@@ -1,0 +1,394 @@
+{
+ "candidates": [
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9"
+   ],
+   "factory": "tricrypto_ng",
+   "factory_index": 87,
+   "pool": "0x054d3af2825a5cd8e4ef5dc28bc368efd396c216",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+   ],
+   "factory": "tricrypto_ng",
+   "factory_index": 88,
+   "pool": "0x087a96c2961dbe228dd1dca45fa7c6e8738f3fa7",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xc7bfe68ad8c34258ddcd746de31c0e6b4695cc6a",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+   ],
+   "factory": "tricrypto_ng",
+   "factory_index": 79,
+   "pool": "0x1a152210b3635f1bceb6f7b7eb066a8c57d2a725",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0x18084fba666a33d37592fa2633fd49a74dd93a88",
+    "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0"
+   ],
+   "factory": "tricrypto_ng",
+   "factory_index": 2,
+   "pool": "0x2889302a794da87fbf1d6db415c1492194663d13",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "0xd33526068d116ce69f19a9ee46f0bd304f21a51f"
+   ],
+   "factory": "tricrypto_ng",
+   "factory_index": 86,
+   "pool": "0x4a2e85e5999cd92349a0fa9bfe493226acc7278e",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "0xd533a949740bb3306d119cc777fa900ba034cd52"
+   ],
+   "factory": "tricrypto_ng",
+   "factory_index": 4,
+   "pool": "0x4ebdf703948ddcea3b11f675b4d1fba9d2414a14",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "0x5a98fcbea516cf06857215779fd812ca3bef1b32"
+   ],
+   "factory": "tricrypto_ng",
+   "factory_index": 19,
+   "pool": "0x5b3ba844b3859f56524e99ae54857b36c8ae3efe",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xb69753c06bb5c366be51e73bfc0cc2e3dc07e371",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e"
+   ],
+   "factory": "tricrypto_ng",
+   "factory_index": 48,
+   "pool": "0x62bfea5673c6336d265865e5ea1d32f67c523c33",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xa21af1050f7b26e0cff45ee51548254c41ed6b5c"
+   ],
+   "factory": "tricrypto_ng",
+   "factory_index": 13,
+   "pool": "0x6a62ee3e5c4b412cd9167d3afd5e481e1e30715a",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0x1494ca1f11d487c2bbe4543e90080aeba4ba3c2b",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+   ],
+   "factory": "tricrypto_ng",
+   "factory_index": 36,
+   "pool": "0x888a9cca07ad3a79ee6671843a36941a45ecaf5a",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0x1494ca1f11d487c2bbe4543e90080aeba4ba3c2b",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+   ],
+   "factory": "tricrypto_ng",
+   "factory_index": 37,
+   "pool": "0xb72c9b6efed482c9ba0d379164283e1edf8212cf",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "0x97effb790f2fbb701d88f89db4521348a2b77be8"
+   ],
+   "factory": "tricrypto_ng",
+   "factory_index": 34,
+   "pool": "0xbed58c1053fd347843883eade0781f562a66f623",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0x47a6eb3e7ae6325976b80563e4afb190a3713d96",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e"
+   ],
+   "factory": "tricrypto_ng",
+   "factory_index": 124,
+   "pool": "0xd6eece4d07cdbb190ce212704accd76b529b73f2",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "0x514910771af9ca656af840dff83e8264ecf986ca"
+   ],
+   "factory": "tricrypto_ng",
+   "factory_index": 85,
+   "pool": "0xe1c121be7303f4760410b0c42c2141653bb57244",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+   ],
+   "factory": "tricrypto_ng",
+   "factory_index": 57,
+   "pool": "0xe838e7de272421ca3a42f90b6fcfedd7c7bce610",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0x62defb9df22bda7fae98af09cb201561febc90ae",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e"
+   ],
+   "factory": "tricrypto_ng",
+   "factory_index": 89,
+   "pool": "0xf0534fdb6f37cb8b56e08864fe31e9aa19725225",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 365,
+   "pool": "0x313698667d7fdd6789a9bc70821309ff891e729a",
+   "yield_basis": true
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 409,
+   "pool": "0x40bd9fe1f6399f7550a88ca24139f80e939e6ead",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0x18084fba666a33d37592fa2633fd49a74dd93a88"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 367,
+   "pool": "0x4f52c3a81e33521e5a9a47fd9d3be475d2279c2e",
+   "yield_basis": true
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 373,
+   "pool": "0x54e5bf78d9663a6d91a5baeb7f93fe511ab8f6d3",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 407,
+   "pool": "0x5d51a4c2f14b271bc7273e362878c8bd5f73aa0a",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 368,
+   "pool": "0x656341ef90b622c6634e0573772ffb7f3669b9f3",
+   "yield_basis": true
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 316,
+   "pool": "0x6e5492f8ea2370844ee098a56dd88e1717e4a9c2",
+   "yield_basis": true
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 252,
+   "pool": "0x83f24023d15d835a213df24fd309c47dab5beb32",
+   "yield_basis": true
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 414,
+   "pool": "0x846254836ab71e53fa66fadb95129036c837c030",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 366,
+   "pool": "0x862cb4e988fb66e72f128d1183829f8c05b6c6a0",
+   "yield_basis": true
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 384,
+   "pool": "0x8aceb095b9933ecfd34fab918edec40f7e6384cf",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 423,
+   "pool": "0x9c9bc7e9f54155760fb03d406c8813453f284388",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 406,
+   "pool": "0xc0fa4703081c07f1099c9bc888f9d4b665ab18fb",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 251,
+   "pool": "0xd9ff8396554a0d18b2cfbec53e1979b7ecce8373",
+   "yield_basis": true
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 385,
+   "pool": "0xddaaf9809252de62a689ec3ad67d98fda7d4975c",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 405,
+   "pool": "0xe147de36c5c8a916da5044b610cec1f3c796dbab",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 422,
+   "pool": "0xe8fcbf3dabc939ea509bff0ecf2c228b6ded7de0",
+   "yield_basis": false
+  },
+  {
+   "coins": [
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "0x18084fba666a33d37592fa2633fd49a74dd93a88"
+   ],
+   "factory": "twocrypto_ng",
+   "factory_index": 253,
+   "pool": "0xf1f435b05d255a5dbde37333c0f61da6f69c6127",
+   "yield_basis": true
+  }
+ ],
+ "reference_block": 26378000,
+ "rule": "PHASE_1B_ADDENDUM.md section 2",
+ "tokens": {
+  "0x18084fba666a33d37592fa2633fd49a74dd93a88": {
+   "decimals": 18,
+   "expected": "tBTC",
+   "symbol": "tBTC"
+  },
+  "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599": {
+   "decimals": 8,
+   "expected": "WBTC",
+   "symbol": "WBTC"
+  },
+  "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0": {
+   "decimals": 18,
+   "expected": "wstETH",
+   "symbol": "wstETH"
+  },
+  "0x8236a87084f8b84306f72007f36f2618a5634494": {
+   "decimals": 8,
+   "expected": "LBTC",
+   "symbol": "LBTC"
+  },
+  "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": {
+   "decimals": 18,
+   "expected": "WETH",
+   "symbol": "WETH"
+  },
+  "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf": {
+   "decimals": 8,
+   "expected": "cbBTC",
+   "symbol": "cbBTC"
+  }
+ }
+}
