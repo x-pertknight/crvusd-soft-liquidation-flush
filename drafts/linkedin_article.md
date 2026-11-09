@@ -1,6 +1,6 @@
 # crvUSD in the 8 November flush. Empty PegKeepers and BTC selling routed through Yield Basis
 
-When ETH fell 6% in fifteen minutes on Sunday night, transactions that passed through Yield Basis pools sold a net 3.85M crvUSD into the crvUSD peg pools. The PegKeepers, the contracts built to absorb that kind of flow, held no crvUSD in those pools to withdraw.
+When ETH fell 6% in fifteen minutes on the night of 8 November, transactions that passed through Yield Basis pools sold a net 3.85M crvUSD into the crvUSD peg pools. The PegKeepers, the contracts built to absorb that kind of flow, held no crvUSD in those pools to withdraw.
 
 I rebuilt the event block by block from Ethereum logs and archive state. Before touching the data, I read the Curve and Yield Basis docs and governance threads, and I logged 39 predictions with a timestamp. Everything below recomputes from raw files in a public repo with one command.
 
