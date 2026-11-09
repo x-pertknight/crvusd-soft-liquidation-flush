@@ -113,3 +113,24 @@ The Blockscout check is limited to a fixed subset of three events, because the B
 - The other seven events are checked against the RPC only. For every event, that means full tiling of the window by the 100 block RPC responses, and the exact balance check: crvUSD.balanceOf of each peg pool at the last window block minus at the pre block, against the net of the fetched Transfer logs.
 
 Disclosure. Before this rule was written, the phase 1b code was run on E01 and E02 to test it, and printed their metrics (T, the split by tag, the completeness counts). No other event's metrics had been computed. The rule above uses transfer counts only, so those two test runs cannot change which events are chosen. E01 had already been checked before the rule.
+
+### Phase 1b checks and outcome
+
+Order of work, each step committed and pushed before the next: addendum with the S rule and data sources, S candidate list (34 pools, 8 Yield Basis) with its hash, Chainlink fetch and event list with its hash, S membership per event with its hash, addendum 2 (log source roles), this check rule, then flows and metrics.
+
+Mechanical checks in code/recompute_p1b.py, all passing:
+- Event selection recomputed from the cached Chainlink logs equals the committed data/phase1b_events.json. The Chainlink responses tile the period with no gap (ETH 17,340 updates, BTC 13,443).
+- For every event, the 100 block RPC responses tile the window with no gap for each of the six log queries.
+- For every event, crvUSD.balanceOf of each peg pool at the last window block minus at the pre block equals the net of the fetched Transfer logs exactly, to the wei.
+- E01, RPC against Blockscout: 503 transfers into the peg pools, 720 out, 1,135 S pool swaps, identical sets in both sources.
+
+Blockscout subset. By the rule above, E03 (3,484 peg pool transfers) and E05 (3,039) were chosen. Blockscout answered HTTP 429 on the first attempt for both. They are reported as not checked. The other seven events are checked against the RPC only.
+
+What the checks do not cover. The balance check covers the peg pool Transfer logs only. The S pool swap logs, which make D, were checked against a second source for E01 only.
+
+Approximations and readings recorded here:
+- In event selection the last block of a Chainlink price level is taken as 12 seconds before the next update. A missed slot just before an update would lengthen that level's 60 minute window by 12 seconds.
+- E01 had four peg pools registered at its pre block, E02 to E06 four, E07 to E10 five.
+- In E01, PegKeeper legs put 39.48M crvUSD into the peg pools during the window. They are excluded from N and from the class totals, as pre-registered.
+- The large peg moves in E03 to E05 appear in every peg pool separately, not in one pool. Lows by pool: E03 0.967 to 0.977, E04 0.954 to 0.978, E05 0.936 to 0.959.
+- P1B-09 rests on two Tricrypto-NG pools (crvUSD/tBTC/wstETH and crvUSD/WETH/CRV). T for those pools is defined in 5 events.

@@ -93,6 +93,48 @@ P26 (soft liquidation loss between 0.2% and 3%) scores HIT only because a WETH l
 - Bad debt in open positions was not checked.
 - The source, window and definition of the 4.10M claim and of the 0.9951 and 0.9963 prints are unverified.
 
+## Phase 1b. Ten drawdowns since Yield Basis launched
+
+Pre-registered in PHASE_1B_PREREG.md, with PHASE_1B_ADDENDUM.md and PHASE_1B_ADDENDUM_2.md. Events come from Chainlink BTC/USD and ETH/USD only: an ETH fall of 5% or a BTC fall of 3% within 60 minutes, from 2025-09-24 (first Yield Basis market) to 2026-11-09. 22 events qualified and the cap kept 10. Each window runs from 2 hours before to 6 hours after the start of the fall.
+
+T is net crvUSD sold into the peg pools (N) divided by the USD value of BTC or ETH sold into the volatile crvUSD pools of set S (D), in the transactions that made those sales. T is not defined when D is under 0.5M. "Other" pools are the S members that Yield Basis does not own. In these windows that is two Tricrypto-NG pools, crvUSD/tBTC/wstETH and crvUSD/WETH/CRV, each holding 0.7M to 3.2M crvUSD.
+
+| Event | Start (UTC) | Fall | N | D | T | T Yield Basis | T other | Peg move | Below 0.997 | PegKeeper debt |
+|---|---|---|---|---|---|---|---|---|---|---|
+| E01 | 2025-10-10 20:20 | BTC 10.2%, ETH 13.6% | 10.94M | 23.36M | 0.47 | 0.68 | -0.02 | -113 bp | 7 min | 0.07M |
+| E02 | 2025-12-17 15:22 | BTC 4.0%, ETH 5.9% | 26.17M | 35.47M | 0.74 | 0.74 | 0.52 | -2 bp | 0 min | 38.48M |
+| E03 | 2026-01-31 16:23 | BTC 4.2%, ETH 5.7% | 34.66M | 50.80M | 0.68 | 0.70 | -0.06 | -254 bp | 314 min | 0 |
+| E04 | 2026-02-05 14:47 | ETH 7.7% | 10.66M | 20.98M | 0.51 | 0.50 | 0.67 | -160 bp | 480 min | 0 |
+| E05 | 2026-02-05 23:20 | BTC 6.9% | 5.74M | 12.07M | 0.48 | 0.48 | 0.41 | -361 bp | 480 min | 0 |
+| E06 | 2026-02-23 00:55 | BTC 4.1% | 0.47M | 7.87M | 0.06 | 0.06 | not defined | -16 bp | 307 min | 0 |
+| E07 | 2026-06-05 05:23 | BTC 3.2%, ETH 6.0% | 3.79M | 7.56M | 0.50 | 0.51 | not defined | -5 bp | 0 min | 0 |
+| E08 | 2026-06-25 12:59 | BTC 4.9%, ETH 6.3% | 1.17M | 11.07M | 0.11 | 0.10 | not defined | -10 bp | 0 min | 0.35M |
+| E09 | 2026-11-05 14:52 | BTC 4.0%, ETH 5.2% | 4.84M | 11.94M | 0.41 | 0.41 | not defined | -15 bp | 0 min | 0 |
+| E10 | 2026-11-08 20:56 | ETH 6.3% | 3.47M | 5.97M | 0.58 | 0.73 | not defined | -37 bp | 300 min | 0 |
+
+- Median T is 0.49 across the ten events, 0.48 without 8 November.
+- Yield Basis pools carry almost all of N. The median share is 0.99.
+- The LEVAMM leg was under a quarter of the S pool leg in 8 of 10 events.
+- T for the other pools could be computed in 5 events. In 3 of them it was within 0.25 of T for the Yield Basis pools. In E01 and E03, the transactions that sold BTC or ETH into the other pools took net crvUSD out of the peg pools.
+- The peg moved most in E03 to E05 (late January and early February 2026). Each of the four peg pools reached a low between 0.93 and 0.98 then, and the weighted price stayed below 0.997 for the whole window in E04 and E05. PegKeeper debt was zero at the start of all three.
+- E10 is 8 November 2026 recomputed under the phase 1b definitions and window. The release 1 figures above use a different window and are not replaced.
+
+Predictions, scored on all ten events and again without 8 November (same result both ways):
+
+| Prediction | Result |
+|---|---|
+| P1B-01. 4 to 15 events qualify (weak) | MISS, 22 |
+| P1B-02. Median T between 0.4 and 0.9 | HIT, 0.49 |
+| P1B-03. LEVAMM leg under 25% of the S pool leg in at least 75% of events | HIT, 8 of 10 |
+| P1B-04. Yield Basis pools carry at least 60% of N in the median event | HIT, 0.99 |
+| P1B-05. Spearman of N over peg pool balance against peg move at least 0.5 | MISS, 0.14 |
+| P1B-06. Low PegKeeper debt events move the peg at least 10 bp more | UNTESTABLE, only 1 event with 5M or more |
+| P1B-07. 8 November T inside the other events' interquartile range | MISS, 0.58 against 0.41 to 0.51 |
+| P1B-08. No event with N above 25M (weak) | MISS, 34.66M in E03 |
+| P1B-09. T for Yield Basis and other pools within 0.25 in at least 75% of events | MISS, 3 of 5 |
+
+Limits of phase 1b. The "other" side of P1B-09 is two small Tricrypto-NG pools, so it is a weak test of whether ownership matters. Completeness was checked against a second source (Blockscout) for E01 only. E03 and E05 were selected for that check by transfer count and Blockscout refused both with HTTP 429. Every event passed the exact peg pool balance check. Details in VERIFICATION.md, section Phase 1b.
+
 ## Reproduce
 
 ```
@@ -110,6 +152,10 @@ Standard library for every number. Charts need matplotlib 3.9.2 (requirements.tx
 - code/contracts.json, code/topics.json. Every contract address with its source, and pinned event topics.
 - code/raw/. Raw RPC results as fetched.
 - data/. CSV outputs, results.json, SHA256SUMS.
+- PHASE_1B_PREREG.md, PHASE_1B_ADDENDUM.md, PHASE_1B_ADDENDUM_2.md. Phase 1b pre-registration.
+- code/p1b_events.py, code/recompute_p1b.py, code/fetch/p1b_*.py. Phase 1b event selection, metrics and fetch.
+- code/raw/phase1b/. Phase 1b raw responses (gzip JSON), the S candidate list and the S membership per event.
+- data/phase1b_events.json, data/phase1b_results.json, data/phase1b_events_metrics.csv. Phase 1b outputs.
 - charts/. C1 to C6 as PNG and SVG. C3_flows_by_class_square_post is a square version without the pre-registered hour band.
 
 Wallets are reported only in aggregate. No address is named as a seller.

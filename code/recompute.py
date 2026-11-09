@@ -836,6 +836,12 @@ wcsv("predictions_scored.csv", ["id", "result", "weak_test", "note"], [[k, v["re
 with open(os.path.join(DATA, "results.json"), "w") as f:
     json.dump(results, f, indent=1, sort_keys=True)
 
+# ---------------- phase 1b ----------------
+sys.path.insert(0, os.path.dirname(__file__))
+import recompute_p1b  # noqa: E402
+P1B = recompute_p1b.main()
+FAIL.extend(recompute_p1b.FAIL)
+
 if os.environ.get("SKIP_CHARTS") != "1":
     try:
         sys.path.insert(0, os.path.dirname(__file__))

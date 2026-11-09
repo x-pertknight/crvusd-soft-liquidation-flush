@@ -1,0 +1,831 @@
+{
+ "blockscout_subset": [
+  "E01",
+  "E03",
+  "E05"
+ ],
+ "events": [
+  {
+   "D": 23362491.39598808,
+   "D_other": 6917261.66967784,
+   "D_yb": 16445229.726310242,
+   "N": 10937598.155328728,
+   "N_other": -168397.18425433675,
+   "N_over_peg_balance": 0.7075304477658229,
+   "N_yb": 11105995.339583065,
+   "T": 0.4681691678314319,
+   "T_other": -0.024344486632985735,
+   "T_yb": 0.6753323318928716,
+   "W_min": 0.9885573609347824,
+   "W_pre": 0.999827254558747,
+   "btc_decline": 0.10161945403550314,
+   "class_n_tx": {
+    "borrower_action": 17,
+    "hard_liquidation": 56,
+    "liquidity_non_pk": 1,
+    "llamma_arbitrage": 224,
+    "other": 197,
+    "s_pool_leg": 356,
+    "yb_levamm_leg": 39
+   },
+   "class_net": {
+    "borrower_action": -457717.9309685745,
+    "hard_liquidation": -15494759.577482933,
+    "liquidity_non_pk": -650965.5323444672,
+    "llamma_arbitrage": -17297019.35384529,
+    "other": 4929720.87253193,
+    "s_pool_leg": 2367305.2114009284,
+    "yb_levamm_leg": -581010.5046032205
+   },
+   "completeness": {
+    "balances_exact": true,
+    "crvusd_from_pools": {
+     "blockscout": 720,
+     "only_blockscout": 0,
+     "only_rpc": 0,
+     "rpc": 720
+    },
+    "crvusd_to_pools": {
+     "blockscout": 503,
+     "only_blockscout": 0,
+     "only_rpc": 0,
+     "rpc": 503
+    },
+    "s_swaps": {
+     "blockscout": 1135,
+     "only_blockscout": 0,
+     "only_rpc": 0,
+     "rpc": 1135
+    },
+    "second_source_match": true
+   },
+   "eth_decline": 0.13595063099581875,
+   "first_block": 23549078,
+   "id": "E01",
+   "in_blockscout_subset": true,
+   "is_8_november": false,
+   "kind": "joint",
+   "last_block": 23551463,
+   "levamm_leg_net": -581010.5046032205,
+   "minutes_below_0997": 6.8,
+   "n_members": 5,
+   "n_members_yb": 3,
+   "n_peg_pools": 4,
+   "n_sale_tx": 420,
+   "peg_move_bp": -112.69893623964578,
+   "peg_pool_crvusd": 15458837.41097858,
+   "pegkeeper_leg_net": 39479543.09023443,
+   "pk_debt": {
+    "0x338cb2d827112d989a861cde87cd9ffd913a1f9d": 69488.49774140536,
+    "0x3fa20eaa107de08b38a8734063d605d5842fe09c": 0.0,
+    "0x9201da0d97caaaff53f01b2fb56767c7072de340": 0.0,
+    "0xfb726f57d251ab5c731e5c64ed4f5f94351ef9f3": 0.0
+   },
+   "pk_debt_total": 69488.49774140536,
+   "pre_block": 23549077,
+   "price_pools_left_out": [],
+   "price_pools_used": 4,
+   "s_pool_leg_net": 2367305.2114009284,
+   "s_pool_other_topics": 7,
+   "t0": 1760127647,
+   "unpriced_sales": 0
+  },
+  {
+   "D": 35473439.63899383,
+   "D_other": 664925.3333067383,
+   "D_yb": 34808514.30568709,
+   "N": 26174832.865406293,
+   "N_other": 344566.27102469973,
+   "N_over_peg_balance": 0.33624524399270606,
+   "N_yb": 25830266.594381593,
+   "T": 0.7378712955885413,
+   "T_other": 0.5182029526700963,
+   "T_yb": 0.7420674829020607,
+   "W_min": 0.999950962190446,
+   "W_pre": 1.000113487294595,
+   "btc_decline": 0.03967325376625443,
+   "class_n_tx": {
+    "borrower_action": 3,
+    "hard_liquidation": 1,
+    "liquidity_non_pk": 4,
+    "llamma_arbitrage": 218,
+    "other": 247,
+    "s_pool_leg": 1120,
+    "yb_levamm_leg": 154
+   },
+   "class_net": {
+    "borrower_action": 589977.3813997754,
+    "hard_liquidation": 9971.446171019195,
+    "liquidity_non_pk": -234085.85918429296,
+    "llamma_arbitrage": -313179.7130192173,
+    "other": 2808499.232594083,
+    "s_pool_leg": 1601292.3688271653,
+    "yb_levamm_leg": -32496.84665779151
+   },
+   "completeness": {
+    "balances_exact": true,
+    "second_source": "RPC only, outside the Blockscout subset",
+    "second_source_match": null
+   },
+   "eth_decline": 0.059116846924556966,
+   "first_block": 24032607,
+   "id": "E02",
+   "in_blockscout_subset": false,
+   "is_8_november": false,
+   "kind": "joint",
+   "last_block": 24034987,
+   "levamm_leg_net": -32496.84665779151,
+   "minutes_below_0997": 0.0,
+   "n_members": 5,
+   "n_members_yb": 3,
+   "n_peg_pools": 4,
+   "n_sale_tx": 1255,
+   "peg_move_bp": -1.6252510414893617,
+   "peg_pool_crvusd": 77844470.16884524,
+   "pegkeeper_leg_net": -3411957.951191698,
+   "pk_debt": {
+    "0x338cb2d827112d989a861cde87cd9ffd913a1f9d": 4038794.183791188,
+    "0x3fa20eaa107de08b38a8734063d605d5842fe09c": 1557558.1915039956,
+    "0x9201da0d97caaaff53f01b2fb56767c7072de340": 32881237.30570755,
+    "0xfb726f57d251ab5c731e5c64ed4f5f94351ef9f3": 0.0
+   },
+   "pk_debt_total": 38477589.681002736,
+   "pre_block": 24032606,
+   "price_pools_left_out": [],
+   "price_pools_used": 4,
+   "s_pool_leg_net": 1601292.3688271653,
+   "s_pool_other_topics": 8,
+   "t0": 1765984955,
+   "unpriced_sales": 0
+  },
+  {
+   "D": 50796990.10088029,
+   "D_other": 1214423.4810158215,
+   "D_yb": 49582566.619864464,
+   "N": 34658775.74575597,
+   "N_other": -69187.72142250692,
+   "N_over_peg_balance": 0.5832461058848548,
+   "N_yb": 34727963.46717848,
+   "T": 0.6822997913247492,
+   "T_other": -0.05697165980736298,
+   "T_yb": 0.700406732338565,
+   "W_min": 0.9739692734379685,
+   "W_pre": 0.9993491746782516,
+   "btc_decline": 0.042193547920122955,
+   "class_n_tx": {
+    "borrower_action": 34,
+    "hard_liquidation": 5,
+    "liquidity_non_pk": 32,
+    "llamma_arbitrage": 1322,
+    "other": 815,
+    "s_pool_leg": 369,
+    "yb_levamm_leg": 65
+   },
+   "class_net": {
+    "borrower_action": -2892313.5238005817,
+    "hard_liquidation": -6493.361984409999,
+    "liquidity_non_pk": 793552.8220993066,
+    "llamma_arbitrage": -3487043.8448678087,
+    "other": -3182833.6629026625,
+    "s_pool_leg": 29884080.30068664,
+    "yb_levamm_leg": 2888139.9968161033
+   },
+   "completeness": {
+    "balances_exact": true,
+    "second_source": "not checked, HTTP 429",
+    "second_source_match": null
+   },
+   "eth_decline": 0.05725784706785493,
+   "first_block": 24355432,
+   "id": "E03",
+   "in_blockscout_subset": true,
+   "is_8_november": false,
+   "kind": "joint",
+   "last_block": 24357814,
+   "levamm_leg_net": 2888139.9968161033,
+   "minutes_below_0997": 314.0,
+   "n_members": 6,
+   "n_members_yb": 4,
+   "n_peg_pools": 4,
+   "n_sale_tx": 492,
+   "peg_move_bp": -253.7990124028311,
+   "peg_pool_crvusd": 59423929.96036282,
+   "pegkeeper_leg_net": 0.0,
+   "pk_debt": {
+    "0x338cb2d827112d989a861cde87cd9ffd913a1f9d": 0.0,
+    "0x3fa20eaa107de08b38a8734063d605d5842fe09c": 0.0,
+    "0x9201da0d97caaaff53f01b2fb56767c7072de340": 0.0,
+    "0xfb726f57d251ab5c731e5c64ed4f5f94351ef9f3": 0.0
+   },
+   "pk_debt_total": 0.0,
+   "pre_block": 24355431,
+   "price_pools_left_out": [],
+   "price_pools_used": 4,
+   "s_pool_leg_net": 29884080.30068664,
+   "s_pool_other_topics": 8,
+   "t0": 1769876627,
+   "unpriced_sales": 0
+  },
+  {
+   "D": 20978346.83215427,
+   "D_other": 1162024.5032005976,
+   "D_yb": 19816322.328953672,
+   "N": 10655270.851676704,
+   "N_other": 777663.2784384385,
+   "N_over_peg_balance": 0.1174622860252194,
+   "N_yb": 9877607.573238267,
+   "T": 0.5079175655226076,
+   "T_other": 0.6692313942576066,
+   "T_yb": 0.49845816036238333,
+   "W_min": 0.9770085881485555,
+   "W_pre": 0.9929952063022123,
+   "btc_decline": null,
+   "class_n_tx": {
+    "borrower_action": 43,
+    "liquidity_non_pk": 20,
+    "llamma_arbitrage": 360,
+    "other": 858,
+    "s_pool_leg": 570,
+    "yb_levamm_leg": 75
+   },
+   "class_net": {
+    "borrower_action": -2320405.981622082,
+    "liquidity_non_pk": -3928201.657378059,
+    "llamma_arbitrage": -1930070.1641334512,
+    "other": -2307599.257149449,
+    "s_pool_leg": 9882494.121670812,
+    "yb_levamm_leg": 675230.7053474914
+   },
+   "completeness": {
+    "balances_exact": true,
+    "second_source": "RPC only, outside the Blockscout subset",
+    "second_source_match": null
+   },
+   "eth_decline": 0.07698946933301043,
+   "first_block": 24390726,
+   "id": "E04",
+   "in_blockscout_subset": false,
+   "is_8_november": false,
+   "kind": "ETH",
+   "last_block": 24393110,
+   "levamm_leg_net": 675230.7053474914,
+   "minutes_below_0997": 480.0,
+   "n_members": 6,
+   "n_members_yb": 4,
+   "n_peg_pools": 4,
+   "n_sale_tx": 711,
+   "peg_move_bp": -159.8661815365676,
+   "peg_pool_crvusd": 90712272.10228989,
+   "pegkeeper_leg_net": 0.0,
+   "pk_debt": {
+    "0x338cb2d827112d989a861cde87cd9ffd913a1f9d": 0.0,
+    "0x3fa20eaa107de08b38a8734063d605d5842fe09c": 0.0,
+    "0x9201da0d97caaaff53f01b2fb56767c7072de340": 0.0,
+    "0xfb726f57d251ab5c731e5c64ed4f5f94351ef9f3": 0.0
+   },
+   "pk_debt_total": 0.0,
+   "pre_block": 24390725,
+   "price_pools_left_out": [],
+   "price_pools_used": 4,
+   "s_pool_leg_net": 9882494.121670812,
+   "s_pool_other_topics": 6,
+   "t0": 1770302855,
+   "unpriced_sales": 0
+  },
+  {
+   "D": 12066030.116969388,
+   "D_other": 1202265.5551274451,
+   "D_yb": 10863764.561841942,
+   "N": 5735247.987606523,
+   "N_other": 487595.1223792219,
+   "N_over_peg_balance": 0.06353660723627276,
+   "N_yb": 5247652.865227301,
+   "T": 0.4753218690827401,
+   "T_other": 0.4055635797762956,
+   "T_yb": 0.48304184386131116,
+   "W_min": 0.9521628800489134,
+   "W_pre": 0.988299320090194,
+   "btc_decline": 0.06860494916740198,
+   "class_n_tx": {
+    "borrower_action": 11,
+    "hard_liquidation": 7,
+    "liquidity_non_pk": 18,
+    "llamma_arbitrage": 543,
+    "other": 875,
+    "s_pool_leg": 612,
+    "yb_levamm_leg": 145
+   },
+   "class_net": {
+    "borrower_action": -135655.12890472982,
+    "hard_liquidation": -13081.658367104234,
+    "liquidity_non_pk": -1408987.96596705,
+    "llamma_arbitrage": 333606.58698178624,
+    "other": -8240902.0022321725,
+    "s_pool_leg": 5993723.059126139,
+    "yb_levamm_leg": 360317.11923340824
+   },
+   "completeness": {
+    "balances_exact": true,
+    "second_source": "not checked, HTTP 429",
+    "second_source_match": null
+   },
+   "eth_decline": null,
+   "first_block": 24393270,
+   "id": "E05",
+   "in_blockscout_subset": true,
+   "is_8_november": false,
+   "kind": "BTC",
+   "last_block": 24395654,
+   "levamm_leg_net": 360317.11923340824,
+   "minutes_below_0997": 480.0,
+   "n_members": 6,
+   "n_members_yb": 4,
+   "n_peg_pools": 4,
+   "n_sale_tx": 668,
+   "peg_move_bp": -361.3644004128058,
+   "peg_pool_crvusd": 90266827.85057959,
+   "pegkeeper_leg_net": 0.0,
+   "pk_debt": {
+    "0x338cb2d827112d989a861cde87cd9ffd913a1f9d": 0.0,
+    "0x3fa20eaa107de08b38a8734063d605d5842fe09c": 0.0,
+    "0x9201da0d97caaaff53f01b2fb56767c7072de340": 0.0,
+    "0xfb726f57d251ab5c731e5c64ed4f5f94351ef9f3": 0.0
+   },
+   "pk_debt_total": 0.0,
+   "pre_block": 24393269,
+   "price_pools_left_out": [],
+   "price_pools_used": 4,
+   "s_pool_leg_net": 5993723.059126139,
+   "s_pool_other_topics": 6,
+   "t0": 1770333611,
+   "unpriced_sales": 0
+  },
+  {
+   "D": 7872608.675219095,
+   "D_other": 259876.02199422565,
+   "D_yb": 7612732.65322487,
+   "N": 469801.18969704997,
+   "N_other": 44498.19471004944,
+   "N_over_peg_balance": 0.005059502526347067,
+   "N_yb": 425302.99498700054,
+   "T": 0.059675414983582344,
+   "T_other": null,
+   "T_yb": 0.055867323123035946,
+   "W_min": 0.9965349810122093,
+   "W_pre": 0.9980927900065995,
+   "btc_decline": 0.041094153161687456,
+   "class_n_tx": {
+    "borrower_action": 3,
+    "hard_liquidation": 2,
+    "liquidity_non_pk": 11,
+    "llamma_arbitrage": 206,
+    "other": 496,
+    "s_pool_leg": 350
+   },
+   "class_net": {
+    "borrower_action": -70279.99920651785,
+    "hard_liquidation": 206.34976544650397,
+    "liquidity_non_pk": 1097.2716157107448,
+    "llamma_arbitrage": -217633.42356665517,
+    "other": 4602499.90861382,
+    "s_pool_leg": 336541.38318444416
+   },
+   "completeness": {
+    "balances_exact": true,
+    "second_source": "RPC only, outside the Blockscout subset",
+    "second_source_match": null
+   },
+   "eth_decline": null,
+   "first_block": 24515537,
+   "id": "E06",
+   "in_blockscout_subset": false,
+   "is_8_november": false,
+   "kind": "BTC",
+   "last_block": 24517928,
+   "levamm_leg_net": 0.0,
+   "minutes_below_0997": 307.2,
+   "n_members": 6,
+   "n_members_yb": 4,
+   "n_peg_pools": 4,
+   "n_sale_tx": 592,
+   "peg_move_bp": -15.578089943901752,
+   "peg_pool_crvusd": 92855213.97619379,
+   "pegkeeper_leg_net": 0.0,
+   "pk_debt": {
+    "0x338cb2d827112d989a861cde87cd9ffd913a1f9d": 0.0,
+    "0x3fa20eaa107de08b38a8734063d605d5842fe09c": 0.0,
+    "0x9201da0d97caaaff53f01b2fb56767c7072de340": 0.0,
+    "0xfb726f57d251ab5c731e5c64ed4f5f94351ef9f3": 0.0
+   },
+   "pk_debt_total": 0.0,
+   "pre_block": 24515536,
+   "price_pools_left_out": [],
+   "price_pools_used": 4,
+   "s_pool_leg_net": 336541.38318444416,
+   "s_pool_other_topics": 4,
+   "t0": 1771808111,
+   "unpriced_sales": 0
+  },
+  {
+   "D": 7561166.158472405,
+   "D_other": 156425.35629039793,
+   "D_yb": 7404740.802182007,
+   "N": 3790736.467119473,
+   "N_other": 50479.51532897834,
+   "N_over_peg_balance": 0.10694904871665296,
+   "N_yb": 3740256.951790495,
+   "T": 0.501342833588162,
+   "T_other": null,
+   "T_yb": 0.5051165262514424,
+   "W_min": 0.9988523826927246,
+   "W_pre": 0.9993726537833632,
+   "btc_decline": 0.031642739942670715,
+   "class_n_tx": {
+    "borrower_action": 5,
+    "hard_liquidation": 1,
+    "liquidity_non_pk": 5,
+    "llamma_arbitrage": 261,
+    "other": 241,
+    "s_pool_leg": 133,
+    "yb_levamm_leg": 95
+   },
+   "class_net": {
+    "borrower_action": -21642.912287451167,
+    "hard_liquidation": -18451.3366305537,
+    "liquidity_non_pk": -473538.216480192,
+    "llamma_arbitrage": 25172.93943992625,
+    "other": -1521881.158873986,
+    "s_pool_leg": 1882687.861614406,
+    "yb_levamm_leg": 1062880.8330030171
+   },
+   "completeness": {
+    "balances_exact": true,
+    "second_source": "RPC only, outside the Blockscout subset",
+    "second_source_match": null
+   },
+   "eth_decline": 0.05989729943894269,
+   "first_block": 25248472,
+   "id": "E07",
+   "in_blockscout_subset": false,
+   "is_8_november": false,
+   "kind": "joint",
+   "last_block": 25250850,
+   "levamm_leg_net": 1062880.8330030171,
+   "minutes_below_0997": 0.0,
+   "n_members": 10,
+   "n_members_yb": 8,
+   "n_peg_pools": 5,
+   "n_sale_tx": 306,
+   "peg_move_bp": -5.202710906385688,
+   "peg_pool_crvusd": 35444321.50268598,
+   "pegkeeper_leg_net": 0.0,
+   "pk_debt": {
+    "0x338cb2d827112d989a861cde87cd9ffd913a1f9d": 0.0,
+    "0x3fa20eaa107de08b38a8734063d605d5842fe09c": 0.0,
+    "0x53876b157decf04389eed66c7c29d73863f8c50b": 0.0,
+    "0x9201da0d97caaaff53f01b2fb56767c7072de340": 0.0,
+    "0xfb726f57d251ab5c731e5c64ed4f5f94351ef9f3": 0.0
+   },
+   "pk_debt_total": 0.0,
+   "pre_block": 25248471,
+   "price_pools_left_out": [],
+   "price_pools_used": 5,
+   "s_pool_leg_net": 1882687.861614406,
+   "s_pool_other_topics": 5,
+   "t0": 1780637003,
+   "unpriced_sales": 0
+  },
+  {
+   "D": 11068862.42096699,
+   "D_other": 152313.2525201704,
+   "D_yb": 10916549.16844682,
+   "N": 1167109.9067763241,
+   "N_other": 59123.69631747282,
+   "N_over_peg_balance": 0.04263156469998157,
+   "N_yb": 1107986.2104588514,
+   "T": 0.10544081788979033,
+   "T_other": null,
+   "T_yb": 0.10149601246347824,
+   "W_min": 0.9989449367668067,
+   "W_pre": 0.9999090626733053,
+   "btc_decline": 0.04939839958081855,
+   "class_n_tx": {
+    "borrower_action": 2,
+    "hard_liquidation": 1,
+    "liquidity_non_pk": 8,
+    "llamma_arbitrage": 155,
+    "other": 251,
+    "s_pool_leg": 89,
+    "yb_levamm_leg": 111
+   },
+   "class_net": {
+    "borrower_action": -13255.17291379807,
+    "hard_liquidation": 27.705762207822524,
+    "liquidity_non_pk": -813206.4101226792,
+    "llamma_arbitrage": -5116.106254851506,
+    "other": 7378490.916203716,
+    "s_pool_leg": 992680.7311973418,
+    "yb_levamm_leg": 718635.2268948999
+   },
+   "completeness": {
+    "balances_exact": true,
+    "second_source": "RPC only, outside the Blockscout subset",
+    "second_source_match": null
+   },
+   "eth_decline": 0.06328061812774377,
+   "first_block": 25394197,
+   "id": "E08",
+   "in_blockscout_subset": false,
+   "is_8_november": false,
+   "kind": "joint",
+   "last_block": 25396586,
+   "levamm_leg_net": 718635.2268948999,
+   "minutes_below_0997": 0.0,
+   "n_members": 10,
+   "n_members_yb": 8,
+   "n_peg_pools": 5,
+   "n_sale_tx": 388,
+   "peg_move_bp": -9.641259064985253,
+   "peg_pool_crvusd": 27376661.283483896,
+   "pegkeeper_leg_net": -349369.1541192455,
+   "pk_debt": {
+    "0x338cb2d827112d989a861cde87cd9ffd913a1f9d": 0.0,
+    "0x3fa20eaa107de08b38a8734063d605d5842fe09c": 0.0,
+    "0x53876b157decf04389eed66c7c29d73863f8c50b": 0.0,
+    "0x9201da0d97caaaff53f01b2fb56767c7072de340": 0.0,
+    "0xfb726f57d251ab5c731e5c64ed4f5f94351ef9f3": 349369.1541192455
+   },
+   "pk_debt_total": 349369.1541192455,
+   "pre_block": 25394196,
+   "price_pools_left_out": [],
+   "price_pools_used": 5,
+   "s_pool_leg_net": 992680.7311973418,
+   "s_pool_other_topics": 5,
+   "t0": 1782392375,
+   "unpriced_sales": 0
+  },
+  {
+   "D": 11941156.679711763,
+   "D_other": 355344.8448658446,
+   "D_yb": 11585811.83484592,
+   "N": 4837166.896518088,
+   "N_other": 30917.092569896635,
+   "N_over_peg_balance": 0.19858560530923236,
+   "N_yb": 4806249.803948191,
+   "T": 0.40508361344395727,
+   "T_other": null,
+   "T_yb": 0.41483927690701267,
+   "W_min": 0.9981654730023943,
+   "W_pre": 0.9996414041112366,
+   "btc_decline": 0.04015607889605675,
+   "class_n_tx": {
+    "borrower_action": 9,
+    "liquidity_non_pk": 5,
+    "llamma_arbitrage": 77,
+    "other": 201,
+    "s_pool_leg": 155,
+    "yb_levamm_leg": 197
+   },
+   "class_net": {
+    "borrower_action": -837710.9320150479,
+    "liquidity_non_pk": 5873.840669611105,
+    "llamma_arbitrage": 104444.00583241657,
+    "other": 3170014.36260289,
+    "s_pool_leg": 4643420.465042807,
+    "yb_levamm_leg": 419776.86511172453
+   },
+   "completeness": {
+    "balances_exact": true,
+    "second_source": "RPC only, outside the Blockscout subset",
+    "second_source_match": null
+   },
+   "eth_decline": 0.05234414406257878,
+   "first_block": 26348753,
+   "id": "E09",
+   "in_blockscout_subset": false,
+   "is_8_november": false,
+   "kind": "joint",
+   "last_block": 26351143,
+   "levamm_leg_net": 419776.86511172453,
+   "minutes_below_0997": 0.0,
+   "n_members": 10,
+   "n_members_yb": 8,
+   "n_peg_pools": 5,
+   "n_sale_tx": 474,
+   "peg_move_bp": -14.759311088422544,
+   "peg_pool_crvusd": 24358094.278715603,
+   "pegkeeper_leg_net": 0.0,
+   "pk_debt": {
+    "0x338cb2d827112d989a861cde87cd9ffd913a1f9d": 0.0,
+    "0x3fa20eaa107de08b38a8734063d605d5842fe09c": 0.0,
+    "0x53876b157decf04389eed66c7c29d73863f8c50b": 0.0,
+    "0x9201da0d97caaaff53f01b2fb56767c7072de340": 0.0,
+    "0xfb726f57d251ab5c731e5c64ed4f5f94351ef9f3": 0.0
+   },
+   "pk_debt_total": 0.0,
+   "pre_block": 26348752,
+   "price_pools_left_out": [],
+   "price_pools_used": 5,
+   "s_pool_leg_net": 4643420.465042807,
+   "s_pool_other_topics": 8,
+   "t0": 1793890343,
+   "unpriced_sales": 0
+  },
+  {
+   "D": 5972947.778803777,
+   "D_other": 339809.9817731028,
+   "D_yb": 5633137.797030674,
+   "N": 3474036.613122469,
+   "N_other": -645836.7045400997,
+   "N_over_peg_balance": 0.11297342544564193,
+   "N_yb": 4119873.3176625683,
+   "T": 0.5816284926265045,
+   "T_other": null,
+   "T_yb": 0.7313638448245001,
+   "W_min": 0.9942505709790624,
+   "W_pre": 0.9979461505228786,
+   "btc_decline": null,
+   "class_n_tx": {
+    "borrower_action": 5,
+    "hard_liquidation": 1,
+    "liquidity_non_pk": 32,
+    "llamma_arbitrage": 47,
+    "other": 303,
+    "s_pool_leg": 186,
+    "yb_levamm_leg": 122
+   },
+   "class_net": {
+    "borrower_action": 6194.831912575116,
+    "hard_liquidation": -9564.896176903636,
+    "liquidity_non_pk": 2023110.5657980863,
+    "llamma_arbitrage": -64566.57328793302,
+    "other": -1503814.4676472663,
+    "s_pool_leg": 3229638.134936608,
+    "yb_levamm_leg": -30341.979882265667
+   },
+   "completeness": {
+    "balances_exact": true,
+    "second_source": "RPC only, outside the Blockscout subset",
+    "second_source_match": null
+   },
+   "eth_decline": 0.06325495351939313,
+   "first_block": 26372089,
+   "id": "E10",
+   "in_blockscout_subset": false,
+   "is_8_november": true,
+   "kind": "ETH",
+   "last_block": 26374480,
+   "levamm_leg_net": -30341.979882265667,
+   "minutes_below_0997": 300.4,
+   "n_members": 10,
+   "n_members_yb": 8,
+   "n_peg_pools": 5,
+   "n_sale_tx": 402,
+   "peg_move_bp": -36.95579543816163,
+   "peg_pool_crvusd": 30750918.62903661,
+   "pegkeeper_leg_net": 0.0,
+   "pk_debt": {
+    "0x338cb2d827112d989a861cde87cd9ffd913a1f9d": 0.0,
+    "0x3fa20eaa107de08b38a8734063d605d5842fe09c": 0.0,
+    "0x53876b157decf04389eed66c7c29d73863f8c50b": 0.0,
+    "0x9201da0d97caaaff53f01b2fb56767c7072de340": 0.0,
+    "0xfb726f57d251ab5c731e5c64ed4f5f94351ef9f3": 0.0
+   },
+   "pk_debt_total": 0.0,
+   "pre_block": 26372088,
+   "price_pools_left_out": [],
+   "price_pools_used": 5,
+   "s_pool_leg_net": 3229638.134936608,
+   "s_pool_other_topics": 9,
+   "t0": 1794171371,
+   "unpriced_sales": 0
+  }
+ ],
+ "flags": [
+  "E03 Blockscout check not checked, HTTP 429",
+  "E05 Blockscout check not checked, HTTP 429"
+ ],
+ "n_selected": 10,
+ "peg_pool_transfer_counts": {
+  "E01": 1223,
+  "E02": 2833,
+  "E03": 3484,
+  "E04": 2595,
+  "E05": 3039,
+  "E06": 1383,
+  "E07": 922,
+  "E08": 762,
+  "E09": 724,
+  "E10": 884
+ },
+ "predictions": {
+  "P1B-01": {
+   "all_events": {
+    "result": "MISS",
+    "value": 22
+   },
+   "weak_test": true,
+   "without_8_november": {
+    "result": "MISS",
+    "value": 21
+   }
+  },
+  "P1B-02": {
+   "all_events": {
+    "result": "HIT",
+    "value": 0.48833235133545105
+   },
+   "weak_test": false,
+   "without_8_november": {
+    "result": "HIT",
+    "value": 0.4753218690827401
+   }
+  },
+  "P1B-03": {
+   "all_events": {
+    "result": "HIT",
+    "value": "8 of 10"
+   },
+   "weak_test": false,
+   "without_8_november": {
+    "result": "HIT",
+    "value": "7 of 9"
+   }
+  },
+  "P1B-04": {
+   "all_events": {
+    "result": "HIT",
+    "value": 0.9867597124280947
+   },
+   "weak_test": false,
+   "without_8_november": {
+    "result": "HIT",
+    "value": 0.9866834543190134
+   }
+  },
+  "P1B-05": {
+   "all_events": {
+    "result": "MISS",
+    "value": 0.1393939393939394
+   },
+   "weak_test": false,
+   "without_8_november": {
+    "result": "MISS",
+    "value": 0.08333333333333333
+   }
+  },
+  "P1B-06": {
+   "all_events": {
+    "result": "UNTESTABLE",
+    "value": "9 events under 1M debt, 1 at 5M or more"
+   },
+   "weak_test": false,
+   "without_8_november": {
+    "result": "UNTESTABLE",
+    "value": "8 events under 1M debt, 1 at 5M or more"
+   }
+  },
+  "P1B-07": {
+   "all_events": {
+    "result": "MISS",
+    "value": {
+     "T_8nov": 0.5816284926265045,
+     "q1": 0.40508361344395727,
+     "q3": 0.5079175655226076
+    }
+   },
+   "weak_test": false,
+   "without_8_november": {
+    "result": "MISS",
+    "value": {
+     "T_8nov": 0.5816284926265045,
+     "q1": 0.40508361344395727,
+     "q3": 0.5079175655226076
+    }
+   }
+  },
+  "P1B-08": {
+   "all_events": {
+    "result": "MISS",
+    "value": 34658775.74575597
+   },
+   "weak_test": true,
+   "without_8_november": {
+    "result": "MISS",
+    "value": 34658775.74575597
+   }
+  },
+  "P1B-09": {
+   "all_events": {
+    "result": "MISS",
+    "value": "3 of 5"
+   },
+   "weak_test": false,
+   "without_8_november": {
+    "result": "MISS",
+    "value": "3 of 5"
+   }
+  }
+ },
+ "qualifying_events_before_cap": 22
+}

@@ -37,7 +37,9 @@
   "rate()": "0x2c4e722e",
   "decimals()": "0x313ce567",
   "get_state()": "0x86b301ad",
-  "A()": "0xf446c1d0"
+  "A()": "0xf446c1d0",
+  "balanceOf(address)": "0x70a08231",
+  "stEthPerToken()": "0x035faf82"
  },
  "aggregator": "0x18672b1b0c623a30089a280ed9256379fb0e4e62",
  "aggregator_source": "PegKeeperRegulator.aggregator(); listed as crvusd-price-aggregator-v3 on docs.curve.finance/developer/deployments",
