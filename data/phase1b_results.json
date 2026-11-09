@@ -88,7 +88,11 @@
    "s_pool_leg_net": 2367305.2114009284,
    "s_pool_other_topics": 7,
    "t0": 1760127647,
-   "unpriced_sales": 0
+   "unpriced_sales": 0,
+   "weth_rate_max": 0.152251431402384,
+   "weth_rate_max_block": 23550005,
+   "weth_rate_pre": 0.116395222677264,
+   "weth_rate_samples": 192
   },
   {
    "D": 35473439.63899383,
@@ -156,7 +160,11 @@
    "s_pool_leg_net": 1601292.3688271653,
    "s_pool_other_topics": 8,
    "t0": 1765984955,
-   "unpriced_sales": 0
+   "unpriced_sales": 0,
+   "weth_rate_max": 0.012993980351904,
+   "weth_rate_max_block": 24034457,
+   "weth_rate_pre": 0.012287930529456,
+   "weth_rate_samples": 153
   },
   {
    "D": 50796990.10088029,
@@ -192,8 +200,25 @@
    },
    "completeness": {
     "balances_exact": true,
-    "second_source": "not checked, HTTP 429",
-    "second_source_match": null
+    "crvusd_from_pools": {
+     "blockscout": 1530,
+     "only_blockscout": 0,
+     "only_rpc": 0,
+     "rpc": 1530
+    },
+    "crvusd_to_pools": {
+     "blockscout": 1954,
+     "only_blockscout": 0,
+     "only_rpc": 0,
+     "rpc": 1954
+    },
+    "s_swaps": {
+     "blockscout": 1196,
+     "only_blockscout": 0,
+     "only_rpc": 0,
+     "rpc": 1196
+    },
+    "second_source_match": true
    },
    "eth_decline": 0.05725784706785493,
    "first_block": 24355432,
@@ -224,7 +249,11 @@
    "s_pool_leg_net": 29884080.30068664,
    "s_pool_other_topics": 8,
    "t0": 1769876627,
-   "unpriced_sales": 0
+   "unpriced_sales": 0,
+   "weth_rate_max": 0.478093644725328,
+   "weth_rate_max_block": 24356802,
+   "weth_rate_pre": 0.128099290246992,
+   "weth_rate_samples": 217
   },
   {
    "D": 20978346.83215427,
@@ -258,8 +287,25 @@
    },
    "completeness": {
     "balances_exact": true,
-    "second_source": "RPC only, outside the Blockscout subset",
-    "second_source_match": null
+    "crvusd_from_pools": {
+     "blockscout": 1322,
+     "only_blockscout": 0,
+     "only_rpc": 0,
+     "rpc": 1322
+    },
+    "crvusd_to_pools": {
+     "blockscout": 1273,
+     "only_blockscout": 0,
+     "only_rpc": 0,
+     "rpc": 1273
+    },
+    "s_swaps": {
+     "blockscout": 1292,
+     "only_blockscout": 0,
+     "only_rpc": 0,
+     "rpc": 1292
+    },
+    "second_source_match": true
    },
    "eth_decline": 0.07698946933301043,
    "first_block": 24390726,
@@ -290,7 +336,11 @@
    "s_pool_leg_net": 9882494.121670812,
    "s_pool_other_topics": 6,
    "t0": 1770302855,
-   "unpriced_sales": 0
+   "unpriced_sales": 0,
+   "weth_rate_max": 0.750240984178656,
+   "weth_rate_max_block": 24391670,
+   "weth_rate_pre": 0.260938589891616,
+   "weth_rate_samples": 168
   },
   {
    "D": 12066030.116969388,
@@ -326,8 +376,25 @@
    },
    "completeness": {
     "balances_exact": true,
-    "second_source": "not checked, HTTP 429",
-    "second_source_match": null
+    "crvusd_from_pools": {
+     "blockscout": 1280,
+     "only_blockscout": 0,
+     "only_rpc": 0,
+     "rpc": 1280
+    },
+    "crvusd_to_pools": {
+     "blockscout": 1759,
+     "only_blockscout": 0,
+     "only_rpc": 0,
+     "rpc": 1759
+    },
+    "s_swaps": {
+     "blockscout": 1762,
+     "only_blockscout": 0,
+     "only_rpc": 0,
+     "rpc": 1762
+    },
+    "second_source_match": true
    },
    "eth_decline": null,
    "first_block": 24393270,
@@ -358,7 +425,11 @@
    "s_pool_leg_net": 5993723.059126139,
    "s_pool_other_topics": 6,
    "t0": 1770333611,
-   "unpriced_sales": 0
+   "unpriced_sales": 0,
+   "weth_rate_max": 1.386294392013264,
+   "weth_rate_max_block": 24394159,
+   "weth_rate_pre": 0.775644635278368,
+   "weth_rate_samples": 178
   },
   {
    "D": 7872608.675219095,
@@ -424,7 +495,11 @@
    "s_pool_leg_net": 336541.38318444416,
    "s_pool_other_topics": 4,
    "t0": 1771808111,
-   "unpriced_sales": 0
+   "unpriced_sales": 0,
+   "weth_rate_max": 0.13792262630544,
+   "weth_rate_max_block": 24516674,
+   "weth_rate_pre": 0.12777258021984,
+   "weth_rate_samples": 145
   },
   {
    "D": 7561166.158472405,
@@ -493,7 +568,11 @@
    "s_pool_leg_net": 1882687.861614406,
    "s_pool_other_topics": 5,
    "t0": 1780637003,
-   "unpriced_sales": 0
+   "unpriced_sales": 0,
+   "weth_rate_max": 0.06439939849008,
+   "weth_rate_max_block": 25248471,
+   "weth_rate_pre": 0.06439939849008,
+   "weth_rate_samples": 135
   },
   {
    "D": 11068862.42096699,
@@ -562,7 +641,11 @@
    "s_pool_leg_net": 992680.7311973418,
    "s_pool_other_topics": 5,
    "t0": 1782392375,
-   "unpriced_sales": 0
+   "unpriced_sales": 0,
+   "weth_rate_max": 0.027387242762256,
+   "weth_rate_max_block": 25395341,
+   "weth_rate_pre": 0.024405189835248,
+   "weth_rate_samples": 112
   },
   {
    "D": 11941156.679711763,
@@ -629,7 +712,11 @@
    "s_pool_leg_net": 4643420.465042807,
    "s_pool_other_topics": 8,
    "t0": 1793890343,
-   "unpriced_sales": 0
+   "unpriced_sales": 0,
+   "weth_rate_max": 0.060419455037136,
+   "weth_rate_max_block": 26349707,
+   "weth_rate_pre": 0.051614410143024,
+   "weth_rate_samples": 105
   },
   {
    "D": 5972947.778803777,
@@ -698,13 +785,14 @@
    "s_pool_leg_net": 3229638.134936608,
    "s_pool_other_topics": 9,
    "t0": 1794171371,
-   "unpriced_sales": 0
+   "unpriced_sales": 0,
+   "weth_rate_max": 0.077352772741488,
+   "weth_rate_max_block": 26374302,
+   "weth_rate_pre": 0.063169534446192,
+   "weth_rate_samples": 124
   }
  ],
- "flags": [
-  "E03 Blockscout check not checked, HTTP 429",
-  "E05 Blockscout check not checked, HTTP 429"
- ],
+ "flags": [],
  "n_selected": 10,
  "peg_pool_transfer_counts": {
   "E01": 1223,

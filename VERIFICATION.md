@@ -133,4 +133,22 @@ Approximations and readings recorded here:
 - E01 had four peg pools registered at its pre block, E02 to E06 four, E07 to E10 five.
 - In E01, PegKeeper legs put 39.48M crvUSD into the peg pools during the window. They are excluded from N and from the class totals, as pre-registered.
 - The large peg moves in E03 to E05 appear in every peg pool separately, not in one pool. Lows by pool: E03 0.967 to 0.977, E04 0.954 to 0.978, E05 0.936 to 0.959.
-- P1B-09 rests on two Tricrypto-NG pools (crvUSD/tBTC/wstETH and crvUSD/WETH/CRV). T for those pools is defined in 5 events.
+- P1B-09 stays scored MISS as pre-registered. The "other" side held only two small Tricrypto-NG pools (crvUSD/tBTC/wstETH and crvUSD/WETH/CRV), with T defined in 5 events, so the test could not discriminate.
+
+### Phase 1b additions after the results (2026-11-09)
+
+These checks were added after the phase 1b results were computed. They change no pre-registered rule, metric or score.
+
+Blockscout retry. E03 and E05, reported above as not checked, were queried again after the throttle, and E04 was added. The retry waited through two more HTTP 429 blocks. All three match the RPC exactly:
+- E03: 1,954 transfers into the peg pools, 1,530 out, 1,196 S pool swaps.
+- E04: 1,273 in, 1,322 out, 1,292 swaps.
+- E05: 1,759 in, 1,280 out, 1,762 swaps.
+Events verified by a second source: E01, E03, E04, E05. E02 and E06 to E10 are checked against the RPC only. The first attempt files for E03 and E05 (ev_E03_blockscout_not_checked, ev_E05_blockscout_not_checked) are kept.
+
+WETH mint market borrow rate. rate() on the WETH mint market LLAMMA, as simple APR as in release 1, read at the pre block, every 25 blocks, at every block with a log from that market's Controller or LLAMMA, and at the last block (code/fetch/p1b_rates.py). Peak in the window: E01 15.2%, E02 1.3%, E03 47.8%, E04 75.0%, E05 138.6%, E06 13.8%, E07 6.4%, E08 2.7%, E09 6.0%, E10 7.7%.
+
+External cross-check against Inverse Finance. Source: forum.inverse.finance, "Proposal to Sunset crvUSD-LP FiRM Markets Pending Demonstrated crvUSD Stability Under Yield Basis", posted 2026-02-10. It reports crvUSD at 0.965 during the previous week's volatility, crvUSD variable rates spiking to 300%, PegKeepers completely depleted, and a market stress event on 6 February.
+- Price. Agrees in direction and size. The phase 1b windows cover 31 January (E03) and 5 to 6 February (E04, E05, the E05 window ends 6 February 05:20 UTC). Per pool lows: E03 0.967 to 0.977, E04 0.954 to 0.978, E05 0.936 to 0.959. The weighted price fell to 0.974, 0.977 and 0.952. The post gives no source or block for 0.965, so an exact match is not expected.
+- PegKeepers. Agrees. PegKeeper debt was zero at the start of E03, E04 and E05.
+- Rates. Not reproduced in the markets measured here. The WETH mint market peaked at 138.6% in E05. Every crvUSD mint market sampled every 100 blocks in E04 and E05 peaked at 138.6% or less (code/fetch/p1b_rates_all.py). The post does not name the market behind 300%. It may be a Llamalend market or a moment outside these windows. Neither was measured.
+- 6 February stress event. The E05 window, 5 February 21:20 to 6 February 05:20 UTC, has the largest peg move in phase 1b, -361 bp, with the weighted price below 0.997 for the whole window. That is consistent with the post, but the post gives no time of day.

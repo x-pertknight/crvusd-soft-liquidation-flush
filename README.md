@@ -133,7 +133,7 @@ Predictions, scored on all ten events and again without 8 November (same result 
 | P1B-08. No event with N above 25M (weak) | MISS, 34.66M in E03 |
 | P1B-09. T for Yield Basis and other pools within 0.25 in at least 75% of events | MISS, 3 of 5 |
 
-Limits of phase 1b. The "other" side of P1B-09 is two small Tricrypto-NG pools, so it is a weak test of whether ownership matters. Completeness was checked against a second source (Blockscout) for E01 only. E03 and E05 were selected for that check by transfer count and Blockscout refused both with HTTP 429. Every event passed the exact peg pool balance check. Details in VERIFICATION.md, section Phase 1b.
+Limits of phase 1b. P1B-09 stays scored MISS as pre-registered. The "other" side held only two small Tricrypto-NG pools, so the test could not discriminate between ownership mattering or not. Completeness was checked against a second source (Blockscout) for E01, E03, E04 and E05, with identical log sets. E03 and E05 were first refused with HTTP 429 and checked in a later retry. E04 was added in that retry. The other six events are checked against the RPC only. Every event passed the exact peg pool balance check. Details in VERIFICATION.md, section Phase 1b.
 
 ## Reproduce
 

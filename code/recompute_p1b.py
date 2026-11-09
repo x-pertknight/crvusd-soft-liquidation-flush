@@ -360,6 +360,15 @@ def event_metrics(ev):
         nxt = path[i + 1][0] if i + 1 < len(path) else ev["window_end_ts"]
         if val < 0.997:
             below += max(0, nxt - ts)
+    # added after the results (VERIFICATION.md): WETH mint market borrow rate, simple APR as in release 1
+    rpath = os.path.join(RAW, f"ev_{eid}_rates_state.json.gz")
+    if os.path.exists(rpath):
+        weth = [x for x in C["mint_markets"] if x["name"] == "WETH"][0]["amm"].lower()
+        rates = {int(k.split("|")[2]): int(v, 16) * 365 * 86400 / E18 for k, v in gz(f"ev_{eid}_rates_state")["calls"].items()
+                 if k.startswith(weth + "|" + SEL["rate()"] + "|") and not v.startswith("ERR")}
+        bmax = max(rates, key=lambda b: (rates[b], -b))
+        out.update({"weth_rate_pre": rates[pre], "weth_rate_max": rates[bmax], "weth_rate_max_block": bmax,
+                    "weth_rate_samples": len(rates)})
     out.update({"W_pre": W_pre, "W_min": W_min, "peg_move_bp": (W_min - W_pre) * 1e4,
                 "minutes_below_0997": below / 60, "price_pools_used": len(used), "price_pools_left_out": left_out})
     return out
@@ -427,12 +436,12 @@ def main():
         json.dump(res, f, indent=1, sort_keys=True)
     cols = ["id", "kind", "t0", "btc_decline", "eth_decline", "N", "D", "T", "N_yb", "D_yb", "T_yb", "N_other",
             "D_other", "T_other", "levamm_leg_net", "s_pool_leg_net", "pk_debt_total", "peg_pool_crvusd",
-            "N_over_peg_balance", "W_pre", "W_min", "peg_move_bp", "minutes_below_0997"]
+            "N_over_peg_balance", "W_pre", "W_min", "peg_move_bp", "minutes_below_0997", "weth_rate_pre", "weth_rate_max"]
     with open(os.path.join(DATA, "phase1b_events_metrics.csv"), "w", newline="") as f:
         wr = csv.writer(f)
         wr.writerow(cols)
         for e in events:
-            wr.writerow(["" if e[c] is None else (f"{e[c]:.6f}" if isinstance(e[c], float) else e[c]) for c in cols])
+            wr.writerow(["" if e.get(c) is None else (f"{e[c]:.6f}" if isinstance(e[c], float) else e[c]) for c in cols])
     for k, v in preds.items():
         print("phase 1b", k, v["all_events"]["result"], v["without_8_november"]["result"])
     return res
