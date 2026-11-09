@@ -104,7 +104,7 @@ Legs versus transactions. The liquidity class has 52 pool legs in 45 transaction
 
 ## Phase 1b
 
-### Scope of the Blockscout completeness check (rule fixed 2026-11-09, 17:45 UTC)
+### Scope of the Blockscout completeness check (rule fixed 2026-11-09, 17:39 UTC)
 
 The Blockscout check is limited to a fixed subset of three events, because the Blockscout quota allows only a few events per hour.
 - E01, already checked.
