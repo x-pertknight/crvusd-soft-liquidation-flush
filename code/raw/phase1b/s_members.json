@@ -1,0 +1,456 @@
+{
+ "events": {
+  "E01": {
+   "first_block": 23549078,
+   "last_block": 23551463,
+   "members": [
+    {
+     "crvusd_balance": 1851636.148327611,
+     "pool": "0x2889302a794da87fbf1d6db415c1492194663d13",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 3187304.0899255336,
+     "pool": "0x4ebdf703948ddcea3b11f675b4d1fba9d2414a14",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 9654826.891552763,
+     "pool": "0x83f24023d15d835a213df24fd309c47dab5beb32",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 9757698.838465111,
+     "pool": "0xd9ff8396554a0d18b2cfbec53e1979b7ecce8373",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 9946997.39107455,
+     "pool": "0xf1f435b05d255a5dbde37333c0f61da6f69c6127",
+     "yield_basis": true
+    }
+   ],
+   "pre_block": 23549077,
+   "t0": 1760127647
+  },
+  "E02": {
+   "first_block": 24032607,
+   "last_block": 24034987,
+   "members": [
+    {
+     "crvusd_balance": 1478383.7851847974,
+     "pool": "0x2889302a794da87fbf1d6db415c1492194663d13",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 2263358.7748647816,
+     "pool": "0x4ebdf703948ddcea3b11f675b4d1fba9d2414a14",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 111798974.21670325,
+     "pool": "0x83f24023d15d835a213df24fd309c47dab5beb32",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 44933172.67866053,
+     "pool": "0xd9ff8396554a0d18b2cfbec53e1979b7ecce8373",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 34381730.53042012,
+     "pool": "0xf1f435b05d255a5dbde37333c0f61da6f69c6127",
+     "yield_basis": true
+    }
+   ],
+   "pre_block": 24032606,
+   "t0": 1765984955
+  },
+  "E03": {
+   "first_block": 24355432,
+   "last_block": 24357814,
+   "members": [
+    {
+     "crvusd_balance": 1184623.5917039984,
+     "pool": "0x2889302a794da87fbf1d6db415c1492194663d13",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 2061097.8006365495,
+     "pool": "0x4ebdf703948ddcea3b11f675b4d1fba9d2414a14",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 19679950.578905255,
+     "pool": "0x6e5492f8ea2370844ee098a56dd88e1717e4a9c2",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 73824164.11591625,
+     "pool": "0x83f24023d15d835a213df24fd309c47dab5beb32",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 36677027.183647186,
+     "pool": "0xd9ff8396554a0d18b2cfbec53e1979b7ecce8373",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 40066574.58648943,
+     "pool": "0xf1f435b05d255a5dbde37333c0f61da6f69c6127",
+     "yield_basis": true
+    }
+   ],
+   "pre_block": 24355431,
+   "t0": 1769876627
+  },
+  "E04": {
+   "first_block": 24390726,
+   "last_block": 24393110,
+   "members": [
+    {
+     "crvusd_balance": 1024048.6580209752,
+     "pool": "0x2889302a794da87fbf1d6db415c1492194663d13",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 1829149.0548825478,
+     "pool": "0x4ebdf703948ddcea3b11f675b4d1fba9d2414a14",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 14928477.754145797,
+     "pool": "0x6e5492f8ea2370844ee098a56dd88e1717e4a9c2",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 46586273.75469299,
+     "pool": "0x83f24023d15d835a213df24fd309c47dab5beb32",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 23392499.88758453,
+     "pool": "0xd9ff8396554a0d18b2cfbec53e1979b7ecce8373",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 23501533.340591,
+     "pool": "0xf1f435b05d255a5dbde37333c0f61da6f69c6127",
+     "yield_basis": true
+    }
+   ],
+   "pre_block": 24390725,
+   "t0": 1770302855
+  },
+  "E05": {
+   "first_block": 24393270,
+   "last_block": 24395654,
+   "members": [
+    {
+     "crvusd_balance": 964909.2091608105,
+     "pool": "0x2889302a794da87fbf1d6db415c1492194663d13",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 1707932.6518349946,
+     "pool": "0x4ebdf703948ddcea3b11f675b4d1fba9d2414a14",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 13037905.70743883,
+     "pool": "0x6e5492f8ea2370844ee098a56dd88e1717e4a9c2",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 38527510.14599713,
+     "pool": "0x83f24023d15d835a213df24fd309c47dab5beb32",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 19487733.908967517,
+     "pool": "0xd9ff8396554a0d18b2cfbec53e1979b7ecce8373",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 20016632.047650266,
+     "pool": "0xf1f435b05d255a5dbde37333c0f61da6f69c6127",
+     "yield_basis": true
+    }
+   ],
+   "pre_block": 24393269,
+   "t0": 1770333611
+  },
+  "E06": {
+   "first_block": 24515537,
+   "last_block": 24517928,
+   "members": [
+    {
+     "crvusd_balance": 947686.8051777807,
+     "pool": "0x2889302a794da87fbf1d6db415c1492194663d13",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 1646456.1122177949,
+     "pool": "0x4ebdf703948ddcea3b11f675b4d1fba9d2414a14",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 13883521.733669605,
+     "pool": "0x6e5492f8ea2370844ee098a56dd88e1717e4a9c2",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 43618731.38041479,
+     "pool": "0x83f24023d15d835a213df24fd309c47dab5beb32",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 21956237.187646475,
+     "pool": "0xd9ff8396554a0d18b2cfbec53e1979b7ecce8373",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 22827999.170950223,
+     "pool": "0xf1f435b05d255a5dbde37333c0f61da6f69c6127",
+     "yield_basis": true
+    }
+   ],
+   "pre_block": 24515536,
+   "t0": 1771808111
+  },
+  "E07": {
+   "first_block": 25248472,
+   "last_block": 25250850,
+   "members": [
+    {
+     "crvusd_balance": 886664.0229500979,
+     "pool": "0x2889302a794da87fbf1d6db415c1492194663d13",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 683393.9717592029,
+     "pool": "0x4ebdf703948ddcea3b11f675b4d1fba9d2414a14",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 14153392.13697594,
+     "pool": "0x313698667d7fdd6789a9bc70821309ff891e729a",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 12815651.653128807,
+     "pool": "0x4f52c3a81e33521e5a9a47fd9d3be475d2279c2e",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 1676052.272755994,
+     "pool": "0x656341ef90b622c6634e0573772ffb7f3669b9f3",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 14932538.48439459,
+     "pool": "0x6e5492f8ea2370844ee098a56dd88e1717e4a9c2",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 13784680.28632659,
+     "pool": "0x83f24023d15d835a213df24fd309c47dab5beb32",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 30757657.545205753,
+     "pool": "0x862cb4e988fb66e72f128d1183829f8c05b6c6a0",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 8139350.999349081,
+     "pool": "0xd9ff8396554a0d18b2cfbec53e1979b7ecce8373",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 6172400.310416485,
+     "pool": "0xf1f435b05d255a5dbde37333c0f61da6f69c6127",
+     "yield_basis": true
+    }
+   ],
+   "pre_block": 25248471,
+   "t0": 1780637003
+  },
+  "E08": {
+   "first_block": 25394197,
+   "last_block": 25396586,
+   "members": [
+    {
+     "crvusd_balance": 1117003.053866718,
+     "pool": "0x2889302a794da87fbf1d6db415c1492194663d13",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 678585.0506148274,
+     "pool": "0x4ebdf703948ddcea3b11f675b4d1fba9d2414a14",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 17466342.5275531,
+     "pool": "0x313698667d7fdd6789a9bc70821309ff891e729a",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 13167469.37665622,
+     "pool": "0x4f52c3a81e33521e5a9a47fd9d3be475d2279c2e",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 8165864.357616454,
+     "pool": "0x656341ef90b622c6634e0573772ffb7f3669b9f3",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 13566883.780476563,
+     "pool": "0x6e5492f8ea2370844ee098a56dd88e1717e4a9c2",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 10458354.20256551,
+     "pool": "0x83f24023d15d835a213df24fd309c47dab5beb32",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 32251817.687329814,
+     "pool": "0x862cb4e988fb66e72f128d1183829f8c05b6c6a0",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 4937663.708771639,
+     "pool": "0xd9ff8396554a0d18b2cfbec53e1979b7ecce8373",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 5236187.566665102,
+     "pool": "0xf1f435b05d255a5dbde37333c0f61da6f69c6127",
+     "yield_basis": true
+    }
+   ],
+   "pre_block": 25394196,
+   "t0": 1782392375
+  },
+  "E09": {
+   "first_block": 26348753,
+   "last_block": 26351143,
+   "members": [
+    {
+     "crvusd_balance": 1450921.1473430756,
+     "pool": "0x2889302a794da87fbf1d6db415c1492194663d13",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 843652.2093231351,
+     "pool": "0x4ebdf703948ddcea3b11f675b4d1fba9d2414a14",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 33083375.21927554,
+     "pool": "0x313698667d7fdd6789a9bc70821309ff891e729a",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 22014599.73803794,
+     "pool": "0x4f52c3a81e33521e5a9a47fd9d3be475d2279c2e",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 15416378.110979253,
+     "pool": "0x656341ef90b622c6634e0573772ffb7f3669b9f3",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 83524.09864233802,
+     "pool": "0x6e5492f8ea2370844ee098a56dd88e1717e4a9c2",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 8885790.009358373,
+     "pool": "0x83f24023d15d835a213df24fd309c47dab5beb32",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 27280152.08254553,
+     "pool": "0x862cb4e988fb66e72f128d1183829f8c05b6c6a0",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 641939.4512237122,
+     "pool": "0xd9ff8396554a0d18b2cfbec53e1979b7ecce8373",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 2335011.341359667,
+     "pool": "0xf1f435b05d255a5dbde37333c0f61da6f69c6127",
+     "yield_basis": true
+    }
+   ],
+   "pre_block": 26348752,
+   "t0": 1793890343
+  },
+  "E10": {
+   "first_block": 26372089,
+   "last_block": 26374480,
+   "members": [
+    {
+     "crvusd_balance": 1412941.5233810071,
+     "pool": "0x2889302a794da87fbf1d6db415c1492194663d13",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 816809.3700545878,
+     "pool": "0x4ebdf703948ddcea3b11f675b4d1fba9d2414a14",
+     "yield_basis": false
+    },
+    {
+     "crvusd_balance": 23325285.67034099,
+     "pool": "0x313698667d7fdd6789a9bc70821309ff891e729a",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 19220825.608900726,
+     "pool": "0x4f52c3a81e33521e5a9a47fd9d3be475d2279c2e",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 14934205.355289273,
+     "pool": "0x656341ef90b622c6634e0573772ffb7f3669b9f3",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 77821.25471397577,
+     "pool": "0x6e5492f8ea2370844ee098a56dd88e1717e4a9c2",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 7254730.53453484,
+     "pool": "0x83f24023d15d835a213df24fd309c47dab5beb32",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 26533783.323574655,
+     "pool": "0x862cb4e988fb66e72f128d1183829f8c05b6c6a0",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 479323.4492116678,
+     "pool": "0xd9ff8396554a0d18b2cfbec53e1979b7ecce8373",
+     "yield_basis": true
+    },
+    {
+     "crvusd_balance": 370507.894624184,
+     "pool": "0xf1f435b05d255a5dbde37333c0f61da6f69c6127",
+     "yield_basis": true
+    }
+   ],
+   "pre_block": 26372088,
+   "t0": 1794171371
+  }
+ },
+ "min_crvusd_balance": 50000,
+ "rule": "PHASE_1B_ADDENDUM.md section 2"
+}
