@@ -28,19 +28,26 @@ def _wait(src):
     _last[src] = time.time()
 
 
-def bs_get(params, tries=10):
+def bs_get(params, tries=25):
     url = BS_URL + "?" + urllib.parse.urlencode(params)
     last = None
     for i in range(tries):
         _wait("bs")
+        pause = min(30, 2 * (i + 1))
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=120) as r:
                 return url, json.loads(r.read())
         except urllib.error.HTTPError as e:
             last = f"HTTP {e.code}"
+            try:
+                reset = int(e.headers.get("x-ratelimit-reset", "0")) / 1000
+                if e.code == 429 and 0 < reset <= 90:
+                    pause = max(pause, reset + 1)
+            except ValueError:
+                pass
         except Exception as e:  # timeout or reset
             last = repr(e)
-        time.sleep(min(30, 2 * (i + 1)))
+        time.sleep(pause)
     raise RuntimeError(f"blockscout failed {last} {url}")
 
 

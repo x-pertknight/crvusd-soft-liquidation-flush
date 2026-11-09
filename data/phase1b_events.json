@@ -1,0 +1,660 @@
+{
+ "all_events": [
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.10161945403550314,
+    "low": 105080.5,
+    "low_ts": 1760131211,
+    "n_moves": 16,
+    "price": 116966.58,
+    "t0": 1760128967
+   },
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.13595063099581875,
+    "low": 3464.3966,
+    "low_ts": 1760131247,
+    "n_moves": 19,
+    "price": 4009.48918462,
+    "t0": 1760127647
+   },
+   "id": "E01",
+   "is_8_november": false,
+   "kind": "joint",
+   "t0": 1760127647,
+   "window_end_ts": 1760149247,
+   "window_start_ts": 1760120447
+  },
+  {
+   "btc": null,
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.05155418929725693,
+    "low": 3127.11481064,
+    "low_ts": 1762287551,
+    "n_moves": 1,
+    "price": 3297.093809,
+    "t0": 1762283951
+   },
+   "is_8_november": false,
+   "kind": "ETH",
+   "t0": 1762283951
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.036164983623564725,
+    "low": 82814.8635975,
+    "low_ts": 1763710475,
+    "n_moves": 2,
+    "price": 85922.24,
+    "t0": 1763706875
+   },
+   "eth": null,
+   "is_8_november": false,
+   "kind": "BTC",
+   "t0": 1763706875
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.03770083693754299,
+    "low": 87349.0209212,
+    "low_ts": 1764550319,
+    "n_moves": 2,
+    "price": 90771.17,
+    "t0": 1764546719
+   },
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.05387347029790303,
+    "low": 2842.798,
+    "low_ts": 1764550427,
+    "n_moves": 1,
+    "price": 3004.67,
+    "t0": 1764546827
+   },
+   "is_8_november": false,
+   "kind": "joint",
+   "t0": 1764546719
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.03135799309987707,
+    "low": 86737.96,
+    "low_ts": 1765812359,
+    "n_moves": 1,
+    "price": 89545.941,
+    "t0": 1765808759
+   },
+   "eth": null,
+   "is_8_november": false,
+   "kind": "BTC",
+   "t0": 1765808759
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.03967325376625443,
+    "low": 86411.2875245,
+    "low_ts": 1765988555,
+    "n_moves": 2,
+    "price": 89981.1318006,
+    "t0": 1765984955
+   },
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.059116846924556966,
+    "low": 2836.01,
+    "low_ts": 1765989131,
+    "n_moves": 2,
+    "price": 3014.2,
+    "t0": 1765985531
+   },
+   "id": "E02",
+   "is_8_november": false,
+   "kind": "joint",
+   "t0": 1765984955,
+   "window_end_ts": 1766006555,
+   "window_start_ts": 1765977755
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.03414391574144656,
+    "low": 92143.3,
+    "low_ts": 1768781027,
+    "n_moves": 1,
+    "price": 95400.65181733,
+    "t0": 1768777427
+   },
+   "eth": null,
+   "is_8_november": false,
+   "kind": "BTC",
+   "t0": 1768777427
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.03519887857299312,
+    "low": 81397.99368415,
+    "low_ts": 1769737391,
+    "n_moves": 3,
+    "price": 84367.64,
+    "t0": 1769733791
+   },
+   "eth": null,
+   "is_8_november": false,
+   "kind": "BTC",
+   "t0": 1769733791
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.042193547920122955,
+    "low": 78309.395,
+    "low_ts": 1769879579,
+    "n_moves": 9,
+    "price": 81759.10157,
+    "t0": 1769876627
+   },
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.05725784706785493,
+    "low": 2385.18406,
+    "low_ts": 1769880935,
+    "n_moves": 5,
+    "price": 2530.049232,
+    "t0": 1769877335
+   },
+   "id": "E03",
+   "is_8_november": false,
+   "kind": "joint",
+   "t0": 1769876627,
+   "window_end_ts": 1769898227,
+   "window_start_ts": 1769869427
+  },
+  {
+   "btc": null,
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.05242403178247009,
+    "low": 2173.53419923,
+    "low_ts": 1770002843,
+    "n_moves": 1,
+    "price": 2293.78358267,
+    "t0": 1769999243
+   },
+   "is_8_november": false,
+   "kind": "ETH",
+   "t0": 1769999243
+  },
+  {
+   "btc": null,
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.07698946933301043,
+    "low": 1930.83231823,
+    "low_ts": 1770305423,
+    "n_moves": 22,
+    "price": 2091.88547051,
+    "t0": 1770302855
+   },
+   "id": "E04",
+   "is_8_november": false,
+   "kind": "ETH",
+   "t0": 1770302855,
+   "window_end_ts": 1770324455,
+   "window_start_ts": 1770295655
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.06860494916740198,
+    "low": 60023.99621362,
+    "low_ts": 1770337211,
+    "n_moves": 26,
+    "price": 64445.26,
+    "t0": 1770333611
+   },
+   "eth": null,
+   "id": "E05",
+   "is_8_november": false,
+   "kind": "BTC",
+   "t0": 1770333611,
+   "window_end_ts": 1770355211,
+   "window_start_ts": 1770326411
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.033815032508029474,
+    "low": 67577.88137158,
+    "low_ts": 1770448631,
+    "n_moves": 1,
+    "price": 69943.00640694,
+    "t0": 1770445031
+   },
+   "eth": null,
+   "is_8_november": false,
+   "kind": "BTC",
+   "t0": 1770445031
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.034294222788304164,
+    "low": 65985.01,
+    "low_ts": 1770822527,
+    "n_moves": 1,
+    "price": 68328.27508863,
+    "t0": 1770819059
+   },
+   "eth": null,
+   "is_8_november": false,
+   "kind": "BTC",
+   "t0": 1770819059
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.041094153161687456,
+    "low": 64421.46,
+    "low_ts": 1771811711,
+    "n_moves": 3,
+    "price": 67182.258,
+    "t0": 1771808111
+   },
+   "eth": null,
+   "id": "E06",
+   "is_8_november": false,
+   "kind": "BTC",
+   "t0": 1771808111,
+   "window_end_ts": 1771829711,
+   "window_start_ts": 1771800911
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.03547580225523001,
+    "low": 63348.01065282,
+    "low_ts": 1772261831,
+    "n_moves": 1,
+    "price": 65677.99004,
+    "t0": 1772258231
+   },
+   "eth": null,
+   "is_8_november": false,
+   "kind": "BTC",
+   "t0": 1772258231
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.031642739942670715,
+    "low": 61230.44,
+    "low_ts": 1780640603,
+    "n_moves": 1,
+    "price": 63231.25,
+    "t0": 1780637003
+   },
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.05989729943894269,
+    "low": 1628.8349,
+    "low_ts": 1780640687,
+    "n_moves": 2,
+    "price": 1732.6137868,
+    "t0": 1780637087
+   },
+   "id": "E07",
+   "is_8_november": false,
+   "kind": "joint",
+   "t0": 1780637003,
+   "window_end_ts": 1780658603,
+   "window_start_ts": 1780629803
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.04939839958081855,
+    "low": 58127.13,
+    "low_ts": 1782395975,
+    "n_moves": 5,
+    "price": 61147.73,
+    "t0": 1782392375
+   },
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.06328061812774377,
+    "low": 1530.97,
+    "low_ts": 1782395987,
+    "n_moves": 3,
+    "price": 1634.39556139,
+    "t0": 1782392387
+   },
+   "id": "E08",
+   "is_8_november": false,
+   "kind": "joint",
+   "t0": 1782392375,
+   "window_end_ts": 1782413975,
+   "window_start_ts": 1782385175
+  },
+  {
+   "btc": null,
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.050383800164874565,
+    "low": 2396.00512229,
+    "low_ts": 1787375591,
+    "n_moves": 1,
+    "price": 2523.13,
+    "t0": 1787373335
+   },
+   "is_8_november": false,
+   "kind": "ETH",
+   "t0": 1787373335
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.030037669728769482,
+    "low": 78365.84,
+    "low_ts": 1793306879,
+    "n_moves": 1,
+    "price": 80792.66333785,
+    "t0": 1793303579
+   },
+   "eth": null,
+   "is_8_november": false,
+   "kind": "BTC",
+   "t0": 1793303579
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.04015607889605675,
+    "low": 75680.05007288,
+    "low_ts": 1793893943,
+    "n_moves": 4,
+    "price": 78846.20448066,
+    "t0": 1793890343
+   },
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.05234414406257878,
+    "low": 2236.7822,
+    "low_ts": 1793894015,
+    "n_moves": 1,
+    "price": 2360.33174489,
+    "t0": 1793890415
+   },
+   "id": "E09",
+   "is_8_november": false,
+   "kind": "joint",
+   "t0": 1793890343,
+   "window_end_ts": 1793911943,
+   "window_start_ts": 1793883143
+  },
+  {
+   "btc": null,
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.06325495351939313,
+    "low": 2089.2833578,
+    "low_ts": 1794174971,
+    "n_moves": 3,
+    "price": 2230.36499168,
+    "t0": 1794171371
+   },
+   "id": "E10",
+   "is_8_november": true,
+   "kind": "ETH",
+   "t0": 1794171371,
+   "window_end_ts": 1794192971,
+   "window_start_ts": 1794164171
+  }
+ ],
+ "chainlink_points": {
+  "BTC": 13443,
+  "ETH": 17340
+ },
+ "period": {
+  "end_block": 26374799,
+  "end_ts": 1794196800,
+  "start_block": 23434006
+ },
+ "qualifying_events_before_cap": 22,
+ "selected": [
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.10161945403550314,
+    "low": 105080.5,
+    "low_ts": 1760131211,
+    "n_moves": 16,
+    "price": 116966.58,
+    "t0": 1760128967
+   },
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.13595063099581875,
+    "low": 3464.3966,
+    "low_ts": 1760131247,
+    "n_moves": 19,
+    "price": 4009.48918462,
+    "t0": 1760127647
+   },
+   "id": "E01",
+   "is_8_november": false,
+   "kind": "joint",
+   "t0": 1760127647,
+   "window_end_ts": 1760149247,
+   "window_start_ts": 1760120447
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.03967325376625443,
+    "low": 86411.2875245,
+    "low_ts": 1765988555,
+    "n_moves": 2,
+    "price": 89981.1318006,
+    "t0": 1765984955
+   },
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.059116846924556966,
+    "low": 2836.01,
+    "low_ts": 1765989131,
+    "n_moves": 2,
+    "price": 3014.2,
+    "t0": 1765985531
+   },
+   "id": "E02",
+   "is_8_november": false,
+   "kind": "joint",
+   "t0": 1765984955,
+   "window_end_ts": 1766006555,
+   "window_start_ts": 1765977755
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.042193547920122955,
+    "low": 78309.395,
+    "low_ts": 1769879579,
+    "n_moves": 9,
+    "price": 81759.10157,
+    "t0": 1769876627
+   },
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.05725784706785493,
+    "low": 2385.18406,
+    "low_ts": 1769880935,
+    "n_moves": 5,
+    "price": 2530.049232,
+    "t0": 1769877335
+   },
+   "id": "E03",
+   "is_8_november": false,
+   "kind": "joint",
+   "t0": 1769876627,
+   "window_end_ts": 1769898227,
+   "window_start_ts": 1769869427
+  },
+  {
+   "btc": null,
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.07698946933301043,
+    "low": 1930.83231823,
+    "low_ts": 1770305423,
+    "n_moves": 22,
+    "price": 2091.88547051,
+    "t0": 1770302855
+   },
+   "id": "E04",
+   "is_8_november": false,
+   "kind": "ETH",
+   "t0": 1770302855,
+   "window_end_ts": 1770324455,
+   "window_start_ts": 1770295655
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.06860494916740198,
+    "low": 60023.99621362,
+    "low_ts": 1770337211,
+    "n_moves": 26,
+    "price": 64445.26,
+    "t0": 1770333611
+   },
+   "eth": null,
+   "id": "E05",
+   "is_8_november": false,
+   "kind": "BTC",
+   "t0": 1770333611,
+   "window_end_ts": 1770355211,
+   "window_start_ts": 1770326411
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.041094153161687456,
+    "low": 64421.46,
+    "low_ts": 1771811711,
+    "n_moves": 3,
+    "price": 67182.258,
+    "t0": 1771808111
+   },
+   "eth": null,
+   "id": "E06",
+   "is_8_november": false,
+   "kind": "BTC",
+   "t0": 1771808111,
+   "window_end_ts": 1771829711,
+   "window_start_ts": 1771800911
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.031642739942670715,
+    "low": 61230.44,
+    "low_ts": 1780640603,
+    "n_moves": 1,
+    "price": 63231.25,
+    "t0": 1780637003
+   },
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.05989729943894269,
+    "low": 1628.8349,
+    "low_ts": 1780640687,
+    "n_moves": 2,
+    "price": 1732.6137868,
+    "t0": 1780637087
+   },
+   "id": "E07",
+   "is_8_november": false,
+   "kind": "joint",
+   "t0": 1780637003,
+   "window_end_ts": 1780658603,
+   "window_start_ts": 1780629803
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.04939839958081855,
+    "low": 58127.13,
+    "low_ts": 1782395975,
+    "n_moves": 5,
+    "price": 61147.73,
+    "t0": 1782392375
+   },
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.06328061812774377,
+    "low": 1530.97,
+    "low_ts": 1782395987,
+    "n_moves": 3,
+    "price": 1634.39556139,
+    "t0": 1782392387
+   },
+   "id": "E08",
+   "is_8_november": false,
+   "kind": "joint",
+   "t0": 1782392375,
+   "window_end_ts": 1782413975,
+   "window_start_ts": 1782385175
+  },
+  {
+   "btc": {
+    "asset": "BTC",
+    "decline": 0.04015607889605675,
+    "low": 75680.05007288,
+    "low_ts": 1793893943,
+    "n_moves": 4,
+    "price": 78846.20448066,
+    "t0": 1793890343
+   },
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.05234414406257878,
+    "low": 2236.7822,
+    "low_ts": 1793894015,
+    "n_moves": 1,
+    "price": 2360.33174489,
+    "t0": 1793890415
+   },
+   "id": "E09",
+   "is_8_november": false,
+   "kind": "joint",
+   "t0": 1793890343,
+   "window_end_ts": 1793911943,
+   "window_start_ts": 1793883143
+  },
+  {
+   "btc": null,
+   "eth": {
+    "asset": "ETH",
+    "decline": 0.06325495351939313,
+    "low": 2089.2833578,
+    "low_ts": 1794174971,
+    "n_moves": 3,
+    "price": 2230.36499168,
+    "t0": 1794171371
+   },
+   "id": "E10",
+   "is_8_november": true,
+   "kind": "ETH",
+   "t0": 1794171371,
+   "window_end_ts": 1794192971,
+   "window_start_ts": 1794164171
+  }
+ ]
+}
