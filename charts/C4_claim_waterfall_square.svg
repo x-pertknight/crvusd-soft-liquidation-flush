@@ -302,8 +302,7 @@ L 820.8 691.2
    </g>
   </g>
   <g id="text_18">
-   <text style="fill: #1a1a1a; font: 600 19px 'Inter'" transform="translate(34.56 44.721563)">The main measure lands 6 percent below the</text>
-   <text style="fill: #1a1a1a; font: 600 19px 'Inter'" transform="translate(34.56 65.976625)">circulating 4.10M figure</text>
+   <text style="fill: #1a1a1a; font: 600 19px 'Inter'; text-anchor: start" x="34.56" y="44.721563" transform="rotate(-0 34.56 44.721563)">The main measure lands 6 percent below the circulating 4.10M figure</text>
   </g>
   <g id="text_19">
    <text style="fill: #6b6b6b; font: 12.5px 'Inter'" transform="translate(34.56 93.329484)">Net crvUSD sold into the five PegKeeper pools by transactions with a Yield Basis leg,</text>

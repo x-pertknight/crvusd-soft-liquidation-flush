@@ -812,6 +812,27 @@
   "mint_loss_pct": 0.26232291892145754,
   "mint_loss_usd": 132.17139265647955
  },
+ "watch": {
+  "crvusd_in_active_yb_pools": {
+   "10 WETH": 14934205.355289271,
+   "7 WBTC": 23325285.670340985,
+   "8 cbBTC": 26533783.323574655,
+   "9 tBTC": 19220825.608900726
+  },
+  "crvusd_in_active_yb_pools_total": 84014099.95810564,
+  "crvusd_in_pegkeeper_pools_window_start": 30776046.60036594,
+  "days_below_1_before_window": 26.336400462962963,
+  "last_sample_at_or_above_1_utc": "2026-10-13 11:55:35",
+  "pegkeeper_debt_ceiling": {
+   "GHO": 0.0,
+   "USDC": 135000000.0,
+   "USDT": 135000000.0,
+   "frxUSD": 9000000.0,
+   "pyUSD": 45000000.0
+  },
+  "pegkeeper_debt_ceiling_total": 324000000.0,
+  "pegkeeper_debt_total_window_start": 0.0
+ },
  "weth_rate": {
   "end_apr": 0.076987701598608,
   "max_apr": 0.077352772741488,

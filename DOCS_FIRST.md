@@ -111,7 +111,7 @@ Method note. Every claim below that the study relies on was checked against the 
 - C2 contradicts itself on which side of the active band holds which token. The study will use the bands_x and bands_y getters, not the prose.
 - C5 does not define DebtFraction, rate0 or sigma values, and does not state the price source. These will be read from the contracts.
 - The C4 page states that UserState is emitted with zeroed values only when a loan is fully closed during liquidation and that partial liquidations do not emit it. Event coverage will be checked against verified ABIs before any count relies on it.
-- Y1 as retrieved describes arbitrageurs bringing crvUSD in both directions. Y2 shows they receive crvUSD when price rises. Y2 is the more detailed source. The raw Y1 text will be re-read in the control review.
+- Y1 as retrieved describes arbitrageurs bringing crvUSD in both directions. Y2 shows they receive crvUSD when price rises. Y2 is the more detailed source. The raw Y1 text will be re-read before publication.
 - No document quantifies how fast PegKeepers can drain in a sustained one sided flow.
 
 ## 5. Raw text check, 2026-11-09

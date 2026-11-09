@@ -53,9 +53,10 @@ import textwrap  # noqa: E402
 
 
 def header(fig, title, subtitle, width=118, top=0.955):
-    fig.text(0.04, top, title, fontsize=19, fontweight="semibold", va="top", ha="left")
-    fig.text(0.04, top - 0.062, "\n".join(textwrap.wrap(subtitle, width, break_on_hyphens=False)), fontsize=12.5, color=MUTED, va="top",
-             ha="left", linespacing=1.35)
+    tl = textwrap.wrap(title, 86)
+    fig.text(0.04, top, "\n".join(tl), fontsize=19, fontweight="semibold", va="top", ha="left", linespacing=1.15)
+    fig.text(0.04, top - 0.062 - 0.045 * (len(tl) - 1), "\n".join(textwrap.wrap(subtitle, width, break_on_hyphens=False)), fontsize=12.5,
+             color=MUTED, va="top", ha="left", linespacing=1.35)
 
 
 def source(fig, extra="", width=150):
@@ -200,14 +201,14 @@ def c3(root, R, square=False, band=True):
     rows = read_csv(root, "flows_15m.csv")
     t = [dt(r["bucket_start_utc"]) for r in rows]
     main = R["q3"]["main"]
-    panels = [("Yield Basis, Curve pool leg", ["yb_curve_pool_leg"]),
-              ("Yield Basis, LEVAMM leg", ["yb_levamm_leg"]),
+    panels = [("Curve pools, Yield Basis as LP", ["yb_curve_pool_leg"]),
+              ("Yield Basis LEVAMM leg", ["yb_levamm_leg"]),
               ("Liquidity deposits and withdrawals", ["liquidity_non_pk"]),
               ("Other swaps", ["other"]),
               ("LLAMMA, liquidations, borrowers", ["llamma_arbitrage", "hard_liquidation", "borrower_action"]),
               ("PegKeepers", ["pegkeeper"])]
     fig = plt.figure(figsize=(12, 12) if square else (12, 6.75), dpi=200)
-    top, bottom = (0.765, 0.12) if square else (0.76, 0.15)
+    top, bottom = (0.745, 0.11) if square else (0.715, 0.15)
     h = (top - bottom) / len(panels)
     vals_all = {name: [-sum(float(r[c]) for c in cls) / 1e6 for r in rows] for name, cls in panels}
     m = max(abs(v) for vs in vals_all.values() for v in vs)
@@ -245,16 +246,19 @@ def c3(root, R, square=False, band=True):
     timeaxis(axes[-1])
     q3 = R["q3"]
     ybn = q3["variants"]["V0_main_net_same_tx"]
-    title = f"Selling routed through Yield Basis pools put a net {ybn / 1e6:.2f}M crvUSD into the peg pools"
+    title = f"Selling through Curve crvUSD pools where Yield Basis is the LP, mostly BTC, put a net {ybn / 1e6:.2f}M crvUSD into the peg pools"
     v5 = q3["variants"]["V5_curve_pool_leg_only"]
     lev = q3["variants"]["levamm_leg_only"]
-    sub = (f"{ybn / 1e6:.2f}M is {v5 / 1e6:.2f}M sold through the Curve pool leg minus {abs(lev) / 1e6:.2f}M bought through the LEVAMM leg, "
-           "most of it between 21:45 and 22:00 UTC. Net crvUSD flow in the five PegKeeper pools per 15 minutes, million crvUSD. "
+    btc = q3["yb_net_rollup"]["btc_markets_only"]
+    sub = (f"{ybn / 1e6:.2f}M is {v5 / 1e6:.2f}M sold through the Curve pools minus {abs(lev) / 1e6:.2f}M bought through the LEVAMM leg, "
+           f"{btc / 1e6:.2f}M of it through the BTC pools, most of it between 21:45 and 22:00 UTC. Net crvUSD flow in the five PegKeeper pools per 15 minutes, million crvUSD. "
            "Above zero (blue) is crvUSD bought out of the pools, below zero (vermillion) is crvUSD sold in. Other swaps and liquidity "
            "deposits in gray. Classes assigned per transaction by the pre-registered rules.")
     if square:
-        fig.text(0.04, 0.965, "\n".join(textwrap.wrap(title, 54)), fontsize=24, fontweight="semibold", va="top", linespacing=1.2)
-        fig.text(0.04, 0.875, "\n".join(textwrap.wrap(sub, 108, break_on_hyphens=False)), fontsize=13, color=MUTED, va="top", linespacing=1.35)
+        tl = textwrap.wrap(title, 56)
+        fig.text(0.04, 0.965, "\n".join(tl), fontsize=24, fontweight="semibold", va="top", linespacing=1.2)
+        fig.text(0.04, 0.965 - 0.034 * len(tl) - 0.014, "\n".join(textwrap.wrap(sub, 110, break_on_hyphens=False)), fontsize=13,
+                 color=MUTED, va="top", linespacing=1.35)
     else:
         header(fig, title, sub, width=124)
     note = ("Times in UTC. Shaded band is the pre-registered flush hour, which missed the actual drop at 21:41 to 21:56. Rules in PREREG_ADDENDUM.md."

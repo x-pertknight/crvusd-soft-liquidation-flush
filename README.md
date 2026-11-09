@@ -23,9 +23,10 @@ Window 2026-11-08 20:00 to 2026-11-09 04:00 UTC, blocks 26,372,408 to 26,374,799
 
 **Q3. Who sold and who bought crvUSD in the peg pools, and does the "net -4.10M sold via YB" claim reproduce?**
 
-- Transactions that passed through a Yield Basis pool sold a net 3.85M crvUSD into the peg pools over the window. In the 15 minutes from 21:45 to 22:00 UTC alone, the figure was 4.26M, partly offset later.
+- Transactions that went through the Curve crvUSD pools where Yield Basis is the LP sold a net 3.85M crvUSD into the peg pools over the window. In the 15 minutes from 21:45 to 22:00 UTC alone, the figure was 4.26M, partly offset later.
+- The Yield Basis LEVAMM leg, where leverage is rebalanced, was close to flat (net bought 0.05M). The selling went through the Curve pools themselves (net sold 3.90M). The mechanism is structural. A pool pairing a volatile asset with crvUSD turns selling of that asset into crvUSD coming out, whoever owns the liquidity. This study measures it on Yield Basis pools only.
 - The typical transaction sold BTC into a Yield Basis Curve pool, took crvUSD out, and sold that crvUSD for USDC or USDT in the same transaction. The crvUSD sold into the peg pools matches the crvUSD taken out of the YB pools. The logs do not show whether these were arbitrage or ordinary sales routed by an aggregator through the cheapest path. This study measures where the flow went, not why.
-- Net by leg. Curve pool leg 3.90M sold. LEVAMM leg 0.05M bought. LEVAMM rebalancing that sources crvUSD inside the YB pool does not appear in peg pool flows.
+- LEVAMM rebalancing that sources crvUSD inside the YB pool does not appear in peg pool flows.
 - BTC markets, not ETH. Transactions touching only BTC markets account for 3.64M, of which 2.86M touched only the active markets 7 to 9. Transactions touching any WETH market account for 0.21M.
 - Concentration. YB gross sells came from 109 transactions and 88 senders. The largest sender accounted for 14% of YB gross sells, the largest destination contract for 17%, and the five largest transactions for 40%.
 - Other traders bought a net 2.19M back, most of it in the same 15 minutes. LLAMMA soft liquidation arbitrage, hard liquidators and borrowers were small net buyers (0.09M combined), as the mechanism predicts.
@@ -33,6 +34,16 @@ Window 2026-11-08 20:00 to 2026-11-09 04:00 UTC, blocks 26,372,408 to 26,374,799
 - The 4.10M claim. The main measure (V0) is 6% below it, which meets the pre-registered rule of within 10%. The claim's window and definition are unknown, and other full-window definitions give 2.69M to 4.59M. So the match does not tell which definition the claim used.
 
 **Soft liquidation (secondary).** LLAMMA barely engaged. 50k USD of collateral was converted in mint markets over 43 trades, all between 22:02 and 23:05, almost all while the EMA oracle was still falling. Measured at that oracle, WETH shows a loss of 221 USD and WBTC a gain of 89 USD. With a lagging oracle the sign is not interpretable. There were 3 hard liquidations, one with 10.8k crvUSD of debt and two dust positions. The flush was too shallow to test the soft liquidation design.
+
+## What to watch
+
+Readings at the start of the window (block 26,372,407), context outside the pre-registered measures. They describe the system's state and are not recommendations.
+
+| Indicator | Value |
+|---|---|
+| PegKeeper debt, all five | 0 crvUSD, against debt ceilings of 324M. Below peg only debt already deposited can be withdrawn |
+| Time below peg | Aggregator price last at or above 1 on 13 October (six-hourly samples), 26.3 days before the window. Below 1 in 119 of 121 samples over 30 days |
+| crvUSD in crvUSD-paired volatile pools versus PegKeeper reserves | 84.0M crvUSD in the four active Yield Basis pools. 30.8M crvUSD in the five PegKeeper pools, of which the PegKeepers' withdrawable share was 0 |
 
 ## How the result depends on choices
 
@@ -99,6 +110,6 @@ Standard library for every number. Charts need matplotlib 3.9.2 (requirements.tx
 - code/contracts.json, code/topics.json. Every contract address with its source, and pinned event topics.
 - code/raw/. Raw RPC results as fetched.
 - data/. CSV outputs, results.json, SHA256SUMS.
-- charts/. C1 to C6 as PNG and SVG. C3_flows_by_class_square_post is the post image, without the pre-registered hour band.
+- charts/. C1 to C6 as PNG and SVG. C3_flows_by_class_square_post is a square version without the pre-registered hour band.
 
 Wallets are reported only in aggregate. No address is named as a seller.

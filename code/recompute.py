@@ -576,6 +576,23 @@ if os.path.exists(ctx_path):
                "since_30oct_n": len(since), "since_30oct_below_1": sum(1 for x in since if x < 1),
                "since_30oct_mean": sum(since) / len(since)}
 
+watch = None
+wpath = os.path.join(RAW, "context_watch.json")
+if os.path.exists(wpath) and context is not None:
+    cw = load("context_watch.json")
+    crv_in_yb = {k: int(v["balance0"], 16) / E18 for k, v in cw["yb_pools"].items()}
+    check(all(v["coin0"].lower().endswith(C["crvusd"][2:]) for v in cw["yb_pools"].values()), "crvUSD is coin 0 in every active Yield Basis pool")
+    ceil = {k: int(v, 16) / E18 for k, v in cw["pegkeeper_debt_ceiling"].items()}
+    ctsall = sorted(cts)
+    above = [b for b, x in vals if x >= 1]
+    last_above_ts = max(cts[b] for b in above) if above else None
+    watch = {"pegkeeper_debt_total_window_start": q2["total_debt_start"],
+             "pegkeeper_debt_ceiling_total": sum(ceil.values()), "pegkeeper_debt_ceiling": ceil,
+             "crvusd_in_active_yb_pools": crv_in_yb, "crvusd_in_active_yb_pools_total": sum(crv_in_yb.values()),
+             "crvusd_in_pegkeeper_pools_window_start": sum(int(st(p["pool"], "balances(uint256)", PRE, (1,)), 16) / E18 for p in C["pegkeepers"]),
+             "last_sample_at_or_above_1_utc": utc(last_above_ts) if last_above_ts else None,
+             "days_below_1_before_window": (TS_START - last_above_ts) / 86400 if last_above_ts else None}
+
 # ---------------- Soft liquidation (C5) and hard liquidations ----------------
 dec = {}
 for m in C["mint_markets"] + C["llamalend_v1_markets"]:
@@ -788,7 +805,7 @@ for k in R:
 results = {"window": {"pre_block": PRE, "first_block": B0, "last_block": B1, "flush_first": F0, "flush_last": F1},
            "eth": eth_res, "btc": btc_res, "q1": q1, "q2": q2, "q3": {k: v for k, v in q3.items()}, "soft_liquidation": soft,
            "hard_liquidations": liq, "yb": {k: {kk: vv for kk, vv in v.items() if kk != "path"} for k, v in ybres.items()},
-           "weth_rate": rate_res, "predictions": R, "context_aggregator_30d": context,
+           "weth_rate": rate_res, "predictions": R, "context_aggregator_30d": context, "watch": watch,
            "checks": {"price_direction": {"agree": agree, "disagree": disagree, "get_p_used_as_crvusd_price": direction_flipped},
                       "sum_flows": sum_flows, "pool_balance_change": d_pool_bal}}
 
