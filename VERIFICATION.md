@@ -101,3 +101,15 @@ Legs versus transactions. The liquidity class has 52 pool legs in 45 transaction
 | Framing | The Yield Basis LEVAMM leg was close to flat (net bought 0.05M). The selling went through the Curve crvUSD pools where Yield Basis is the LP, 3.64M of the 3.85M through the BTC pools. The README now states the mechanism in those terms. No number changed |
 | C3 title and labels | Now "Selling through Curve crvUSD pools where Yield Basis is the LP, mostly BTC". Panels renamed "Curve pools, Yield Basis as LP" and "Yield Basis LEVAMM leg" |
 | What to watch | New context read at block 26,372,407 (code/fetch/fetch_context_watch.py, raw in code/raw/context_watch.json, computed in results.json under watch). PegKeeper debt 0 against ceilings of 324M. Aggregator price last at or above 1 on 13 October in six-hourly samples, 26.3 days before the window. crvUSD in the four active Yield Basis pools 84.0M, crvUSD in the five PegKeeper pools 30.8M |
+
+## Phase 1b
+
+### Scope of the Blockscout completeness check (rule fixed 2026-11-09, 17:45 UTC)
+
+The Blockscout check is limited to a fixed subset of three events, because the Blockscout quota allows only a few events per hour.
+- E01, already checked.
+- The two other events with the most crvUSD Transfer logs into and out of the peg pools in the RPC logs (crvusd_to_pools plus crvusd_from_pools). The choice uses this count only, read after the RPC fetch of all ten events is complete. Ties go to the earlier event.
+- Each of the two is queried once when it is due. If Blockscout answers with HTTP 429, that event is reported as not checked. The script does not wait for the quota to reset.
+- The other seven events are checked against the RPC only. For every event, that means full tiling of the window by the 100 block RPC responses, and the exact balance check: crvUSD.balanceOf of each peg pool at the last window block minus at the pre block, against the net of the fetched Transfer logs.
+
+Disclosure. Before this rule was written, the phase 1b code was run on E01 and E02 to test it, and printed their metrics (T, the split by tag, the completeness counts). No other event's metrics had been computed. The rule above uses transfer counts only, so those two test runs cannot change which events are chosen. E01 had already been checked before the rule.
