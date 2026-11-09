@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="486pt" viewBox="0 0 864 486" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 486 
+L 864 486 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 112.32 364.5 
+L 440.64 364.5 
+L 440.64 140.94 
+L 112.32 140.94 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 112.32 364.5 
+L 112.32 140.94 
+" clip-path="url(#p02848ff262)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m268e59bc56" d="M 0 0 
+L 0 3.5 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m268e59bc56" x="112.32" y="364.5" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: middle" x="112.32" y="380.9575" transform="rotate(-0 112.32 380.9575)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 192.857527 364.5 
+L 192.857527 140.94 
+" clip-path="url(#p02848ff262)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m268e59bc56" x="192.857527" y="364.5" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: middle" x="192.857527" y="380.9575" transform="rotate(-0 192.857527 380.9575)">10</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 273.395054 364.5 
+L 273.395054 140.94 
+" clip-path="url(#p02848ff262)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m268e59bc56" x="273.395054" y="364.5" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: middle" x="273.395054" y="380.9575" transform="rotate(-0 273.395054 380.9575)">20</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 353.932581 364.5 
+L 353.932581 140.94 
+" clip-path="url(#p02848ff262)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m268e59bc56" x="353.932581" y="364.5" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: middle" x="353.932581" y="380.9575" transform="rotate(-0 353.932581 380.9575)">30</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 434.470109 364.5 
+L 434.470109 140.94 
+" clip-path="url(#p02848ff262)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m268e59bc56" x="434.470109" y="364.5" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: middle" x="434.470109" y="380.9575" transform="rotate(-0 434.470109 380.9575)">40</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: middle" x="276.48" y="397.067813" transform="rotate(-0 276.48 397.067813)">collateral value converted to crvUSD, thousand USD</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_11">
+      <path d="M 112.32 320.465455 
+L 440.64 320.465455 
+" clip-path="url(#p02848ff262)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <defs>
+       <path id="m400fdde608" d="M 0 0 
+L -3.5 0 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m400fdde608" x="112.32" y="320.465455" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="fill: #6b6b6b; font: 11.5px 'Inter'; text-anchor: end" x="105.32" y="324.64858" transform="rotate(-0 105.32 324.64858)">WETH (26 trades)</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_13">
+      <path d="M 112.32 184.974545 
+L 440.64 184.974545 
+" clip-path="url(#p02848ff262)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m400fdde608" x="112.32" y="184.974545" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="fill: #6b6b6b; font: 11.5px 'Inter'; text-anchor: end" x="105.32" y="189.15767" transform="rotate(-0 105.32 189.15767)">WBTC (17 trades)</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 112.32 354.338182 
+L 265.554484 354.338182 
+L 265.554484 286.592727 
+L 112.32 286.592727 
+z
+" clip-path="url(#p02848ff262)" style="fill: #1a1a1a"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 112.32 218.847273 
+L 364.873846 218.847273 
+L 364.873846 151.101818 
+L 112.32 151.101818 
+z
+" clip-path="url(#p02848ff262)" style="fill: #1a1a1a"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 112.32 364.5 
+L 112.32 140.94 
+" style="fill: none; stroke: #e4e4e4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 112.32 364.5 
+L 440.64 364.5 
+" style="fill: none; stroke: #e4e4e4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_9">
+    <text style="fill: #1a1a1a; font: 11px 'Inter'; text-anchor: start" x="265.554484" y="323.344361" transform="rotate(-0 265.554484 323.344361)">  19.0k</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #1a1a1a; font: 11px 'Inter'; text-anchor: start" x="364.873846" y="187.853452" transform="rotate(-0 364.873846 187.853452)">  31.4k</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_7">
+    <path d="M 501.12 364.5 
+L 812.16 364.5 
+L 812.16 140.94 
+L 501.12 140.94 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_6">
+     <g id="line2d_15">
+      <path d="M 549.822347 364.5 
+L 549.822347 140.94 
+" clip-path="url(#p9c9ba5e749)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m268e59bc56" x="549.822347" y="364.5" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: middle" x="549.822347" y="380.9575" transform="rotate(-0 549.822347 380.9575)">−0.5</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_17">
+      <path d="M 613.170874 364.5 
+L 613.170874 140.94 
+" clip-path="url(#p9c9ba5e749)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m268e59bc56" x="613.170874" y="364.5" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: middle" x="613.170874" y="380.9575" transform="rotate(-0 613.170874 380.9575)">0.0</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_19">
+      <path d="M 676.519401 364.5 
+L 676.519401 140.94 
+" clip-path="url(#p9c9ba5e749)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m268e59bc56" x="676.519401" y="364.5" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: middle" x="676.519401" y="380.9575" transform="rotate(-0 676.519401 380.9575)">0.5</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_21">
+      <path d="M 739.867928 364.5 
+L 739.867928 140.94 
+" clip-path="url(#p9c9ba5e749)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#m268e59bc56" x="739.867928" y="364.5" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: middle" x="739.867928" y="380.9575" transform="rotate(-0 739.867928 380.9575)">1.0</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_23">
+      <path d="M 803.216455 364.5 
+L 803.216455 140.94 
+" clip-path="url(#p9c9ba5e749)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#m268e59bc56" x="803.216455" y="364.5" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: middle" x="803.216455" y="380.9575" transform="rotate(-0 803.216455 380.9575)">1.5</text>
+     </g>
+    </g>
+    <g id="text_16">
+     <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: middle" x="656.64" y="397.512656" transform="rotate(-0 656.64 397.512656)">loss at oracle price, % of value converted</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_3">
+     <g id="line2d_25">
+      <path d="M 501.12 320.465455 
+L 812.16 320.465455 
+" clip-path="url(#p9c9ba5e749)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#m400fdde608" x="501.12" y="320.465455" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_27">
+      <path d="M 501.12 184.974545 
+L 812.16 184.974545 
+" clip-path="url(#p9c9ba5e749)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_28">
+      <g>
+       <use xlink:href="#m400fdde608" x="501.12" y="184.974545" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="patch_8">
+    <path d="M 613.170874 354.338182 
+L 760.570227 354.338182 
+L 760.570227 286.592727 
+L 613.170874 286.592727 
+z
+" clip-path="url(#p9c9ba5e749)" style="fill: #1a1a1a"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 613.170874 218.847273 
+L 577.138232 218.847273 
+L 577.138232 151.101818 
+L 613.170874 151.101818 
+z
+" clip-path="url(#p9c9ba5e749)" style="fill: #9a9a9a"/>
+   </g>
+   <g id="line2d_29">
+    <path d="M 613.170874 364.5 
+L 613.170874 140.94 
+" clip-path="url(#p9c9ba5e749)" style="fill: none; stroke: #1a1a1a; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 501.12 364.5 
+L 501.12 140.94 
+" style="fill: none; stroke: #e4e4e4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 501.12 364.5 
+L 812.16 364.5 
+" style="fill: none; stroke: #e4e4e4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_17">
+    <text style="fill: #1a1a1a; font: 11px 'Inter'; text-anchor: start" x="760.570227" y="323.344361" transform="rotate(-0 760.570227 323.344361)">  1.16%</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: #1a1a1a; font: 11px 'Inter'; text-anchor: end" x="577.138232" y="187.853452" transform="rotate(-0 577.138232 187.853452)">-0.28%  </text>
+   </g>
+  </g>
+  <g id="text_19">
+   <text style="fill: #1a1a1a; font: 600 19px 'Inter'; text-anchor: start" x="34.56" y="36.351562" transform="rotate(-0 34.56 36.351562)">Soft liquidation barely engaged. 50k USD of collateral was converted</text>
+  </g>
+  <g id="text_20">
+   <text style="fill: #6b6b6b; font: 12.5px 'Inter'" transform="translate(34.56 61.09575)">crvUSD mint markets, 20:00 to 04:00 UTC, 43 trades, all between 22:02 and 23:05, almost all while the EMA oracle was still</text>
+   <text style="fill: #6b6b6b; font: 12.5px 'Inter'" transform="translate(34.56 76.500535)">falling. Loss is measured at that lagging oracle, so its sign is not interpretable. A negative loss means the trades</text>
+   <text style="fill: #6b6b6b; font: 12.5px 'Inter'" transform="translate(34.56 92.051805)">executed above the oracle. 3 hard liquidations, one with 10.8k crvUSD of debt and two dust positions.</text>
+  </g>
+  <g id="text_21">
+   <text style="fill: #6b6b6b; font: 9.5px 'Inter'" transform="translate(34.56 450.592148)">Source: Ethereum mainnet logs and archive state via public RPC. Window 2026-11-08 20:00 to 2026-11-09 04:00 UTC. Loss = value leaving LLAMMA minus</text>
+   <text style="fill: #6b6b6b; font: 9.5px 'Inter'" transform="translate(34.56 462.411113)">value entering it, both at price_oracle, over soft and de-liquidation trades.</text>
+   <text style="fill: #6b6b6b; font: 9.5px 'Inter'" transform="translate(34.56 474.230078)">Data and code: github.com/x-pertknight/crvusd-soft-liquidation-flush</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p02848ff262">
+   <rect x="112.32" y="140.94" width="328.32" height="223.56"/>
+  </clipPath>
+  <clipPath id="p9c9ba5e749">
+   <rect x="501.12" y="140.94" width="311.04" height="223.56"/>
+  </clipPath>
+ </defs>
+</svg>

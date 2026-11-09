@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="1152pt" viewBox="0 0 864 1152" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 1152 
+L 864 1152 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="text_1">
+   <text style="fill: #1a1a1a; font: 600 19px 'Inter'; text-anchor: start" x="34.56" y="43.281563" transform="rotate(-0 34.56 43.281563)">Pre-registered predictions and results</text>
+  </g>
+  <g id="text_2">
+   <text style="fill: #6b6b6b; font: 12px 'Inter'; text-anchor: start" x="34.56" y="60.57" transform="rotate(-0 34.56 60.57)">14 hit, 12 missed, 13 untestable in release 1. Weak tests marked w and not counted as calibration evidence.</text>
+  </g>
+  <g id="text_3">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="94.03875" transform="rotate(-0 34.56 94.03875)">P01</text>
+  </g>
+  <g id="text_4">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="94.017187" transform="rotate(-0 77.76 94.017187)">The steepest 15 minute ETH decline in the window falls between 22:30 and 23:30 UTC.</text>
+  </g>
+  <g id="text_5">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="93.675" transform="rotate(-0 691.2 93.675)">0.75</text>
+  </g>
+  <g id="text_6">
+   <text style="fill: #d55e00; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="93.675" transform="rotate(-0 734.4 93.675)">MISS</text>
+  </g>
+  <g id="text_7">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="119.95875" transform="rotate(-0 34.56 119.95875)">P02</text>
+  </g>
+  <g id="text_8">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="119.834062" transform="rotate(-0 77.76 119.834062)">ETH peak to trough inside 2026-11-08 20:00 to 2026-11-09 04:00 UTC is between 5 and 12 percent.</text>
+  </g>
+  <g id="text_9">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="119.595" transform="rotate(-0 691.2 119.595)">0.5</text>
+  </g>
+  <g id="text_10">
+   <text style="fill: #0072b2; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="119.595" transform="rotate(-0 734.4 119.595)">HIT w</text>
+  </g>
+  <g id="text_11">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="145.87875" transform="rotate(-0 34.56 145.87875)">P03</text>
+  </g>
+  <g id="text_12">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="145.960312" transform="rotate(-0 77.76 145.960312)">The crvUSD minimum (block level spot, any PegKeeper pool) occurs within 45 minutes after the ETH ...</text>
+  </g>
+  <g id="text_13">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="145.515" transform="rotate(-0 691.2 145.515)">0.7</text>
+  </g>
+  <g id="text_14">
+   <text style="fill: #0072b2; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="145.515" transform="rotate(-0 734.4 145.515)">HIT</text>
+  </g>
+  <g id="text_15">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="171.79875" transform="rotate(-0 34.56 171.79875)">P04</text>
+  </g>
+  <g id="text_16">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="171.674062" transform="rotate(-0 77.76 171.674062)">The block level minimum in at least one PegKeeper pool is below 0.9951. The 0.9951 print looks ...</text>
+  </g>
+  <g id="text_17">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="171.435" transform="rotate(-0 691.2 171.435)">0.7</text>
+  </g>
+  <g id="text_18">
+   <text style="fill: #0072b2; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="171.435" transform="rotate(-0 734.4 171.435)">HIT</text>
+  </g>
+  <g id="text_19">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="197.71875" transform="rotate(-0 34.56 197.71875)">P05</text>
+  </g>
+  <g id="text_20">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="197.594062" transform="rotate(-0 77.76 197.594062)">The block level minimum across PegKeeper pools is above 0.985.</text>
+  </g>
+  <g id="text_21">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="197.355" transform="rotate(-0 691.2 197.355)">0.8</text>
+  </g>
+  <g id="text_22">
+   <text style="fill: #0072b2; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="197.355" transform="rotate(-0 734.4 197.355)">HIT w</text>
+  </g>
+  <g id="text_23">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="223.63875" transform="rotate(-0 34.56 223.63875)">P06</text>
+  </g>
+  <g id="text_24">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="223.720312" transform="rotate(-0 77.76 223.720312)">Time below 0.997 (TVL weighted across PegKeeper pools) is between 30 minutes and 4 hours.</text>
+  </g>
+  <g id="text_25">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="223.275" transform="rotate(-0 691.2 223.275)">0.6</text>
+  </g>
+  <g id="text_26">
+   <text style="fill: #d55e00; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="223.275" transform="rotate(-0 734.4 223.275)">MISS</text>
+  </g>
+  <g id="text_27">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="249.55875" transform="rotate(-0 34.56 249.55875)">P07</text>
+  </g>
+  <g id="text_28">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="249.640312" transform="rotate(-0 77.76 249.640312)">Time below 0.995 (same price) is under 60 minutes.</text>
+  </g>
+  <g id="text_29">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="249.195" transform="rotate(-0 691.2 249.195)">0.6</text>
+  </g>
+  <g id="text_30">
+   <text style="fill: #0072b2; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="249.195" transform="rotate(-0 734.4 249.195)">HIT</text>
+  </g>
+  <g id="text_31">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="275.47875" transform="rotate(-0 34.56 275.47875)">P08</text>
+  </g>
+  <g id="text_32">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="275.354062" transform="rotate(-0 77.76 275.354062)">The weighted price is back above 0.999 by 2026-11-09 04:00 UTC.</text>
+  </g>
+  <g id="text_33">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="275.115" transform="rotate(-0 691.2 275.115)">0.45</text>
+  </g>
+  <g id="text_34">
+   <text style="fill: #d55e00; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="275.115" transform="rotate(-0 734.4 275.115)">MISS w</text>
+  </g>
+  <g id="text_35">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="301.39875" transform="rotate(-0 34.56 301.39875)">P09</text>
+  </g>
+  <g id="text_36">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="301.377187" transform="rotate(-0 77.76 301.377187)">LLAMMA soft liquidation arbitrage is a net buyer of crvUSD in the peg pools during the flush, ...</text>
+  </g>
+  <g id="text_37">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="301.035" transform="rotate(-0 691.2 301.035)">0.75</text>
+  </g>
+  <g id="text_38">
+   <text style="fill: #0072b2; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="301.035" transform="rotate(-0 734.4 301.035)">HIT</text>
+  </g>
+  <g id="text_39">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="327.31875" transform="rotate(-0 34.56 327.31875)">P10</text>
+  </g>
+  <g id="text_40">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="327.297187" transform="rotate(-0 77.76 327.297187)">Hard liquidators in mint markets are net buyers of crvUSD.</text>
+  </g>
+  <g id="text_41">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="326.955" transform="rotate(-0 691.2 326.955)">0.8</text>
+  </g>
+  <g id="text_42">
+   <text style="fill: #0072b2; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="326.955" transform="rotate(-0 734.4 326.955)">HIT</text>
+  </g>
+  <g id="text_43">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="353.23875" transform="rotate(-0 34.56 353.23875)">P11</text>
+  </g>
+  <g id="text_44">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="353.217187" transform="rotate(-0 77.76 353.217187)">YB related routes are the largest net seller class of crvUSD in the peg pools over the flush ...</text>
+  </g>
+  <g id="text_45">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="352.875" transform="rotate(-0 691.2 352.875)">0.6</text>
+  </g>
+  <g id="text_46">
+   <text style="fill: #d55e00; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="352.875" transform="rotate(-0 734.4 352.875)">MISS</text>
+  </g>
+  <g id="text_47">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="379.15875" transform="rotate(-0 34.56 379.15875)">P12</text>
+  </g>
+  <g id="text_48">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="379.240312" transform="rotate(-0 77.76 379.240312)">Inside the flush, the YB Curve pool leg (asset sold into YB pools, crvUSD taken out) leads the ...</text>
+  </g>
+  <g id="text_49">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="378.795" transform="rotate(-0 691.2 378.795)">0.55</text>
+  </g>
+  <g id="text_50">
+   <text style="fill: #9a9a9a; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="378.795" transform="rotate(-0 734.4 378.795)">UNTESTABLE</text>
+  </g>
+  <g id="text_51">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="405.07875" transform="rotate(-0 34.56 405.07875)">P13</text>
+  </g>
+  <g id="text_52">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="405.160312" transform="rotate(-0 77.76 405.160312)">All YB markets touched by the flush are over-leveraged (DTV above 50 percent) for most of the ...</text>
+  </g>
+  <g id="text_53">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="404.715" transform="rotate(-0 691.2 404.715)">0.8</text>
+  </g>
+  <g id="text_54">
+   <text style="fill: #d55e00; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="404.715" transform="rotate(-0 734.4 404.715)">MISS</text>
+  </g>
+  <g id="text_55">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="430.99875" transform="rotate(-0 34.56 430.99875)">P14</text>
+  </g>
+  <g id="text_56">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="430.874062" transform="rotate(-0 77.76 430.874062)">The -4.10M claim reproduces in sign.</text>
+  </g>
+  <g id="text_57">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="430.635" transform="rotate(-0 691.2 430.635)">0.65</text>
+  </g>
+  <g id="text_58">
+   <text style="fill: #0072b2; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="430.635" transform="rotate(-0 734.4 430.635)">HIT</text>
+  </g>
+  <g id="text_59">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="456.91875" transform="rotate(-0 34.56 456.91875)">P15</text>
+  </g>
+  <g id="text_60">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="456.897187" transform="rotate(-0 77.76 456.897187)">The -4.10M claim does not reproduce within 25 percent once YB flows are netted across both legs ...</text>
+  </g>
+  <g id="text_61">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="456.555" transform="rotate(-0 691.2 456.555)">0.55</text>
+  </g>
+  <g id="text_62">
+   <text style="fill: #d55e00; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="456.555" transform="rotate(-0 734.4 456.555)">MISS</text>
+  </g>
+  <g id="text_63">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="482.83875" transform="rotate(-0 34.56 482.83875)">P16</text>
+  </g>
+  <g id="text_64">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="482.817187" transform="rotate(-0 77.76 482.817187)">One address or a small set of addresses accounts for more than 50 percent of YB related crvUSD ...</text>
+  </g>
+  <g id="text_65">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="482.475" transform="rotate(-0 691.2 482.475)">0.6</text>
+  </g>
+  <g id="text_66">
+   <text style="fill: #d55e00; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="482.475" transform="rotate(-0 734.4 482.475)">MISS</text>
+  </g>
+  <g id="text_67">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="508.75875" transform="rotate(-0 34.56 508.75875)">P17</text>
+  </g>
+  <g id="text_68">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="508.840312" transform="rotate(-0 77.76 508.840312)">PegKeepers withdraw crvUSD in at least 3 of the 4 pools (USDC, USDT, pyUSD, frxUSD) inside the ...</text>
+  </g>
+  <g id="text_69">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="508.395" transform="rotate(-0 691.2 508.395)">0.75</text>
+  </g>
+  <g id="text_70">
+   <text style="fill: #d55e00; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="508.395" transform="rotate(-0 734.4 508.395)">MISS</text>
+  </g>
+  <g id="text_71">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="534.67875" transform="rotate(-0 34.56 534.67875)">P18</text>
+  </g>
+  <g id="text_72">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="534.554062" transform="rotate(-0 77.76 534.554062)">Total PegKeeper withdrawals inside the window are between 2M and 20M crvUSD.</text>
+  </g>
+  <g id="text_73">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="534.315" transform="rotate(-0 691.2 534.315)">0.5</text>
+  </g>
+  <g id="text_74">
+   <text style="fill: #d55e00; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="534.315" transform="rotate(-0 734.4 534.315)">MISS</text>
+  </g>
+  <g id="text_75">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="560.59875" transform="rotate(-0 34.56 560.59875)">P19</text>
+  </g>
+  <g id="text_76">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="560.577187" transform="rotate(-0 77.76 560.577187)">At least one PegKeeper withdraws more than 80 percent of its window-start debt, so reserve depth ...</text>
+  </g>
+  <g id="text_77">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="560.235" transform="rotate(-0 691.2 560.235)">0.35</text>
+  </g>
+  <g id="text_78">
+   <text style="fill: #d55e00; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="560.235" transform="rotate(-0 734.4 560.235)">MISS</text>
+  </g>
+  <g id="text_79">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="586.51875" transform="rotate(-0 34.56 586.51875)">P20</text>
+  </g>
+  <g id="text_80">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="586.394062" transform="rotate(-0 77.76 586.394062)">The gap between successive withdraw actions on the busiest PegKeeper is set by action_delay, not ...</text>
+  </g>
+  <g id="text_81">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="586.155" transform="rotate(-0 691.2 586.155)">0.6</text>
+  </g>
+  <g id="text_82">
+   <text style="fill: #9a9a9a; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="586.155" transform="rotate(-0 734.4 586.155)">UNTESTABLE</text>
+  </g>
+  <g id="text_83">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="612.43875" transform="rotate(-0 34.56 612.43875)">P21</text>
+  </g>
+  <g id="text_84">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="612.314062" transform="rotate(-0 77.76 612.314062)">At least one update call in the window does nothing because the Regulator returns zero.</text>
+  </g>
+  <g id="text_85">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="612.075" transform="rotate(-0 691.2 612.075)">0.4</text>
+  </g>
+  <g id="text_86">
+   <text style="fill: #9a9a9a; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="612.075" transform="rotate(-0 734.4 612.075)">UNTESTABLE</text>
+  </g>
+  <g id="text_87">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="638.35875" transform="rotate(-0 34.56 638.35875)">P22</text>
+  </g>
+  <g id="text_88">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="638.234062" transform="rotate(-0 77.76 638.234062)">The WETH mint market rate at 04:00 UTC is higher than at 20:00 UTC by 15 to 100 percent in ...</text>
+  </g>
+  <g id="text_89">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="637.995" transform="rotate(-0 691.2 637.995)">0.6</text>
+  </g>
+  <g id="text_90">
+   <text style="fill: #0072b2; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="637.995" transform="rotate(-0 734.4 637.995)">HIT</text>
+  </g>
+  <g id="text_91">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="664.27875" transform="rotate(-0 34.56 664.27875)">P23</text>
+  </g>
+  <g id="text_92">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="664.154062" transform="rotate(-0 77.76 664.154062)">The rate peak lags the crvUSD price minimum by more than 30 minutes.</text>
+  </g>
+  <g id="text_93">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="663.915" transform="rotate(-0 691.2 663.915)">0.6</text>
+  </g>
+  <g id="text_94">
+   <text style="fill: #0072b2; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="663.915" transform="rotate(-0 734.4 663.915)">HIT</text>
+  </g>
+  <g id="text_95">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="690.19875" transform="rotate(-0 34.56 690.19875)">P24</text>
+  </g>
+  <g id="text_96">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="690.177187" transform="rotate(-0 77.76 690.177187)">Across all mint markets, the peak count of loans in soft liquidation is between 10 and 150.</text>
+  </g>
+  <g id="text_97">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="689.835" transform="rotate(-0 691.2 689.835)">0.6</text>
+  </g>
+  <g id="text_98">
+   <text style="fill: #9a9a9a; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="689.835" transform="rotate(-0 734.4 689.835)">UNTESTABLE</text>
+  </g>
+  <g id="text_99">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="716.11875" transform="rotate(-0 34.56 716.11875)">P25</text>
+  </g>
+  <g id="text_100">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="716.097187" transform="rotate(-0 77.76 716.097187)">WETH and wstETH mint markets together account for more than 60 percent of collateral value ...</text>
+  </g>
+  <g id="text_101">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="715.755" transform="rotate(-0 691.2 715.755)">0.6</text>
+  </g>
+  <g id="text_102">
+   <text style="fill: #d55e00; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="715.755" transform="rotate(-0 734.4 715.755)">MISS</text>
+  </g>
+  <g id="text_103">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="742.03875" transform="rotate(-0 34.56 742.03875)">P26</text>
+  </g>
+  <g id="text_104">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="742.017187" transform="rotate(-0 77.76 742.017187)">Aggregate soft liquidation loss in the window, defined as oracle value of collateral sold minus ...</text>
+  </g>
+  <g id="text_105">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="741.675" transform="rotate(-0 691.2 741.675)">0.55</text>
+  </g>
+  <g id="text_106">
+   <text style="fill: #0072b2; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="741.675" transform="rotate(-0 734.4 741.675)">HIT</text>
+  </g>
+  <g id="text_107">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="767.95875" transform="rotate(-0 34.56 767.95875)">P27</text>
+  </g>
+  <g id="text_108">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="767.937187" transform="rotate(-0 77.76 767.937187)">Loss per unit converted is higher in the fastest 30 minutes than in the rest of the window by at ...</text>
+  </g>
+  <g id="text_109">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="767.595" transform="rotate(-0 691.2 767.595)">0.6</text>
+  </g>
+  <g id="text_110">
+   <text style="fill: #9a9a9a; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="767.595" transform="rotate(-0 734.4 767.595)">UNTESTABLE</text>
+  </g>
+  <g id="text_111">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="793.87875" transform="rotate(-0 34.56 793.87875)">P28</text>
+  </g>
+  <g id="text_112">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="793.857187" transform="rotate(-0 77.76 793.857187)">Some loans lose health from de-liquidation after the bounce while their collateral value is ...</text>
+  </g>
+  <g id="text_113">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="793.515" transform="rotate(-0 691.2 793.515)">0.5</text>
+  </g>
+  <g id="text_114">
+   <text style="fill: #9a9a9a; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="793.515" transform="rotate(-0 734.4 793.515)">UNTESTABLE</text>
+  </g>
+  <g id="text_115">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="819.79875" transform="rotate(-0 34.56 819.79875)">P29</text>
+  </g>
+  <g id="text_116">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="819.674062" transform="rotate(-0 77.76 819.674062)">Mint markets have 0 to 10 hard liquidations in the window.</text>
+  </g>
+  <g id="text_117">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="819.435" transform="rotate(-0 691.2 819.435)">0.7</text>
+  </g>
+  <g id="text_118">
+   <text style="fill: #0072b2; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="819.435" transform="rotate(-0 734.4 819.435)">HIT</text>
+  </g>
+  <g id="text_119">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="845.71875" transform="rotate(-0 34.56 845.71875)">P30</text>
+  </g>
+  <g id="text_120">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="845.355" transform="rotate(-0 77.76 845.355)">No mint market has bad debt at window end.</text>
+  </g>
+  <g id="text_121">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="845.355" transform="rotate(-0 691.2 845.355)">0.85</text>
+  </g>
+  <g id="text_122">
+   <text style="fill: #9a9a9a; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="845.355" transform="rotate(-0 734.4 845.355)">UNTESTABLE w</text>
+  </g>
+  <g id="text_123">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="871.63875" transform="rotate(-0 34.56 871.63875)">P31</text>
+  </g>
+  <g id="text_124">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="871.617187" transform="rotate(-0 77.76 871.617187)">Llamalend markets have more hard liquidations per 1M of debt than mint markets.</text>
+  </g>
+  <g id="text_125">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="871.275" transform="rotate(-0 691.2 871.275)">0.6</text>
+  </g>
+  <g id="text_126">
+   <text style="fill: #9a9a9a; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="871.275" transform="rotate(-0 734.4 871.275)">UNTESTABLE</text>
+  </g>
+  <g id="text_127">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="897.55875" transform="rotate(-0 34.56 897.55875)">P32</text>
+  </g>
+  <g id="text_128">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="897.640312" transform="rotate(-0 77.76 897.640312)">The WETH YB market (market 10) shows a larger DTV excursion from 50 percent than the BTC markets.</text>
+  </g>
+  <g id="text_129">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="897.195" transform="rotate(-0 691.2 897.195)">0.65</text>
+  </g>
+  <g id="text_130">
+   <text style="fill: #d55e00; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="897.195" transform="rotate(-0 734.4 897.195)">MISS</text>
+  </g>
+  <g id="text_131">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="923.47875" transform="rotate(-0 34.56 923.47875)">P33</text>
+  </g>
+  <g id="text_132">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="923.457187" transform="rotate(-0 77.76 923.457187)">No YB market leaves the 6.25 to 53.125 percent safety band.</text>
+  </g>
+  <g id="text_133">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="923.115" transform="rotate(-0 691.2 923.115)">0.85</text>
+  </g>
+  <g id="text_134">
+   <text style="fill: #0072b2; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="923.115" transform="rotate(-0 734.4 923.115)">HIT w</text>
+  </g>
+  <g id="text_135">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="949.39875" transform="rotate(-0 34.56 949.39875)">P34</text>
+  </g>
+  <g id="text_136">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="949.377187" transform="rotate(-0 77.76 949.377187)">The crvUSD depeg itself lowers YB LP oracle values, since the oracle multiplies by the crvUSD ...</text>
+  </g>
+  <g id="text_137">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="949.035" transform="rotate(-0 691.2 949.035)">0.8</text>
+  </g>
+  <g id="text_138">
+   <text style="fill: #0072b2; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="949.035" transform="rotate(-0 734.4 949.035)">HIT w</text>
+  </g>
+  <g id="text_139">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="975.31875" transform="rotate(-0 34.56 975.31875)">P35</text>
+  </g>
+  <g id="text_140">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="975.297187" transform="rotate(-0 77.76 975.297187)">On borrower loss for positions that would have been hard liquidated elsewhere at the same LTV, ...</text>
+  </g>
+  <g id="text_141">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="974.955" transform="rotate(-0 691.2 974.955)">0.65</text>
+  </g>
+  <g id="text_142">
+   <text style="fill: #9a9a9a; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="974.955" transform="rotate(-0 734.4 974.955)">UNTESTABLE</text>
+  </g>
+  <g id="text_143">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="1001.23875" transform="rotate(-0 34.56 1001.23875)">P36</text>
+  </g>
+  <g id="text_144">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="1001.217187" transform="rotate(-0 77.76 1001.217187)">On borrower loss across all positions per unit of collateral drawdown, crvUSD is not best when ...</text>
+  </g>
+  <g id="text_145">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="1000.875" transform="rotate(-0 691.2 1000.875)">0.55</text>
+  </g>
+  <g id="text_146">
+   <text style="fill: #9a9a9a; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="1000.875" transform="rotate(-0 734.4 1000.875)">UNTESTABLE</text>
+  </g>
+  <g id="text_147">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="1027.15875" transform="rotate(-0 34.56 1027.15875)">P37</text>
+  </g>
+  <g id="text_148">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="1027.034062" transform="rotate(-0 77.76 1027.034062)">Bad debt is zero or close to zero in all compared systems. So bad debt cannot rank them in this ...</text>
+  </g>
+  <g id="text_149">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="1026.795" transform="rotate(-0 691.2 1026.795)">0.75</text>
+  </g>
+  <g id="text_150">
+   <text style="fill: #9a9a9a; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="1026.795" transform="rotate(-0 734.4 1026.795)">UNTESTABLE</text>
+  </g>
+  <g id="text_151">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="1053.07875" transform="rotate(-0 34.56 1053.07875)">P38</text>
+  </g>
+  <g id="text_152">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="1053.160312" transform="rotate(-0 77.76 1053.160312)">crvUSD shows a larger peg deviation in the window than BOLD (Liquity v2) and GHO.</text>
+  </g>
+  <g id="text_153">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="1052.715" transform="rotate(-0 691.2 1052.715)">0.5</text>
+  </g>
+  <g id="text_154">
+   <text style="fill: #9a9a9a; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="1052.715" transform="rotate(-0 734.4 1052.715)">UNTESTABLE</text>
+  </g>
+  <g id="text_155">
+   <text style="fill: #1a1a1a; font: 600 10.5px 'Inter'; text-anchor: start" x="34.56" y="1078.99875" transform="rotate(-0 34.56 1078.99875)">P39</text>
+  </g>
+  <g id="text_156">
+   <text style="fill: #1a1a1a; font: 10px 'Inter'; text-anchor: start" x="77.76" y="1078.977187" transform="rotate(-0 77.76 1078.977187)">The final verdict on "best liquidation system in DeFi" is "not supported by one event". A single ...</text>
+  </g>
+  <g id="text_157">
+   <text style="fill: #6b6b6b; font: 10px 'Inter'; text-anchor: start" x="691.2" y="1078.635" transform="rotate(-0 691.2 1078.635)">0.8</text>
+  </g>
+  <g id="text_158">
+   <text style="fill: #9a9a9a; font: 600 10px 'Inter'; text-anchor: start" x="734.4" y="1078.635" transform="rotate(-0 734.4 1078.635)">UNTESTABLE</text>
+  </g>
+  <g id="text_159">
+   <text style="fill: #6b6b6b; font: 9.5px 'Inter'; text-anchor: start" x="691.2" y="69.12" transform="rotate(-0 691.2 69.12)">conf.</text>
+  </g>
+  <g id="text_160">
+   <text style="fill: #6b6b6b; font: 9.5px 'Inter'; text-anchor: start" x="734.4" y="69.12" transform="rotate(-0 734.4 69.12)">result</text>
+  </g>
+  <g id="text_161">
+   <text style="fill: #6b6b6b; font: 9.5px 'Inter'; text-anchor: start" x="34.56" y="1138.176" transform="rotate(-0 34.56 1138.176)">Predictions recorded 2026-11-09 10:16 UTC before any chain data. Scoring rules in PREREG_ADDENDUM.md. Data and code: github.com/x-pertknight/crvusd-soft-liquidation-flush</text>
+  </g>
+ </g>
+</svg>

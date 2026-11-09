@@ -1,0 +1,864 @@
+{
+ "btc": {
+  "at_2145": 75677.06558935,
+  "at_2200": 73868.81,
+  "end": 74782.39118587,
+  "max_drawdown": -0.025305089249859525,
+  "min": 73868.81,
+  "start": 75760.974
+ },
+ "checks": {
+  "pool_balance_change": 3635102.1529066027,
+  "price_direction": {
+   "agree": 462,
+   "disagree": 1,
+   "get_p_used_as_crvusd_price": true
+  },
+  "sum_flows": 3633678.82502075
+ },
+ "context_aggregator_30d": {
+  "max": 1.0000040158242227,
+  "mean": 0.9994269258408324,
+  "n_below_1": 119,
+  "n_samples": 121,
+  "since_30oct_below_1": 40,
+  "since_30oct_mean": 0.9988024499215953,
+  "since_30oct_n": 40
+ },
+ "eth": {
+  "at_2141": 2223.7437,
+  "dd_peak_block": 26372408,
+  "dd_peak_utc": "2026-11-08 20:00:11",
+  "dd_trough_block": 26372986,
+  "dd_trough_utc": "2026-11-08 21:56:11",
+  "end": 2140.2623772,
+  "max": 2230.36499168,
+  "max_drawdown": -0.06325495351939314,
+  "min": 2089.2833578,
+  "n_updates": 24,
+  "start": 2230.36499168,
+  "steepest_15m": -0.060465755203713445,
+  "steepest_15m_start_block": 26372911,
+  "steepest_15m_start_utc": "2026-11-08 21:41:11"
+ },
+ "hard_liquidations": [
+  {
+   "block": 26373016,
+   "collateral_received": 4539531464783486797,
+   "controller": "0x100daa78fc509db39ef7d04de0c1abd299f4c6ce",
+   "debt": 10794.57651588233,
+   "market_set": "mint_markets",
+   "stablecoin_received": 1265.8300092157658
+  },
+  {
+   "block": 26374302,
+   "collateral_received": 559681220054277,
+   "controller": "0xa920de414ea4ab66b97da1bfe9e6eca7d4219635",
+   "debt": 1.0953917333117107,
+   "market_set": "mint_markets",
+   "stablecoin_received": 0.0
+  },
+  {
+   "block": 26374382,
+   "collateral_received": 589863075070983,
+   "controller": "0xa920de414ea4ab66b97da1bfe9e6eca7d4219635",
+   "debt": 1.1778870972120146,
+   "market_set": "mint_markets",
+   "stablecoin_received": 0.0
+  }
+ ],
+ "predictions": {
+  "P01": {
+   "note": "steepest 15 min ETH decline -6.05% starting 2026-11-08 21:41:11 UTC",
+   "result": "MISS",
+   "weak_test": false
+  },
+  "P02": {
+   "note": "ETH max drawdown in window -6.33%",
+   "result": "HIT",
+   "weak_test": true
+  },
+  "P03": {
+   "note": "W minimum 2026-11-08 21:56:35, ETH trough 2026-11-08 21:56:11, lag 0 min",
+   "result": "HIT",
+   "weak_test": false
+  },
+  "P04": {
+   "note": "lowest pool price 0.9893 (pyUSD)",
+   "result": "HIT",
+   "weak_test": false
+  },
+  "P05": {
+   "note": "lowest pool price 0.9893",
+   "result": "HIT",
+   "weak_test": true
+  },
+  "P06": {
+   "note": "weighted price below 0.997 for 364 min",
+   "result": "MISS",
+   "weak_test": false
+  },
+  "P07": {
+   "note": "weighted price below 0.995 for 23 min",
+   "result": "HIT",
+   "weak_test": false
+  },
+  "P08": {
+   "note": "recovery to 0.999: not by 04:00 UTC",
+   "result": "MISS",
+   "weak_test": true
+  },
+  "P09": {
+   "note": "LLAMMA arbitrage net_in -64,567 crvUSD over 47 tx",
+   "result": "HIT",
+   "weak_test": false
+  },
+  "P10": {
+   "note": "hard liquidation net_in -9,565 over 1 tx",
+   "result": "HIT",
+   "weak_test": false
+  },
+  "P11": {
+   "note": "flush hour net_in YB combined -406,731, largest other other 81,694",
+   "result": "MISS",
+   "weak_test": false
+  },
+  "P12": {
+   "note": "curve pool leg sell peak bucket 2026-11-08 22:30:00, LEVAMM leg buy peak bucket 2026-11-08 23:00:00",
+   "result": "UNTESTABLE",
+   "weak_test": false
+  },
+  "P13": {
+   "note": "share of flush hour samples with DTV above 50%: 7 WBTC 51%, 8 cbBTC 100%, 9 tBTC 0%, 10 WETH 100%",
+   "result": "MISS",
+   "weak_test": false
+  },
+  "P14": {
+   "note": "V0 = 3,854,933 crvUSD (positive means sold into peg pools)",
+   "result": "HIT",
+   "weak_test": false
+  },
+  "P15": {
+   "note": "V0 = 3,854,933 vs claim 4,100,000",
+   "result": "MISS",
+   "weak_test": false
+  },
+  "P16": {
+   "note": "largest single sender share of YB gross sells 14%",
+   "result": "MISS",
+   "weak_test": false
+  },
+  "P17": {
+   "note": "PegKeepers that withdrew: 0 of 4. Window-start debt total 0",
+   "result": "MISS",
+   "weak_test": false
+  },
+  "P18": {
+   "note": "total withdrawn 0",
+   "result": "MISS",
+   "weak_test": false
+  },
+  "P19": {
+   "note": "no PegKeeper withdrew. Window-start debt total 0, so no reserve was available ('no reserves to deploy')",
+   "result": "MISS",
+   "weak_test": false
+  },
+  "P20": {
+   "note": "no withdraw actions",
+   "result": "UNTESTABLE",
+   "weak_test": false
+  },
+  "P21": {
+   "note": "reverted calls not scanned in release 1",
+   "result": "UNTESTABLE",
+   "weak_test": false
+  },
+  "P22": {
+   "note": "WETH mint rate 6.32% to 7.70% (+22%)",
+   "result": "HIT",
+   "weak_test": false
+  },
+  "P23": {
+   "note": "rate peak 2026-11-09 02:21:23, W minimum 2026-11-08 21:56:35",
+   "result": "HIT",
+   "weak_test": false
+  },
+  "P24": {
+   "note": "per-user soft liquidation state not measured in release 1",
+   "result": "UNTESTABLE",
+   "weak_test": false
+  },
+  "P25": {
+   "note": "WETH plus wstETH share of mint value converted 38%",
+   "result": "MISS",
+   "weak_test": false
+  },
+  "P26": {
+   "note": "mint market loss 0.262% of value converted",
+   "result": "HIT",
+   "weak_test": false
+  },
+  "P27": {
+   "note": "insufficient conversions to compare (in 0, out 50,385)",
+   "result": "UNTESTABLE",
+   "weak_test": false
+  },
+  "P28": {
+   "note": "per-user health path not measured in release 1",
+   "result": "UNTESTABLE",
+   "weak_test": false
+  },
+  "P29": {
+   "note": "3 hard liquidations in mint markets",
+   "result": "HIT",
+   "weak_test": false
+  },
+  "P30": {
+   "note": "open positions not checked for negative equity in release 1",
+   "result": "UNTESTABLE",
+   "weak_test": true
+  },
+  "P31": {
+   "note": "moved out of release 1",
+   "result": "UNTESTABLE",
+   "weak_test": false
+  },
+  "P32": {
+   "note": "max DTV deviation from 50%: WETH 0.43 pts, BTC markets max 0.60 pts",
+   "result": "MISS",
+   "weak_test": false
+  },
+  "P33": {
+   "note": "DTV range 7 WBTC 49.78% to 50.04%, 8 cbBTC 50.36% to 50.60%, 9 tBTC 49.66% to 50.15%, 10 WETH 49.80% to 50.43%",
+   "result": "HIT",
+   "weak_test": true
+  },
+  "P34": {
+   "note": "lowest aggregator price 0.9951, so LP value effect 0.49%",
+   "result": "HIT",
+   "weak_test": true
+  },
+  "P35": {
+   "note": "cross-protocol comparison moved to phase 2",
+   "result": "UNTESTABLE",
+   "weak_test": false
+  },
+  "P36": {
+   "note": "cross-protocol comparison moved to phase 2",
+   "result": "UNTESTABLE",
+   "weak_test": false
+  },
+  "P37": {
+   "note": "cross-protocol comparison moved to phase 2",
+   "result": "UNTESTABLE",
+   "weak_test": false
+  },
+  "P38": {
+   "note": "cross-protocol comparison moved to phase 2",
+   "result": "UNTESTABLE",
+   "weak_test": false
+  },
+  "P39": {
+   "note": "meta prediction, not scored",
+   "result": "UNTESTABLE",
+   "weak_test": false
+  }
+ },
+ "q1": {
+  "W": {
+   "end": 0.9966841893535693,
+   "max": 0.9980045937766734,
+   "min": 0.9942499286090289,
+   "min_block": 26372988,
+   "min_utc": "2026-11-08 21:56:35",
+   "recovery_block": null,
+   "recovery_sec": null,
+   "sec_below_0995": 1356,
+   "sec_below_0997": 21853,
+   "sec_below_0999": 28789
+  },
+  "W_pre": 0.9979478064785788,
+  "aggregator": {
+   "max": 0.9979210995716563,
+   "min": 0.9951125589584969,
+   "min_block": 26373257,
+   "pre": 0.9978721026366444
+  },
+  "min_any_pool": 0.9893464666207807,
+  "min_any_pool_name": "pyUSD",
+  "pools": {
+   "GHO": {
+    "end": 0.9967697656829292,
+    "min": 0.9948132861864057,
+    "min_block": 26372999,
+    "min_utc": "2026-11-08 21:58:47",
+    "pre": 0.9980088342481557,
+    "sec_below_0995": 1332,
+    "sec_below_0997": 21853
+   },
+   "USDC": {
+    "end": 0.9964538488241371,
+    "min": 0.9937937030680047,
+    "min_block": 26373046,
+    "min_utc": "2026-11-08 22:08:11",
+    "pre": 0.9976881890764616,
+    "sec_below_0995": 3828,
+    "sec_below_0997": 21877
+   },
+   "USDT": {
+    "end": 0.9974605982030302,
+    "min": 0.9930589009477105,
+    "min_block": 26372988,
+    "min_utc": "2026-11-08 21:56:35",
+    "pre": 0.9986906004427901,
+    "sec_below_0995": 132,
+    "sec_below_0997": 10116
+   },
+   "frxUSD": {
+    "end": 0.9963949668936405,
+    "min": 0.9932267132013921,
+    "min_block": 26372986,
+    "min_utc": "2026-11-08 21:56:11",
+    "pre": 0.9977158283823268,
+    "sec_below_0995": 3672,
+    "sec_below_0997": 21841
+   },
+   "pyUSD": {
+    "end": 0.9963022092107784,
+    "min": 0.9893464666207807,
+    "min_block": 26372986,
+    "min_utc": "2026-11-08 21:56:11",
+    "pre": 0.99752178829988,
+    "sec_below_0995": 3960,
+    "sec_below_0997": 21829
+   }
+  },
+  "tvl_pre_usd": {
+   "GHO": 1379510.3245283384,
+   "USDC": 12474952.86051175,
+   "USDT": 9035661.108336082,
+   "frxUSD": 13179909.91600733,
+   "pyUSD": 1172855.3682853668
+  },
+  "weights": {
+   "GHO": 0.037040904724951945,
+   "USDC": 0.33496200219630196,
+   "USDT": 0.24261439460792902,
+   "frxUSD": 0.3538906369904796,
+   "pyUSD": 0.03149206148033745
+  }
+ },
+ "q2": {
+  "n_events": 0,
+  "pegkeepers": {
+   "GHO": {
+    "debt_end": 0.0,
+    "debt_start": 0.0,
+    "provided": 0.0,
+    "withdrawn": 0.0
+   },
+   "USDC": {
+    "debt_end": 0.0,
+    "debt_start": 0.0,
+    "provided": 0.0,
+    "withdrawn": 0.0
+   },
+   "USDT": {
+    "debt_end": 0.0,
+    "debt_start": 0.0,
+    "provided": 0.0,
+    "withdrawn": 0.0
+   },
+   "frxUSD": {
+    "debt_end": 0.0,
+    "debt_start": 0.0,
+    "provided": 0.0,
+    "withdrawn": 0.0
+   },
+   "pyUSD": {
+    "debt_end": 0.0,
+    "debt_start": 0.0,
+    "provided": 0.0,
+    "withdrawn": 0.0
+   }
+  },
+  "total_debt_start": 0.0,
+  "verdict": "no reserves to deploy"
+ },
+ "q3": {
+  "all_net_2145_2200": 2591473.639203448,
+  "buckets_15m": {
+   "0": {
+    "other": 1273.8519856182427
+   },
+   "1": {
+    "liquidity_non_pk": -932.8565892008903,
+    "llamma_arbitrage": -3.003632948855381,
+    "other": -100353.37104231092
+   },
+   "2": {
+    "other": 1151.8643029846155
+   },
+   "3": {
+    "liquidity_non_pk": 1800.9369497678836,
+    "other": 639.8054923814525
+   },
+   "4": {
+    "other": 862.0806175788485
+   },
+   "5": {
+    "liquidity_non_pk": -5008.661331739684,
+    "other": 258.85966609179246
+   },
+   "6": {
+    "other": 73.44862573326952,
+    "yb_levamm_leg": 6261.31543083878
+   },
+   "7": {
+    "liquidity_non_pk": -37358.801428525025,
+    "other": -1631754.896714052,
+    "yb_curve_pool_leg": 3718606.676347058,
+    "yb_levamm_leg": 541980.6609989668
+   },
+   "8": {
+    "hard_liquidation": -9564.896176903636,
+    "liquidity_non_pk": -60846.13638315789,
+    "llamma_arbitrage": -26569.03924773656,
+    "other": -221593.46843263277,
+    "yb_curve_pool_leg": 247105.56370213025,
+    "yb_levamm_leg": 43159.34059241857
+   },
+   "9": {
+    "borrower_action": -14105.168087424885,
+    "llamma_arbitrage": -7957.664305088385,
+    "other": -139291.3077866339,
+    "yb_levamm_leg": -11287.26369031831
+   },
+   "10": {
+    "llamma_arbitrage": -3887.5896132399403,
+    "other": 4385.335415058893
+   },
+   "11": {
+    "liquidity_non_pk": 24001.993490431592,
+    "llamma_arbitrage": -2254.5822969114674,
+    "other": -109741.18522122221
+   },
+   "12": {
+    "liquidity_non_pk": 2654.103194336982,
+    "llamma_arbitrage": -24498.706208386866,
+    "other": 233256.41806457823,
+    "yb_curve_pool_leg": -60997.34154292925,
+    "yb_levamm_leg": -274990.01150777715
+   },
+   "13": {
+    "llamma_arbitrage": 604.135376570525,
+    "other": -46206.94138397293,
+    "yb_levamm_leg": -70743.3957203203
+   },
+   "14": {
+    "liquidity_non_pk": 1908182.8874580695,
+    "other": -12664.334747433433,
+    "yb_curve_pool_leg": 318.4002218691377
+   },
+   "15": {
+    "liquidity_non_pk": 15784.202778587536,
+    "other": 117878.85516035653,
+    "yb_levamm_leg": -151824.86165347803
+   },
+   "16": {
+    "liquidity_non_pk": 806.8884812363697,
+    "other": 34480.84307707847
+   },
+   "17": {
+    "liquidity_non_pk": -51.58705272879743,
+    "llamma_arbitrage": -0.13785426813993065,
+    "other": -10435.422016375676
+   },
+   "18": {
+    "liquidity_non_pk": 38786.78990457215,
+    "other": -316605.1165713631
+   },
+   "19": {
+    "liquidity_non_pk": -92.74919622170705,
+    "other": -26761.41611296011,
+    "yb_levamm_leg": -11326.88746319877
+   },
+   "20": {
+    "liquidity_non_pk": -79.60313144489521,
+    "other": -22074.69813051744,
+    "yb_levamm_leg": -26524.47029986159
+   },
+   "21": {
+    "liquidity_non_pk": 1601.0571461177765,
+    "other": -22375.041178141557
+   },
+   "22": {
+    "liquidity_non_pk": 29297.097997814984,
+    "other": -13962.36920973385,
+    "yb_curve_pool_leg": 134.45551664943915,
+    "yb_levamm_leg": -7413.244525754955
+   },
+   "23": {
+    "other": -534.7868935554256,
+    "yb_levamm_leg": -10562.174673250442
+   },
+   "24": {
+    "liquidity_non_pk": 111066.37541167559,
+    "other": -19355.72925485105,
+    "yb_levamm_leg": -16715.782806976236
+   },
+   "25": {
+    "borrower_action": 350.0,
+    "llamma_arbitrage": 0.014494076674590371,
+    "other": 106129.80450464637,
+    "yb_curve_pool_leg": -1719.2045946149165,
+    "yb_levamm_leg": -20614.26791567071
+   },
+   "26": {
+    "liquidity_non_pk": 32.08108147645071,
+    "other": 27.765202226844764,
+    "yb_levamm_leg": -17023.991285051157
+   },
+   "27": {
+    "other": 2174.892508454856,
+    "yb_levamm_leg": -2716.945362832017
+   },
+   "28": {
+    "other": 622.6528842917947,
+    "yb_levamm_leg": -1817.5322039382697
+   },
+   "29": {
+    "liquidity_non_pk": 25021.686501750515,
+    "other": 2571.0184973416126,
+    "yb_levamm_leg": -3691.9539082926
+   },
+   "30": {
+    "other": -2433.8160502836745,
+    "yb_levamm_leg": -12663.982136079085
+   },
+   "31": {
+    "liquidity_non_pk": -6.8778936076632595,
+    "other": 2329.9384058315572
+   }
+  },
+  "claim_verdict": "reproduces",
+  "flush": {
+   "borrower_action": {
+    "bought": 0.0,
+    "n_tx": 0,
+    "net_in": 0.0,
+    "sold": 0.0
+   },
+   "hard_liquidation": {
+    "bought": 0.0,
+    "n_tx": 0,
+    "net_in": 0.0,
+    "sold": 0.0
+   },
+   "liquidity_non_pk": {
+    "bought": 7099.644241687285,
+    "n_tx": 5,
+    "net_in": 26656.096684768578,
+    "sold": 33755.74092645587
+   },
+   "llamma_arbitrage": {
+    "bought": 30640.925748429414,
+    "n_tx": 18,
+    "net_in": -30036.74274196774,
+    "sold": 604.1830064616682
+   },
+   "other": {
+    "bought": 1828814.2609813295,
+    "n_tx": 112,
+    "net_in": 81693.6268744419,
+    "sold": 1910507.8878557724
+   },
+   "pegkeeper": {
+    "bought": 0.0,
+    "n_tx": 0,
+    "net_in": 0.0,
+    "sold": 0.0
+   },
+   "yb_curve_pool_leg": {
+    "bought": 60997.34154292925,
+    "n_tx": 4,
+    "net_in": -60997.34154292925,
+    "sold": 0.0
+   },
+   "yb_levamm_leg": {
+    "bought": 345733.4072280974,
+    "n_tx": 25,
+    "net_in": -345733.4072280974,
+    "sold": 0.0
+   }
+  },
+  "largest_sender_share": {
+   "borrower_action": 0.7370785570911024,
+   "hard_liquidation": 1.0,
+   "liquidity_non_pk": 0.8209525447183003,
+   "llamma_arbitrage": 0.32834935167873525,
+   "other": 0.12941562278098073,
+   "pegkeeper": null,
+   "yb_curve_pool_leg": 0.1638656774467276,
+   "yb_levamm_leg": 0.1238861944736315
+  },
+  "largest_single_leg": {
+   "class": "liquidity_non_pk",
+   "net_in": 1908182.8874580695,
+   "pool": "pyUSD",
+   "utc": "2026-11-08 23:38:11"
+  },
+  "liquidity_non_pk_detail": {
+   "all_liquidity_legs": true,
+   "deposited": 2189505.5344305723,
+   "largest": {
+    "W_after": 0.9959958946952792,
+    "W_before": 0.996010855188767,
+    "amounts_added": {
+     "crvusd": 1908182.8874580695,
+     "paired_coin": 235800.917598
+    },
+    "net_in": 1908182.8874580695,
+    "pool": "pyUSD",
+    "pool_A": 2000,
+    "pool_balances": {
+     "after": {
+      "crvusd": 3043174.491932125,
+      "paired_coin": 392760.306451,
+      "paired_share": 0.11430959243924661
+     },
+     "before": {
+      "crvusd": 1139822.0002374225,
+      "paired_coin": 152152.443071,
+      "paired_share": 0.11776737834022145
+     }
+    },
+    "pool_price_after": 0.9953268988186892,
+    "pool_price_before": 0.9956010022636482,
+    "pool_weight": 0.03149206148033745,
+    "single_sided": false,
+    "utc": "2026-11-08 23:38:11",
+    "weight_definition": "pool TVL share at the block before the window, both coins at 1 USD, fixed for the window"
+   },
+   "n_legs": 52,
+   "withdrawn": 134846.70704136157
+  },
+  "main": {
+   "borrower_action": {
+    "bought": 14105.168087424885,
+    "n_tx": 4,
+    "net_in": -13755.168087424885,
+    "sold": 350.0
+   },
+   "hard_liquidation": {
+    "bought": 9564.896176903636,
+    "n_tx": 1,
+    "net_in": -9564.896176903636,
+    "sold": 0.0
+   },
+   "liquidity_non_pk": {
+    "bought": 134846.70704136157,
+    "n_tx": 45,
+    "net_in": 2054658.8273892098,
+    "sold": 2189505.5344305723
+   },
+   "llamma_arbitrage": {
+    "bought": 85026.8811785228,
+    "n_tx": 47,
+    "net_in": -64566.573287933024,
+    "sold": 20460.30789058977
+   },
+   "other": {
+    "bought": 5894248.675713811,
+    "n_tx": 409,
+    "net_in": -2188026.466335788,
+    "sold": 3706222.2093780222
+   },
+   "pegkeeper": {
+    "bought": 0.0,
+    "n_tx": 0,
+    "net_in": 0.0,
+    "sold": 0.0
+   },
+   "yb_curve_pool_leg": {
+    "bought": 67148.58550039119,
+    "n_tx": 72,
+    "net_in": 3903448.549650163,
+    "sold": 3970597.1351505537
+   },
+   "yb_levamm_leg": {
+    "bought": 668532.7871704851,
+    "n_tx": 127,
+    "net_in": -48515.4481305755,
+    "sold": 620017.3390399095
+   }
+  },
+  "multi_class": {
+   "hard_liquidation+borrower_action": {
+    "n_tx": 1,
+    "net_in": -9564.896176903636
+   },
+   "llamma_arbitrage+yb_levamm_leg+yb_curve_pool_leg": {
+    "n_tx": 1,
+    "net_in": -22338.91231324985
+   },
+   "yb_levamm_leg+yb_curve_pool_leg": {
+    "n_tx": 29,
+    "net_in": -1862.7767335104645
+   }
+  },
+  "s1_from_only_moved_net_in": -21397.409821260466,
+  "s1_moved_n_tx": 126,
+  "s1_moved_net_in": -1162723.2752903712,
+  "s2_levamm_strict_split": {
+   "fee_or_other_log_only": 18557.981604082015,
+   "strict": -67073.4297346575
+  },
+  "total_net_in_main": 3633678.8250207477,
+  "variants": {
+   "V0_main_net_same_tx": 3854933.1015195865,
+   "V1_flush_hour": -406730.74877102656,
+   "V2_gross_sells": 4590614.474190463,
+   "V3_with_cross_tx": 2692209.8262292156,
+   "V4_usdc_usdt_only": 2935730.081108653,
+   "V5_curve_pool_leg_only": 3903448.549650163,
+   "levamm_leg_only": -48515.4481305755
+  },
+  "yb_gross_sell_largest_destination_share": 0.17010426531499462,
+  "yb_gross_sell_largest_sender_share": 0.1441305824290051,
+  "yb_gross_sell_n_senders": 88,
+  "yb_gross_sell_n_tx": 109,
+  "yb_gross_sell_top5_tx_share": 0.4012068593171539,
+  "yb_net_2145_2200": 4260587.337346025,
+  "yb_net_by_market": {
+   "10 WETH": 175472.46806296858,
+   "10 WETH + 2 tBTC + 5 tBTC": -6414.847555320613,
+   "10 WETH + 3 WBTC": 7706.320568733173,
+   "10 WETH + 6 WETH": 37834.278271774325,
+   "2 tBTC + 5 tBTC": -482.01158699916175,
+   "3 WBTC": 1057.4934558077932,
+   "3 WBTC + 4 cbBTC": 39198.02430828084,
+   "3 WBTC + 4 cbBTC + 5 tBTC": 6304.8559449162585,
+   "4 cbBTC": 19906.059616757975,
+   "4 cbBTC + 7 WBTC + 8 cbBTC": 661647.9378720925,
+   "5 tBTC": -379.6279408644632,
+   "5 tBTC + 9 tBTC": 58434.83141369095,
+   "6 WETH": -871.4153755076611,
+   "7 WBTC": 1421202.6840880637,
+   "7 WBTC + 8 cbBTC": -32956.406821733945,
+   "8 cbBTC": 169987.43276722895,
+   "9 tBTC": 1297285.0244296982
+  },
+  "yb_net_rollup": {
+   "active_btc_markets_7_to_9_only": 2855518.734463257,
+   "any_weth_market": 213726.8039726478,
+   "btc_markets_only": 3641206.2975469395
+  }
+ },
+ "soft_liquidation": {
+  "doc_reference_pct_8h": 0.03333333333333333,
+  "doc_reference_pct_per_day": 0.1,
+  "hard_liq_debt_mint": 10796.849794712854,
+  "hard_liquidations_llamalend": 0,
+  "hard_liquidations_mint": 3,
+  "markets": {
+   "LL CRV #3": {
+    "converted_usd": 1218.7069380600285,
+    "deliq_usd": 1199.0720661933224,
+    "loss_pct_of_converted": 1.610556055314646,
+    "loss_usd": 19.6279583874655,
+    "loss_usd_prevblock": 19.81896294735024,
+    "mint": false,
+    "n": 21
+   },
+   "LL USDe #14": {
+    "converted_usd": 2.9998135459253343,
+    "deliq_usd": 0.0,
+    "loss_pct_of_converted": -0.12732134419602836,
+    "loss_usd": -0.003819402930046678,
+    "loss_usd_prevblock": -0.003819354218127735,
+    "mint": false,
+    "n": 1
+   },
+   "LL WETH #12": {
+    "converted_usd": 0.25320676718839275,
+    "deliq_usd": 0.0,
+    "loss_pct_of_converted": 6.0055216608011115,
+    "loss_usd": 0.015206387250113168,
+    "loss_usd_prevblock": 0.015196817429259601,
+    "mint": false,
+    "n": 2
+   },
+   "WBTC": {
+    "converted_usd": 31358.529401936165,
+    "deliq_usd": 0.0,
+    "loss_pct_of_converted": -0.28438490168429714,
+    "loss_usd": -89.17892300933758,
+    "loss_usd_prevblock": -86.82147444072119,
+    "mint": true,
+    "n": 17
+   },
+   "WETH": {
+    "converted_usd": 19026.466769920684,
+    "deliq_usd": 0.0,
+    "loss_pct_of_converted": 1.1633810856346394,
+    "loss_usd": 221.35031566581713,
+    "loss_usd_prevblock": 225.51634358991979,
+    "mint": true,
+    "n": 26
+   }
+  },
+  "mint_converted_usd": 50384.99617185685,
+  "mint_loss_pct": 0.26232291892145754,
+  "mint_loss_usd": 132.17139265647955
+ },
+ "weth_rate": {
+  "end_apr": 0.076987701598608,
+  "max_apr": 0.077352772741488,
+  "max_block": 26374307,
+  "max_utc": "2026-11-09 02:21:23",
+  "rel_change": 0.21874733245321543,
+  "start_apr": 0.063169534446192
+ },
+ "window": {
+  "first_block": 26372408,
+  "flush_first": 26373155,
+  "flush_last": 26373453,
+  "last_block": 26374799,
+  "pre_block": 26372407
+ },
+ "yb": {
+  "10 WETH": {
+   "dtv_max": 0.504340534711,
+   "dtv_min": 0.49798669638534077,
+   "flush_share_above_50": 1.0,
+   "left_safety_band": false,
+   "max_abs_dev": 0.004340534711000044,
+   "n_points": 122
+  },
+  "7 WBTC": {
+   "dtv_max": 0.5003817466716376,
+   "dtv_min": 0.49780811171928147,
+   "flush_share_above_50": 0.5072463768115942,
+   "left_safety_band": false,
+   "max_abs_dev": 0.0021918882807185347,
+   "n_points": 164
+  },
+  "8 cbBTC": {
+   "dtv_max": 0.5060124881719419,
+   "dtv_min": 0.5036237109076126,
+   "flush_share_above_50": 1.0,
+   "left_safety_band": false,
+   "max_abs_dev": 0.006012488171941888,
+   "n_points": 131
+  },
+  "9 tBTC": {
+   "dtv_max": 0.5014675068548916,
+   "dtv_min": 0.4965574107400528,
+   "flush_share_above_50": 0.0,
+   "left_safety_band": false,
+   "max_abs_dev": 0.0034425892599472263,
+   "n_points": 133
+  }
+ }
+}

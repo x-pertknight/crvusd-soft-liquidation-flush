@@ -1,0 +1,2 @@
+matplotlib==3.9.2
+pycryptodome==3.20.0  # fetch scripts only

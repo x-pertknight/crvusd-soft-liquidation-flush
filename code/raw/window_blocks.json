@@ -1,0 +1,26 @@
+{
+ "main_start": {
+  "utc": "2026-11-08T20:00:00Z",
+  "first_block_at_or_after": 26372408,
+  "block_ts": 1794168011,
+  "prev_block_ts": 1794167999
+ },
+ "main_end": {
+  "utc": "2026-11-09T04:00:00Z",
+  "first_block_at_or_after": 26374800,
+  "block_ts": 1794196811,
+  "prev_block_ts": 1794196799
+ },
+ "flush_start": {
+  "utc": "2026-11-08T22:30:00Z",
+  "first_block_at_or_after": 26373155,
+  "block_ts": 1794177011,
+  "prev_block_ts": 1794176999
+ },
+ "flush_end": {
+  "utc": "2026-11-08T23:30:00Z",
+  "first_block_at_or_after": 26373454,
+  "block_ts": 1794180611,
+  "prev_block_ts": 1794180599
+ }
+}

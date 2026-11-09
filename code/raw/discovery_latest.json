@@ -1,0 +1,190 @@
+{
+ "block": 26377273,
+ "regulator_aggregator": "0x18672b1b0c623a30089a280ed9256379fb0e4e62",
+ "pegkeepers": [
+  {
+   "pegkeeper": "0x9201da0d97caaaff53f01b2fb56767c7072de340",
+   "pool": "0x4dece678ceceb27446b35c672dc7d61f30bad69e",
+   "is_inverse": 0,
+   "include_index": 0,
+   "coins": [
+    "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e"
+   ],
+   "coin_symbols": [
+    "USDC",
+    "crvUSD"
+   ],
+   "debt_now": 0,
+   "action_delay": null,
+   "ACTION_DELAY": null,
+   "regulator": "0x36a04caffc681fa179558b2aaba30395cddd855f"
+  },
+  {
+   "pegkeeper": "0xfb726f57d251ab5c731e5c64ed4f5f94351ef9f3",
+   "pool": "0x390f3595bca2df7d23783dfd126427cceb997bf4",
+   "is_inverse": 0,
+   "include_index": 0,
+   "coins": [
+    "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e"
+   ],
+   "coin_symbols": [
+    "USDT",
+    "crvUSD"
+   ],
+   "debt_now": 0,
+   "action_delay": null,
+   "ACTION_DELAY": null,
+   "regulator": "0x36a04caffc681fa179558b2aaba30395cddd855f"
+  },
+  {
+   "pegkeeper": "0x3fa20eaa107de08b38a8734063d605d5842fe09c",
+   "pool": "0x625e92624bc2d88619accc1788365a69767f6200",
+   "is_inverse": 0,
+   "include_index": 1,
+   "coins": [
+    "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e"
+   ],
+   "coin_symbols": [
+    "PYUSD",
+    "crvUSD"
+   ],
+   "debt_now": 0,
+   "action_delay": null,
+   "ACTION_DELAY": null,
+   "regulator": "0x36a04caffc681fa179558b2aaba30395cddd855f"
+  },
+  {
+   "pegkeeper": "0x338cb2d827112d989a861cde87cd9ffd913a1f9d",
+   "pool": "0x13e12bb0e6a2f1a3d6901a59a9d585e89a6243e1",
+   "is_inverse": 0,
+   "include_index": 1,
+   "coins": [
+    "0xcacd6fd266af91b8aed52accc382b4e165586e29",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e"
+   ],
+   "coin_symbols": [
+    "frxUSD",
+    "crvUSD"
+   ],
+   "debt_now": 0,
+   "action_delay": 12,
+   "ACTION_DELAY": null,
+   "regulator": "0x36a04caffc681fa179558b2aaba30395cddd855f"
+  },
+  {
+   "pegkeeper": "0x53876b157decf04389eed66c7c29d73863f8c50b",
+   "pool": "0x635ef0056a597d13863b73825cca297236578595",
+   "is_inverse": 0,
+   "include_index": 1,
+   "coins": [
+    "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e"
+   ],
+   "coin_symbols": [
+    "GHO",
+    "crvUSD"
+   ],
+   "debt_now": 0,
+   "action_delay": 12,
+   "ACTION_DELAY": null,
+   "regulator": "0x36a04caffc681fa179558b2aaba30395cddd855f"
+  }
+ ],
+ "mint_markets": [
+  {
+   "index": 0,
+   "collateral": "0xac3e018457b222d93114458476f3e3416abbe38f",
+   "symbol": "sfrxETH",
+   "controller": "0x8472a9a7632b173c8cf3a86d3afec50c35548e76",
+   "amm": "0x136e783846ef68c8bd00a3369f787df8d683a696",
+   "monetary_policy": "0xc684432fd6322c6d58b6bc5d28b18569aa0ad0a1",
+   "n_loans_now": 4,
+   "total_debt_now": 21567005237048957196355
+  },
+  {
+   "index": 1,
+   "collateral": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+   "symbol": "wstETH",
+   "controller": "0x100daa78fc509db39ef7d04de0c1abd299f4c6ce",
+   "amm": "0x37417b2238aa52d0dd2d6252d989e728e8f706e4",
+   "monetary_policy": "0x07491d124ddb3ef59a8938fcb3ee50f9fa0b9251",
+   "n_loans_now": 90,
+   "total_debt_now": 10996931093376589229544620
+  },
+  {
+   "index": 2,
+   "collateral": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+   "symbol": "WBTC",
+   "controller": "0x4e59541306910ad6dc1dac0ac9dfb29bd9f15c67",
+   "amm": "0xe0438eb3703bf871e31ce639bd351109c88666ea",
+   "monetary_policy": "0x07491d124ddb3ef59a8938fcb3ee50f9fa0b9251",
+   "n_loans_now": 169,
+   "total_debt_now": 18963410120701785759672916
+  },
+  {
+   "index": 3,
+   "collateral": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+   "symbol": "WETH",
+   "controller": "0xa920de414ea4ab66b97da1bfe9e6eca7d4219635",
+   "amm": "0x1681195c176239ac5e72d9aebacf5b2492e0c4ee",
+   "monetary_policy": "0x07491d124ddb3ef59a8938fcb3ee50f9fa0b9251",
+   "n_loans_now": 205,
+   "total_debt_now": 3304979272947583428336372
+  },
+  {
+   "index": 4,
+   "collateral": "0xac3e018457b222d93114458476f3e3416abbe38f",
+   "symbol": "sfrxETH",
+   "controller": "0xec0820efafc41d8943ee8de495fc9ba8495b15cf",
+   "amm": "0xfa96ad0a9e64261db86950e2da362f5572c5c6fd",
+   "monetary_policy": "0x07491d124ddb3ef59a8938fcb3ee50f9fa0b9251",
+   "n_loans_now": 24,
+   "total_debt_now": 2497985887559565764689718
+  },
+  {
+   "index": 5,
+   "collateral": "0x18084fba666a33d37592fa2633fd49a74dd93a88",
+   "symbol": "tBTC",
+   "controller": "0x1c91da0223c763d2e0173243eadaa0a2ea47e704",
+   "amm": "0xf9bd9da2427a50908c4c6d1599d8e62837c2bcb0",
+   "monetary_policy": "0x07491d124ddb3ef59a8938fcb3ee50f9fa0b9251",
+   "n_loans_now": 22,
+   "total_debt_now": 6333170323743286682537215
+  },
+  {
+   "index": 6,
+   "collateral": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+   "symbol": "weETH",
+   "controller": "0x652aea6b22310c89dcc506710cad24d2dba56b11",
+   "amm": "0xed325262f54b2987e74436f4556a27f748146da1",
+   "monetary_policy": "0x07491d124ddb3ef59a8938fcb3ee50f9fa0b9251",
+   "n_loans_now": 11,
+   "total_debt_now": 3237595672445594506543518
+  },
+  {
+   "index": 7,
+   "collateral": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+   "symbol": "cbBTC",
+   "controller": "0xf8c786b1064889ffd3c8a08b48d5e0c159f4cbe3",
+   "amm": "0xb6e62aa178a5421d0a51d17e720a05de78d3137a",
+   "monetary_policy": "0x07491d124ddb3ef59a8938fcb3ee50f9fa0b9251",
+   "n_loans_now": 32,
+   "total_debt_now": 7356120395276483906282383
+  },
+  {
+   "index": 8,
+   "collateral": "0x8236a87084f8b84306f72007f36f2618a5634494",
+   "symbol": "LBTC",
+   "controller": "0x8aca5a776a878ea1f8967e70a23b8563008f58ef",
+   "amm": "0x9a2e6bb3114b1eeb5492d97188a3ecb09e39fac8",
+   "monetary_policy": "0x07491d124ddb3ef59a8938fcb3ee50f9fa0b9251",
+   "n_loans_now": 2,
+   "total_debt_now": 1108239823015581367
+  }
+ ],
+ "chainlink_eth_usd_proxy": "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419",
+ "chainlink_eth_usd_aggregator_now": "0x7d4e742018fb52e48b08be73d041c18b21de6fb5"
+}

@@ -1,0 +1,45 @@
+{
+ "event_signatures": {
+  "Transfer": "Transfer(address,address,uint256)",
+  "TokenExchange_stableswap": "TokenExchange(address,int128,uint256,int128,uint256)",
+  "TokenExchange_llamma": "TokenExchange(address,uint256,uint256,uint256,uint256)",
+  "TokenExchange_twocrypto": "TokenExchange(address,uint256,uint256,uint256,uint256,uint256,uint256)",
+  "Liquidate": "Liquidate(address,address,uint256,uint256,uint256)",
+  "Borrow": "Borrow(address,uint256,uint256)",
+  "Repay": "Repay(address,uint256,uint256)",
+  "RemoveCollateral": "RemoveCollateral(address,uint256)",
+  "Provide": "Provide(uint256)",
+  "Withdraw_pk": "Withdraw(uint256)",
+  "AnswerUpdated": "AnswerUpdated(int256,uint256,uint256)",
+  "AddLiquidity_ng": "AddLiquidity(address,uint256[],uint256[],uint256,uint256)"
+ },
+ "topics": {
+  "Transfer": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+  "TokenExchange_stableswap": "0x8b3e96f2b889fa771c53c981b40daf005f63f637f1869f707052d15a3dd97140",
+  "TokenExchange_llamma": "0xb2e76ae99761dc136e598d4a629bb347eccb9532a5f8bbd72e18467c3c34cc98",
+  "TokenExchange_twocrypto": "0x143f1f8e861fbdeddd5b46e844b7d3ac7b86a122f36e8c463859ee6811b1f29c",
+  "Liquidate": "0x642dd4d37ddd32036b9797cec464c0045dd2118c549066ae6b0f88e32240c2d0",
+  "Borrow": "0xe1979fe4c35e0cef342fef5668e2c8e7a7e9f5d5d1ca8fee0ac6c427fa4153af",
+  "Repay": "0x77c6871227e5d2dec8dadd5354f78453203e22e669cd0ec4c19d9a8c5edb31d0",
+  "RemoveCollateral": "0xe25410a4059619c9594dc6f022fe231b02aaea733f689e7ab0cd21b3d4d0eb54",
+  "Provide": "0x8d685bd3f45d861c759ed7a46ea3d30eb5cc6ce9fe06c526931f94c963bca7d2",
+  "Withdraw_pk": "0x5b6b431d4476a211bb7d41c20d1aab9ae2321deee0d20be3d9fc9b1093fa6e3d",
+  "AnswerUpdated": "0x0559884fd3a460db3073b7fc896cc77986f16e378210ded43186175bf646fc5f",
+  "AddLiquidity_ng": "0x189c623b666b1b45b83d7178f39b8c087cb09774317ca2f53c2d3c3726f222a2"
+ },
+ "selectors": {
+  "get_p()": "0xf2388acb",
+  "get_p(uint256)": "0xec023862",
+  "balances(uint256)": "0x4903b0d1",
+  "debt()": "0x0dca59c1",
+  "price()": "0xa035b1fe",
+  "price_oracle()": "0x86fc88d3",
+  "rate()": "0x2c4e722e",
+  "decimals()": "0x313ce567",
+  "get_state()": "0x86b301ad",
+  "A()": "0xf446c1d0"
+ },
+ "aggregator": "0x18672b1b0c623a30089a280ed9256379fb0e4e62",
+ "aggregator_source": "PegKeeperRegulator.aggregator(); listed as crvusd-price-aggregator-v3 on docs.curve.finance/developer/deployments",
+ "signature_sources": "Event definitions in source shown on docs.curve.finance (AMM, Controller, PegKeeperV2) and Curve pool sources; each topic0 was observed in the cached logs"
+}

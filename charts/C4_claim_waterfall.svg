@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="486pt" viewBox="0 0 864 486" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 486 
+L 864 486 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 69.12 364.5 
+L 820.8 364.5 
+L 820.8 126.36 
+L 69.12 126.36 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 149.139457 364.5 
+L 149.139457 126.36 
+" clip-path="url(#p4696853e95)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m268e59bc56" d="M 0 0 
+L 0 3.5 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m268e59bc56" x="149.139457" y="364.5" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="fill: #6b6b6b; font: 10.5px 'Inter'" transform="translate(125.737582 379.13875)">YB Curve</text>
+      <text style="fill: #6b6b6b; font: 10.5px 'Inter'" transform="translate(127.815433 390.447906)">pool leg,</text>
+      <text style="fill: #6b6b6b; font: 10.5px 'Inter'" transform="translate(141.259535 401.880109)">net</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 297.049728 364.5 
+L 297.049728 126.36 
+" clip-path="url(#p4696853e95)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m268e59bc56" x="297.049728" y="364.5" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="fill: #6b6b6b; font: 10.5px 'Inter'" transform="translate(278.956916 379.13875)">Net the</text>
+      <text style="fill: #6b6b6b; font: 10.5px 'Inter'" transform="translate(265.167463 390.447906)">LEVAMM leg</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 444.96 364.5 
+L 444.96 126.36 
+" clip-path="url(#p4696853e95)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m268e59bc56" x="444.96" y="364.5" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="fill: #6b6b6b; font: 10.5px 'Inter'" transform="translate(430.319062 379.13875)">All YB</text>
+      <text style="fill: #6b6b6b; font: 10.5px 'Inter'" transform="translate(418.312969 390.447906)">routes, net</text>
+      <text style="fill: #6b6b6b; font: 10.5px 'Inter'" transform="translate(419.28668 401.955906)">(V0, main)</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 592.870272 364.5 
+L 592.870272 126.36 
+" clip-path="url(#p4696853e95)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m268e59bc56" x="592.870272" y="364.5" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="fill: #6b6b6b; font: 10.5px 'Inter'" transform="translate(568.163279 379.13875)">Link other</text>
+      <text style="fill: #6b6b6b; font: 10.5px 'Inter'" transform="translate(561.983045 390.447906)">tx by sender</text>
+      <text style="fill: #6b6b6b; font: 10.5px 'Inter'" transform="translate(565.661326 401.798078)">or contract</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 740.780543 364.5 
+L 740.780543 126.36 
+" clip-path="url(#p4696853e95)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m268e59bc56" x="740.780543" y="364.5" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="fill: #6b6b6b; font: 10.5px 'Inter'" transform="translate(729.514371 379.13875)">With</text>
+      <text style="fill: #6b6b6b; font: 10.5px 'Inter'" transform="translate(711.256676 391.009)">linkage (V3,</text>
+      <text style="fill: #6b6b6b; font: 10.5px 'Inter'" transform="translate(707.035348 403.002297)">upper bound)</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_11">
+      <path d="M 69.12 350.081837 
+L 820.8 350.081837 
+" clip-path="url(#p4696853e95)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <defs>
+       <path id="m400fdde608" d="M 0 0 
+L -3.5 0 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m400fdde608" x="69.12" y="350.081837" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: end" x="62.12" y="354.810587" transform="rotate(-0 62.12 354.810587)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_13">
+      <path d="M 69.12 302.021292 
+L 820.8 302.021292 
+" clip-path="url(#p4696853e95)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m400fdde608" x="69.12" y="302.021292" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: end" x="62.12" y="306.750042" transform="rotate(-0 62.12 306.750042)">1</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_15">
+      <path d="M 69.12 253.960747 
+L 820.8 253.960747 
+" clip-path="url(#p4696853e95)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m400fdde608" x="69.12" y="253.960747" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: end" x="62.12" y="258.689497" transform="rotate(-0 62.12 258.689497)">2</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_17">
+      <path d="M 69.12 205.900202 
+L 820.8 205.900202 
+" clip-path="url(#p4696853e95)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m400fdde608" x="69.12" y="205.900202" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: end" x="62.12" y="210.628952" transform="rotate(-0 62.12 210.628952)">3</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_19">
+      <path d="M 69.12 157.839657 
+L 820.8 157.839657 
+" clip-path="url(#p4696853e95)" style="fill: none; stroke: #e4e4e4; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m400fdde608" x="69.12" y="157.839657" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: end" x="62.12" y="162.568407" transform="rotate(-0 62.12 162.568407)">4</text>
+     </g>
+    </g>
+    <g id="text_11">
+     <text style="fill: #6b6b6b; font: 13px 'Inter'; text-anchor: middle" x="46.917656" y="245.43" transform="rotate(-90 46.917656 245.43)">million crvUSD sold into peg pools (positive)</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 103.287273 350.081837 
+L 194.991641 350.081837 
+L 194.991641 162.479972 
+L 103.287273 162.479972 
+z
+" clip-path="url(#p4696853e95)" style="fill: #d55e00; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 251.197544 162.479972 
+L 342.901913 162.479972 
+L 342.901913 164.811651 
+L 251.197544 164.811651 
+z
+" clip-path="url(#p4696853e95)" style="fill: #0072b2; opacity: 0.45"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 399.107816 350.081837 
+L 490.812184 350.081837 
+L 490.812184 164.811651 
+L 399.107816 164.811651 
+z
+" clip-path="url(#p4696853e95)" style="fill: #d55e00; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 547.018087 164.811651 
+L 638.722456 164.811651 
+L 638.722456 220.692765 
+L 547.018087 220.692765 
+z
+" clip-path="url(#p4696853e95)" style="fill: #0072b2; opacity: 0.45"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 694.928359 350.081837 
+L 786.632727 350.081837 
+L 786.632727 220.692765 
+L 694.928359 220.692765 
+z
+" clip-path="url(#p4696853e95)" style="fill: #d55e00; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_21">
+    <path d="M 251.197544 164.811651 
+L 342.901913 164.811651 
+" clip-path="url(#p4696853e95)" style="fill: none; stroke: #1a1a1a; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_22">
+    <path d="M 547.018087 220.692765 
+L 638.722456 220.692765 
+" clip-path="url(#p4696853e95)" style="fill: none; stroke: #1a1a1a; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_23">
+    <path d="M 69.12 350.081837 
+L 820.8 350.081837 
+" clip-path="url(#p4696853e95)" style="fill: none; stroke: #1a1a1a; stroke-width: 0.7; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_24">
+    <path d="M 69.12 153.033602 
+L 820.8 153.033602 
+" clip-path="url(#p4696853e95)" style="fill: none; stroke-dasharray: 4,3; stroke-dashoffset: 0; stroke: #6b6b6b"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 69.12 364.5 
+L 69.12 126.36 
+" style="fill: none; stroke: #e4e4e4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 69.12 364.5 
+L 820.8 364.5 
+" style="fill: none; stroke: #e4e4e4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_12">
+    <text style="fill: #ffffff; font: 600 13px 'Inter'; text-anchor: middle" x="149.139457" y="177.704738" transform="rotate(-0 149.139457 177.704738)">3.90M</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: #6b6b6b; font: 11px 'Inter'; text-anchor: start" x="347.339221" y="166.524718" transform="rotate(-0 347.339221 166.524718)">-0.05M</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #ffffff; font: 600 13px 'Inter'; text-anchor: middle" x="444.96" y="180.036416" transform="rotate(-0 444.96 180.036416)">3.85M</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: #6b6b6b; font: 11px 'Inter'; text-anchor: start" x="643.159764" y="195.631114" transform="rotate(-0 643.159764 195.631114)">-1.16M</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: #ffffff; font: 600 13px 'Inter'; text-anchor: middle" x="740.780543" y="235.917531" transform="rotate(-0 740.780543 235.917531)">2.69M</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: #6b6b6b; font: 10.5px 'Inter'; text-anchor: end" x="814.735679" y="148.364872" transform="rotate(-0 814.735679 148.364872)">circulating claim 4.10M, definition unknown</text>
+   </g>
+  </g>
+  <g id="text_18">
+   <text style="fill: #1a1a1a; font: 600 19px 'Inter'; text-anchor: start" x="34.56" y="36.351562" transform="rotate(-0 34.56 36.351562)">The main measure lands 6 percent below the circulating 4.10M figure</text>
+  </g>
+  <g id="text_19">
+   <text style="fill: #6b6b6b; font: 12.5px 'Inter'" transform="translate(34.56 61.523484)">Net crvUSD sold into the five PegKeeper pools by transactions with a Yield Basis leg, 20:00 to 04:00 UTC. Other full-window</text>
+   <text style="fill: #6b6b6b; font: 12.5px 'Inter'" transform="translate(34.56 77.074754)">definitions give 2.69M to 4.59M, so a match does not tell which definition the claim used. Linking by sender alone moves</text>
+   <text style="fill: #6b6b6b; font: 12.5px 'Inter'" transform="translate(34.56 92.626023)">only -0.02M. Most of the V3 change comes from shared router contracts.</text>
+  </g>
+  <g id="text_20">
+   <text style="fill: #6b6b6b; font: 9.5px 'Inter'" transform="translate(34.56 450.459891)">Source: Ethereum mainnet logs and archive state via public RPC. Window 2026-11-08 20:00 to 2026-11-09 04:00 UTC. No primary source for the claim was</text>
+   <text style="fill: #6b6b6b; font: 9.5px 'Inter'" transform="translate(34.56 462.411113)">found. The pre-registered flush hour (22:30 to 23:30) missed the drop and gives -0.41M. Rules in PREREG_ADDENDUM.md.</text>
+   <text style="fill: #6b6b6b; font: 9.5px 'Inter'" transform="translate(34.56 474.230078)">Data and code: github.com/x-pertknight/crvusd-soft-liquidation-flush</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4696853e95">
+   <rect x="69.12" y="126.36" width="751.68" height="238.14"/>
+  </clipPath>
+ </defs>
+</svg>

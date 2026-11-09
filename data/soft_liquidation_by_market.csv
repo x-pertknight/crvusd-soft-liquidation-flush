@@ -1,0 +1,6 @@
+market,mint_market,n_exchanges,converted_usd,deliquidated_usd,loss_usd,loss_pct_of_converted
+LL CRV #3,False,21,1218.71,1199.07,19.63,1.6106
+LL USDe #14,False,1,3.00,0.00,-0.00,-0.1273
+LL WETH #12,False,2,0.25,0.00,0.02,6.0055
+WBTC,True,17,31358.53,0.00,-89.18,-0.2844
+WETH,True,26,19026.47,0.00,221.35,1.1634

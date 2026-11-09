@@ -1,0 +1,695 @@
+{
+ "window": {
+  "pre_block": 26372407,
+  "first_block": 26372408,
+  "last_block": 26374799
+ },
+ "sources": {
+  "pegkeepers": "PegKeeperRegulator.peg_keepers(i) at pre_block; regulator address from docs.curve.finance/developer/deployments",
+  "mint_markets": "ControllerFactory controllers/amms/collaterals at pre_block; factory from docs deployments",
+  "llamalend_v1_markets": "OneWayLendingFactory market_count/controllers/amms/borrowed_tokens at pre_block",
+  "yb_markets": "docs.yieldbasis.com/user/reference/contract-addresses, confirmed by Factory.markets(i) at pre_block",
+  "chainlink": "EACAggregatorProxy.aggregator() at pre_block",
+  "names_decimals": "ERC20 symbol() and decimals() at pre_block",
+  "chainlink_btc": "EACAggregatorProxy description() = BTC / USD, aggregator() at pre_block"
+ },
+ "pegkeepers": [
+  {
+   "pegkeeper": "0x9201da0d97caaaff53f01b2fb56767c7072de340",
+   "pool": "0x4dece678ceceb27446b35c672dc7d61f30bad69e",
+   "is_inverse": 0,
+   "include_index": 0,
+   "coins": [
+    "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e"
+   ],
+   "coin_symbols": [
+    "USDC",
+    "crvUSD"
+   ],
+   "coin_decimals": [
+    6,
+    18
+   ],
+   "name": "USDC"
+  },
+  {
+   "pegkeeper": "0xfb726f57d251ab5c731e5c64ed4f5f94351ef9f3",
+   "pool": "0x390f3595bca2df7d23783dfd126427cceb997bf4",
+   "is_inverse": 0,
+   "include_index": 0,
+   "coins": [
+    "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e"
+   ],
+   "coin_symbols": [
+    "USDT",
+    "crvUSD"
+   ],
+   "coin_decimals": [
+    6,
+    18
+   ],
+   "name": "USDT"
+  },
+  {
+   "pegkeeper": "0x3fa20eaa107de08b38a8734063d605d5842fe09c",
+   "pool": "0x625e92624bc2d88619accc1788365a69767f6200",
+   "is_inverse": 0,
+   "include_index": 1,
+   "coins": [
+    "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e"
+   ],
+   "coin_symbols": [
+    "PYUSD",
+    "crvUSD"
+   ],
+   "coin_decimals": [
+    6,
+    18
+   ],
+   "name": "pyUSD"
+  },
+  {
+   "pegkeeper": "0x338cb2d827112d989a861cde87cd9ffd913a1f9d",
+   "pool": "0x13e12bb0e6a2f1a3d6901a59a9d585e89a6243e1",
+   "is_inverse": 0,
+   "include_index": 1,
+   "coins": [
+    "0xcacd6fd266af91b8aed52accc382b4e165586e29",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e"
+   ],
+   "coin_symbols": [
+    "frxUSD",
+    "crvUSD"
+   ],
+   "coin_decimals": [
+    18,
+    18
+   ],
+   "name": "frxUSD"
+  },
+  {
+   "pegkeeper": "0x53876b157decf04389eed66c7c29d73863f8c50b",
+   "pool": "0x635ef0056a597d13863b73825cca297236578595",
+   "is_inverse": 0,
+   "include_index": 1,
+   "coins": [
+    "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
+    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e"
+   ],
+   "coin_symbols": [
+    "GHO",
+    "crvUSD"
+   ],
+   "coin_decimals": [
+    18,
+    18
+   ],
+   "name": "GHO"
+  }
+ ],
+ "mint_markets": [
+  {
+   "controller": "0x8472a9a7632b173c8cf3a86d3afec50c35548e76",
+   "amm": "0x136e783846ef68c8bd00a3369f787df8d683a696",
+   "collateral": "0xac3e018457b222d93114458476f3e3416abbe38f",
+   "name": "sfrxETH"
+  },
+  {
+   "controller": "0x100daa78fc509db39ef7d04de0c1abd299f4c6ce",
+   "amm": "0x37417b2238aa52d0dd2d6252d989e728e8f706e4",
+   "collateral": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+   "name": "wstETH"
+  },
+  {
+   "controller": "0x4e59541306910ad6dc1dac0ac9dfb29bd9f15c67",
+   "amm": "0xe0438eb3703bf871e31ce639bd351109c88666ea",
+   "collateral": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+   "name": "WBTC"
+  },
+  {
+   "controller": "0xa920de414ea4ab66b97da1bfe9e6eca7d4219635",
+   "amm": "0x1681195c176239ac5e72d9aebacf5b2492e0c4ee",
+   "collateral": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+   "name": "WETH"
+  },
+  {
+   "controller": "0xec0820efafc41d8943ee8de495fc9ba8495b15cf",
+   "amm": "0xfa96ad0a9e64261db86950e2da362f5572c5c6fd",
+   "collateral": "0xac3e018457b222d93114458476f3e3416abbe38f",
+   "name": "sfrxETH v2"
+  },
+  {
+   "controller": "0x1c91da0223c763d2e0173243eadaa0a2ea47e704",
+   "amm": "0xf9bd9da2427a50908c4c6d1599d8e62837c2bcb0",
+   "collateral": "0x18084fba666a33d37592fa2633fd49a74dd93a88",
+   "name": "tBTC"
+  },
+  {
+   "controller": "0x652aea6b22310c89dcc506710cad24d2dba56b11",
+   "amm": "0xed325262f54b2987e74436f4556a27f748146da1",
+   "collateral": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+   "name": "weETH"
+  },
+  {
+   "controller": "0xf8c786b1064889ffd3c8a08b48d5e0c159f4cbe3",
+   "amm": "0xb6e62aa178a5421d0a51d17e720a05de78d3137a",
+   "collateral": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+   "name": "cbBTC"
+  },
+  {
+   "controller": "0x8aca5a776a878ea1f8967e70a23b8563008f58ef",
+   "amm": "0x9a2e6bb3114b1eeb5492d97188a3ecb09e39fac8",
+   "collateral": "0x8236a87084f8b84306f72007f36f2618a5634494",
+   "name": "LBTC"
+  }
+ ],
+ "llamalend_v1_markets": [
+  {
+   "index": 0,
+   "controller": "0x1e0165dbd2019441ab7927c018701f3138114d71",
+   "amm": "0x847d7a5e4aa4b380043b2908c29a92e2e5157e64",
+   "collateral": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+   "name": "wstETH #0"
+  },
+  {
+   "index": 1,
+   "controller": "0xaade9230aa9161880e13a38c83400d3d1995267b",
+   "amm": "0xb46adcd1ea7e35c4eb801406c3e76e76e9a46edf",
+   "collateral": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+   "name": "WETH #1"
+  },
+  {
+   "index": 2,
+   "controller": "0x413fd2511bad510947a91f5c6c79ebd8138c29fc",
+   "amm": "0x5338b1bf469651a5951ef618fb5defbffaed7be9",
+   "collateral": "0x18084fba666a33d37592fa2633fd49a74dd93a88",
+   "name": "tBTC #2"
+  },
+  {
+   "index": 3,
+   "controller": "0xeda215b7666936ded834f76f3fbc6f323295110a",
+   "amm": "0xafca625321df8d6a068bdd8f1585d489d2acf11b",
+   "collateral": "0xd533a949740bb3306d119cc777fa900ba034cd52",
+   "name": "CRV #3"
+  },
+  {
+   "index": 7,
+   "controller": "0x98fc283d6636f6dcff5a817a00ac69a3add96907",
+   "amm": "0x9bbdb1b160b48c48efce260aaea4505b1ade8f4b",
+   "collateral": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+   "name": "sUSDe #7"
+  },
+  {
+   "index": 8,
+   "controller": "0x09dbdeb3b301a4753589ac6df8a178c7716ce16b",
+   "amm": "0x6be658242b769500f27498ba0637406e417507b1",
+   "collateral": "0x55c08ca52497e2f1534b59e2917bf524d4765257",
+   "name": "UwU #8"
+  },
+  {
+   "index": 9,
+   "controller": "0xcad85b7fe52b1939dceebee9bcf0b2a5aa0ce617",
+   "amm": "0x8eede294459efaff55d580bc95c98306ab03f0c8",
+   "collateral": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+   "name": "WBTC #9"
+  },
+  {
+   "index": 10,
+   "controller": "0x4f87158350c296955966059c50263f711ce0817c",
+   "amm": "0xcd28cf8f7755f03967d27e128b38022b63919836",
+   "collateral": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+   "name": "pufETH #10"
+  },
+  {
+   "index": 11,
+   "controller": "0xb536fea3a01c95dd09932440ec802a75410139d6",
+   "amm": "0x6505aec799ac3b16a79cb1ae2a61884889b54c1b",
+   "collateral": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+   "name": "sUSDe #11"
+  },
+  {
+   "index": 12,
+   "controller": "0x23f5a668a9590130940ef55964ead9787976f2cc",
+   "amm": "0x04b28ccf37828978140643525961d20099e63668",
+   "collateral": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+   "name": "WETH #12"
+  },
+  {
+   "index": 13,
+   "controller": "0x5756a035f276a8095a922931f224f4ed06149608",
+   "amm": "0x83c71e53571d6d139d2f9c434e3244d99473319b",
+   "collateral": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+   "name": "wstETH #13"
+  },
+  {
+   "index": 14,
+   "controller": "0x74f88baa966407b50c10b393bbd789639effe78b",
+   "amm": "0xf832f4d9087e474357afb9c9a277cb23b9a136cb",
+   "collateral": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+   "name": "USDe #14"
+  },
+  {
+   "index": 15,
+   "controller": "0x8c2537f1a5b1b167a960a14b89f7860dd5f7cd68",
+   "amm": "0xcd546deaf54c3995de3a5a6d17322799f7666c92",
+   "collateral": "0xa663b02cf0a4b149d2ad41910cb81e23e1c41c32",
+   "name": "sFRAX #15"
+  },
+  {
+   "index": 16,
+   "controller": "0x3c1350aa6faff17c87bde2015bbb45100d37dad3",
+   "amm": "0xd432f59cbb90eaec3a1e6c4a214d6c6df3d334d8",
+   "collateral": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+   "name": "ezETH #16"
+  },
+  {
+   "index": 17,
+   "controller": "0xcf3df6c1b4a6b38496661b31170de9508b867c8e",
+   "amm": "0xa882374fc57be61070d7f1c851f708ee204836c5",
+   "collateral": "0xb45ad160634c528cc3d2926d9807104fa3157305",
+   "name": "sDOLA #17"
+  },
+  {
+   "index": 18,
+   "controller": "0xac9add93364aea685be238db6c40bf53753f2cf1",
+   "amm": "0xd19e96c90f717a4a9463c015e7530f33e75ff25b",
+   "collateral": "0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb",
+   "name": "ETHFI #18"
+  },
+  {
+   "index": 19,
+   "controller": "0x1f9d988cdebfa1fd5563c122a987186e516173c2",
+   "amm": "0x5e2cdcd38a4927ca63f14ae1da7154a89228c8a4",
+   "collateral": "0x1d08e7adc263cfc70b1babe6dc5bb339c16eec52",
+   "name": "USD0USD0++ #19"
+  },
+  {
+   "index": 20,
+   "controller": "0xdc8b1caf2e10de76fb67e82c2485e7d4fa098c53",
+   "amm": "0x12b1eaa2469a34548fd5e360d5428b01dbb91cf8",
+   "collateral": "0x1d08e7adc263cfc70b1babe6dc5bb339c16eec52",
+   "name": "USD0USD0++ #20"
+  },
+  {
+   "index": 21,
+   "controller": "0x276b8c8873079eeaccf4dd241de14be92d733b45",
+   "amm": "0x9dbcaea6c46703a631cc7f96527ef114c0494c63",
+   "collateral": "0x8db2350d78abc13f5673a411d4700bcf87864dde",
+   "name": "swBTC #21"
+  },
+  {
+   "index": 22,
+   "controller": "0xdc5d5ee1223d4c8b7eac8e876793f2171e7e8deb",
+   "amm": "0x16117999d974629ec46973b3745a42a6c6859fc0",
+   "collateral": "0x09db87a538bd693e9d08544577d5ccfaa6373a48",
+   "name": "ynETH #22"
+  },
+  {
+   "index": 23,
+   "controller": "0x143985860efaeacb92db23e4b0c4d66be51b08d2",
+   "amm": "0x1785e3aec59fc7ffdc665c1db1f0d16a43ca9de2",
+   "collateral": "0x09db87a538bd693e9d08544577d5ccfaa6373a48",
+   "name": "ynETH #23"
+  },
+  {
+   "index": 25,
+   "controller": "0xc28c2fd809fc1795f90de1c9da2131434a77721d",
+   "amm": "0x62c265b8c07696057ba4c25e5a172891e58b9340",
+   "collateral": "0x8236a87084f8b84306f72007f36f2618a5634494",
+   "name": "LBTC #25"
+  },
+  {
+   "index": 26,
+   "controller": "0xf8c27436b277734aaa726a8fd5e6d7dade0296c5",
+   "amm": "0x062811f90cda4830fbde96051d22013242a91f48",
+   "collateral": "0x57b96d4af698605563a4653d882635da59bf11af",
+   "name": "RCH #26"
+  },
+  {
+   "index": 27,
+   "controller": "0xb4544e705665e0856961a51f7e86ccf633404b86",
+   "amm": "0x527e37764c33e66e7955f0813f201212cd4775a1",
+   "collateral": "0x2103e845c5e135493bb6c2a4f0b8651956ea8682",
+   "name": "XAUM #27"
+  },
+  {
+   "index": 28,
+   "controller": "0x3de37c38739dfb83b7a902842bf5393040f7bf50",
+   "amm": "0x90d1d11254fa67e499d2791460b2139b76ab2bf5",
+   "collateral": "0xcf62f905562626cfcdd2261162a51fd02fc9c5b6",
+   "name": "sfrxUSD #28"
+  },
+  {
+   "index": 29,
+   "controller": "0x6f91f33ac7122f025b73206239cbc81606f022d4",
+   "amm": "0x53fa1acf93b3d7655516906aace7d128f09275b4",
+   "collateral": "0x657d9aba1dbb59e53f9f3ecaa878447dcfc96dcb",
+   "name": "ynETHx #29"
+  },
+  {
+   "index": 30,
+   "controller": "0xad444663c6c92b497225c6ce65fee2e7f78bfb86",
+   "amm": "0x0079885e248b572cdc4559a8b156745e2d8ea1f7",
+   "collateral": "0xb45ad160634c528cc3d2926d9807104fa3157305",
+   "name": "sDOLA #30"
+  },
+  {
+   "index": 31,
+   "controller": "0xc572297c5e995692b972c8eea1d12b56b6399e1e",
+   "amm": "0x82008dd2ab6fc26379aece70a281cf84eff5751e",
+   "collateral": "0x18084fba666a33d37592fa2633fd49a74dd93a88",
+   "name": "tBTC #31"
+  },
+  {
+   "index": 32,
+   "controller": "0x2da313f6dcee04ba46466e100c4656618e5d3ddd",
+   "amm": "0x670829e34ad135b2998bec9a7b39597d10ddbc85",
+   "collateral": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "name": "sUSDS #32"
+  },
+  {
+   "index": 33,
+   "controller": "0xd961b0da2b0fb04439c96b552777720b5fc551a0",
+   "amm": "0x71ec81444a6b68378dbf1607e0804b5c64bf2c2f",
+   "collateral": "0xc8cf6d7991f15525488b2a83df53468d682ba4b0",
+   "name": "sUSDf #33"
+  },
+  {
+   "index": 34,
+   "controller": "0x89707721927d7aaeeee513797a8d6cbbd0e08f41",
+   "amm": "0x590bdc6663a5c4ed04db86a278707560d1924582",
+   "collateral": "0x1202f5c7b4b9e47a1a484e8b270be34dbbc75055",
+   "name": "wstUSR #34"
+  },
+  {
+   "index": 35,
+   "controller": "0x24174143ccf438f0a1f6dcf93b468c127123a96e",
+   "amm": "0xf1b03586c03ebfec014238d105148a15102a282f",
+   "collateral": "0x95f19b19aff698169a1a0bbc28a2e47b14cb9a86",
+   "name": "ycvxCRV #35"
+  },
+  {
+   "index": 36,
+   "controller": "0xb62b9272679d7a495d7e9698d8663f217224408a",
+   "amm": "0xffa2167e69aa082f858fdc3ddcabd6516495e7b0",
+   "collateral": "0xbe53a109b494e5c9f97b9cd39fe969be68bf6204",
+   "name": "yvUSDC-1 #36"
+  },
+  {
+   "index": 37,
+   "controller": "0xe786af7faef857c8d850d648723eec0a27cd8581",
+   "amm": "0x6452a0f06f57f4ca8f023854b3314675db0f1e4f",
+   "collateral": "0x182863131f9a4630ff9e27830d945b1413e347e8",
+   "name": "yvUSDS-1 #37"
+  },
+  {
+   "index": 38,
+   "controller": "0x5bfee37053d711f49a0acf5afed6496fa68dce32",
+   "amm": "0x10a931b5623b0c1e40cfb5877ec64529f6b73541",
+   "collateral": "0xac37729b76db6438ce62042ae1270ee574ca7571",
+   "name": "yvWETH-2 #38"
+  },
+  {
+   "index": 39,
+   "controller": "0x8035b16053560b3c351b665b10f6c7dbdb6a1e05",
+   "amm": "0x9d529d110c1339e9216c8781d56006440930f99b",
+   "collateral": "0x7743e50f534a7f9f1791dde7dcd89f7783eefc39",
+   "name": "fxSAVE #39"
+  },
+  {
+   "index": 40,
+   "controller": "0xfa4f65b3dc477738ce8618e9145e1f0ad9e29034",
+   "amm": "0xe629d73baedc886c80468cb8f07730fb485deff6",
+   "collateral": "0x5c5b196abe0d54485975d1ec29617d42d9198326",
+   "name": "sdeUSD #40"
+  },
+  {
+   "index": 41,
+   "controller": "0x4f79fe450a2baf833e8f50340bd230f5a3ecafe9",
+   "amm": "0x437722a015eefb96a6a2a882f3b27caf3c2bc41c",
+   "collateral": "0x557ab1e003951a73c12d16f0fea8490e39c33c35",
+   "name": "sreUSD #41"
+  },
+  {
+   "index": 42,
+   "controller": "0xbe0f8c48776c0433b2b778ae9c076c21683ebe7b",
+   "amm": "0x418c220639f6d93b8723f171272cb5e39caafa58",
+   "collateral": "0x199cc8f0ac008bdc8cf0b1ccd5187f84e168c4d2",
+   "name": "zkBTC #42"
+  },
+  {
+   "index": 43,
+   "controller": "0xbcc9acd2e7934bb8b5d734416737694acdd9e25a",
+   "amm": "0x3e24794db67b1bdcbdd2a33946c32f19e4f5aabd",
+   "collateral": "0x199cc8f0ac008bdc8cf0b1ccd5187f84e168c4d2",
+   "name": "zkBTC #43"
+  },
+  {
+   "index": 44,
+   "controller": "0xd15d9797c4ecbf1c97c010327602bc51a09dfb95",
+   "amm": "0xe29927de64e0e8b923ec33ca9f13537377822855",
+   "collateral": "0x48b847cf774a5710f36f594b11fc10e2e59bba72",
+   "name": "UNIT0 #44"
+  },
+  {
+   "index": 45,
+   "controller": "0x6934ba5ed7b1664f9e04161d7d76291c3f9d8c21",
+   "amm": "0xec60d54e3d259238ee173d51e7d880c10970010d",
+   "collateral": "0xbe1936a67f503e0eaf2434b0cf9f4e3d7100008a",
+   "name": "PROS #45"
+  },
+  {
+   "index": 46,
+   "controller": "0x1591f867c42eca199d59a4f8b0074dedee5d843a",
+   "amm": "0x27e79a02b237078e9f54f7113471ed23ecb293b7",
+   "collateral": "0x0844c227b892be5d7c837000c096f64bfc316c2d",
+   "name": "yvCurve-yYB-f #46"
+  },
+  {
+   "index": 47,
+   "controller": "0x9e1a39b16fe4d56c275998189b08953898bed048",
+   "amm": "0xf4998a148bb5cd89a8b023923eac6bb2c83f343e",
+   "collateral": "0x719d2ef37ce4b66d0c2180ae4915c0f31bc0261e",
+   "name": "cy-scrvUSD #47"
+  }
+ ],
+ "yb_markets": [
+  {
+   "market": 0,
+   "asset": "WBTC",
+   "status": "deprecated",
+   "pool": "0xD9FF8396554A0d18B2CFbeC53e1979b7ecCe8373",
+   "levamm": "0xa25306937dbA98378c32F167588F5Dc17A95c94b",
+   "virtual_pool": "0xABf17d1deF75dA1B41B6df5f0b4AecE602b4E045",
+   "lp_oracle": "0x7Ec34e12A770DfCa068FF287bE9F2799EE70DE24",
+   "factory_markets_words": [
+    "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "0xd9ff8396554a0d18b2cfbec53e1979b7ecce8373",
+    "0xa25306937dba98378c32f167588f5dc17a95c94b",
+    "0x6095a220c5567360d459462a25b1ad5aead45204",
+    "0x7ec34e12a770dfca068ff287be9f2799ee70de24",
+    "0xabf17d1def75da1b41b6df5f0b4aece602b4e045",
+    "0x37f45e64935e7b8383d2f034048b32770b04e8bd"
+   ],
+   "confirmed": true
+  },
+  {
+   "market": 1,
+   "asset": "cbBTC",
+   "status": "deprecated",
+   "pool": "0x83f24023d15d835a213df24fd309c47dAb5BEb32",
+   "levamm": "0xB42e34Bf1f8627189e099ABDB069B9D73B521E4F",
+   "virtual_pool": "0x2dA2Aada1445a5101d648F3c8711B070799bbc91",
+   "lp_oracle": "0x3E5A6c61488de85383Fb0efD8c152d3e10C6bfE6",
+   "factory_markets_words": [
+    "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+    "0x83f24023d15d835a213df24fd309c47dab5beb32",
+    "0xb42e34bf1f8627189e099abdb069b9d73b521e4f",
+    "0xd6a1147666f6e4d7161caf436d9923d44d901112",
+    "0x3e5a6c61488de85383fb0efd8c152d3e10c6bfe6",
+    "0x2da2aada1445a5101d648f3c8711b070799bbc91",
+    "0x3dae83d236b4ec301a8d0553f8c13cb9b7925b6a"
+   ],
+   "confirmed": true
+  },
+  {
+   "market": 2,
+   "asset": "tBTC",
+   "status": "deprecated",
+   "pool": "0xf1F435B05D255a5dBdE37333C0f61DA6F69c6127",
+   "levamm": "0xb0faaBE84076c6330A9642a6400e87CE4cAec9d4",
+   "virtual_pool": "0xFD1DB6F59fd1FBe0635F3DF11c127B3DDC744092",
+   "lp_oracle": "0x58321Ba91c7d4BdbCBC2142256b2c42d9eCFc573",
+   "factory_markets_words": [
+    "0x18084fba666a33d37592fa2633fd49a74dd93a88",
+    "0xf1f435b05d255a5dbde37333c0f61da6f69c6127",
+    "0xb0faabe84076c6330a9642a6400e87ce4caec9d4",
+    "0x2b513ebe7070cff91cf699a0bfe5075020c732ff",
+    "0x58321ba91c7d4bdbcbc2142256b2c42d9ecfc573",
+    "0xfd1db6f59fd1fbe0635f3df11c127b3ddc744092",
+    "0x2a4671fd269df5b3da03103c74063da10d03e23c"
+   ],
+   "confirmed": true
+  },
+  {
+   "market": 3,
+   "asset": "WBTC",
+   "status": "deprecated",
+   "pool": "0xD9FF8396554A0d18B2CFbeC53e1979b7ecCe8373",
+   "levamm": "0x10B663da78055bDA0c7c26712CE1A0613AF0Ae66",
+   "virtual_pool": "0xf07c96d040a2D8455AEe8B0862DdFBeE479B1b72",
+   "lp_oracle": "0x3F3F0512d148d691d294De306B306c4e740b70BF",
+   "factory_markets_words": [
+    "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "0xd9ff8396554a0d18b2cfbec53e1979b7ecce8373",
+    "0x10b663da78055bda0c7c26712ce1a0613af0ae66",
+    "0xfbf3c16676055776ab9b286492d8f13e30e2e763",
+    "0x3f3f0512d148d691d294de306b306c4e740b70bf",
+    "0xf07c96d040a2d8455aee8b0862ddfbee479b1b72",
+    "0xbc56e3edb67b56d598ace07668b138815f45d7aa"
+   ],
+   "confirmed": true
+  },
+  {
+   "market": 4,
+   "asset": "cbBTC",
+   "status": "deprecated",
+   "pool": "0x83f24023d15d835a213df24fd309c47dAb5BEb32",
+   "levamm": "0xDC90F6B111DF0c26e349d3cC8d3C357b191e109a",
+   "virtual_pool": "0xE3ebC767F98a39dCfAA3272805C51caB7633Ebed",
+   "lp_oracle": "0x7110640E30B08F5aE10e8eaD5d99E8bBb29c783a",
+   "factory_markets_words": [
+    "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+    "0x83f24023d15d835a213df24fd309c47dab5beb32",
+    "0xdc90f6b111df0c26e349d3cc8d3c357b191e109a",
+    "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
+    "0x7110640e30b08f5ae10e8ead5d99e8bbb29c783a",
+    "0xe3ebc767f98a39dcfaa3272805c51cab7633ebed",
+    "0xf3081a2eb8927c0462864ec3fdbe927c842a0893"
+   ],
+   "confirmed": true
+  },
+  {
+   "market": 5,
+   "asset": "tBTC",
+   "status": "deprecated",
+   "pool": "0xf1F435B05D255a5dBdE37333C0f61DA6F69c6127",
+   "levamm": "0x61ED017468C8A3bE3Bac972b54fdae6eAfcbcd79",
+   "virtual_pool": "0x61d2558FAA6b81814DEEADb0d390612Be291b827",
+   "lp_oracle": "0x908640fb4cafD33389375F9b94E52f3f444771e8",
+   "factory_markets_words": [
+    "0x18084fba666a33d37592fa2633fd49a74dd93a88",
+    "0xf1f435b05d255a5dbde37333c0f61da6f69c6127",
+    "0x61ed017468c8a3be3bac972b54fdae6eafcbcd79",
+    "0xac0a340c1644321d0bbc6404946d828c1ebfac92",
+    "0x908640fb4cafd33389375f9b94e52f3f444771e8",
+    "0x61d2558faa6b81814deeadb0d390612be291b827",
+    "0x30ba8b27f2128c770b90c965ff671e08b9310d21"
+   ],
+   "confirmed": true
+  },
+  {
+   "market": 6,
+   "asset": "WETH",
+   "status": "deprecated",
+   "pool": "0x6e5492F8ea2370844EE098A56DD88e1717e4A9C2",
+   "levamm": "0x35095d94E0f1F4a78386B7eB74BB64768A2341e4",
+   "virtual_pool": "0x7CAD378DF4a9a830505c18D3a83cAc5d8c9A55fd",
+   "lp_oracle": "0x84E7F75fF75A0935847D72e1F76Ceb392174EE17",
+   "factory_markets_words": [
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "0x6e5492f8ea2370844ee098a56dd88e1717e4a9c2",
+    "0x35095d94e0f1f4a78386b7eb74bb64768a2341e4",
+    "0x931d40dd07b25b91932b481b63631ea86d236e09",
+    "0x84e7f75ff75a0935847d72e1f76ceb392174ee17",
+    "0x7cad378df4a9a830505c18d3a83cac5d8c9a55fd",
+    "0xe4e656b5215a82009969219b1babb7c0757a3315"
+   ],
+   "confirmed": true
+  },
+  {
+   "market": 7,
+   "asset": "WBTC",
+   "status": "active",
+   "pool": "0x313698667d7FDD6789a9BC70821309ff891E729A",
+   "levamm": "0x7b9817eb5C49A99875138A5d52bF64a8B2cFFFFE",
+   "virtual_pool": "0xF96Ff1189f1c2977b37E5Df01962e1895bcc3d6A",
+   "lp_oracle": "0x57977de27E8cEBaaE7D4f1c1c5E00A47177EAE0E",
+   "factory_markets_words": [
+    "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "0x313698667d7fdd6789a9bc70821309ff891e729a",
+    "0x7b9817eb5c49a99875138a5d52bf64a8b2cffffe",
+    "0x651d4b8168488fa163d85304662e8278d4c55baa",
+    "0x57977de27e8cebaae7d4f1c1c5e00a47177eae0e",
+    "0xf96ff1189f1c2977b37e5df01962e1895bcc3d6a",
+    "0xaa0b1d265f23972eafb7d088e963bd31403a58f5"
+   ],
+   "confirmed": true
+  },
+  {
+   "market": 8,
+   "asset": "cbBTC",
+   "status": "active",
+   "pool": "0x862CB4E988FB66E72f128d1183829f8c05B6c6A0",
+   "levamm": "0x49F51d7e279252F3C9a09678fdC65B4dBd5CB196",
+   "virtual_pool": "0x04CA7a7E602335a261B63128e89d43b6fE1e2c87",
+   "lp_oracle": "0x586855729584a2f2EB8d9ce93EC5EB678C124995",
+   "factory_markets_words": [
+    "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+    "0x862cb4e988fb66e72f128d1183829f8c05b6c6a0",
+    "0x49f51d7e279252f3c9a09678fdc65b4dbd5cb196",
+    "0x722fc3640ba007c3e9867ccdb0dca59f2e2f29f9",
+    "0x586855729584a2f2eb8d9ce93ec5eb678c124995",
+    "0x04ca7a7e602335a261b63128e89d43b6fe1e2c87",
+    "0xf8764cbcdb15a9e4c7ca1b0b8a578d9ebeec1b6f"
+   ],
+   "confirmed": true
+  },
+  {
+   "market": 9,
+   "asset": "tBTC",
+   "status": "active",
+   "pool": "0x4F52C3a81E33521e5a9A47FD9D3BE475D2279c2e",
+   "levamm": "0x0e357Af536592F275C6Aa07b8AC2CA6EB3d0cF5a",
+   "virtual_pool": "0x1b9518f6B179552c6A903F213d4EA5503Ab7F96E",
+   "lp_oracle": "0xaD78a4e35166F9942FB2916fDcFc1888b4718036",
+   "factory_markets_words": [
+    "0x18084fba666a33d37592fa2633fd49a74dd93a88",
+    "0x4f52c3a81e33521e5a9a47fd9d3be475d2279c2e",
+    "0x0e357af536592f275c6aa07b8ac2ca6eb3d0cf5a",
+    "0x771f7290428d830ecd41e980745c327e507823ec",
+    "0xad78a4e35166f9942fb2916fdcfc1888b4718036",
+    "0x1b9518f6b179552c6a903f213d4ea5503ab7f96e",
+    "0xe83d888fe3213dd3471de0bc1957e0f94f038483"
+   ],
+   "confirmed": true
+  },
+  {
+   "market": 10,
+   "asset": "WETH",
+   "status": "active",
+   "pool": "0x656341Ef90b622c6634e0573772FfB7f3669b9f3",
+   "levamm": "0x5f8D24F33Cc5a1D5D1bf012261E6A2214C92233c",
+   "virtual_pool": "0x772cfF0BE38A6ED31aeAe479cbcb26D54B8404CF",
+   "lp_oracle": "0x231C37b8e9D2076d673C5E24eCFcC2a82652E054",
+   "factory_markets_words": [
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "0x656341ef90b622c6634e0573772ffb7f3669b9f3",
+    "0x5f8d24f33cc5a1d5d1bf012261e6a2214c92233c",
+    "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+    "0x231c37b8e9d2076d673c5e24ecfcc2a82652e054",
+    "0x772cff0be38a6ed31aeae479cbcb26d54b8404cf",
+    "0xd829456fd63ada7de0657714a3a7a26de403e3d8"
+   ],
+   "confirmed": true
+  }
+ ],
+ "chainlink_eth_usd_proxy": "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419",
+ "chainlink_eth_usd_aggregator": "0x7d4e742018fb52e48b08be73d041c18b21de6fb5",
+ "crvusd": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+ "chainlink_btc_usd_proxy": "0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c",
+ "chainlink_btc_usd_aggregator": "0x4a3411ac2948b33c69666b35cc6d055b27ea84f1"
+}
