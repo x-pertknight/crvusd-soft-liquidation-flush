@@ -118,6 +118,7 @@ T is net crvUSD sold into the peg pools (N) divided by the USD value of BTC or E
 - T for the other pools could be computed in 5 events. In 3 of them it was within 0.25 of T for the Yield Basis pools. In E01 and E03, the transactions that sold BTC or ETH into the other pools took net crvUSD out of the peg pools.
 - The peg moved most in E03 to E05 (late January and early February 2026). Each of the four peg pools reached a low between 0.93 and 0.98 then, and the weighted price stayed below 0.997 for the whole window in E04 and E05. PegKeeper debt was zero at the start of all three.
 - E10 is 8 November 2026 recomputed under the phase 1b definitions and window. The release 1 figures above use a different window and are not replaced.
+- In E10, T is 0.58 overall and 0.73 for the Yield Basis pools. The gap comes from the other pools. The transactions that sold into them took a net 0.65M crvUSD out of the peg pools on only 0.34M of sales, under the 0.5M floor, so T for the other pools is not defined there but their flow still counts in T.
 
 Predictions, scored on all ten events and again without 8 November (same result both ways):
 
