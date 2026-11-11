@@ -81,7 +81,9 @@ def spread(vals, gap):
 
 
 def save(fig, root, name):
-    out = os.path.join(root, "charts")
+    # Published charts live in charts/. A plain rerun writes to out/charts/ so that a
+    # different matplotlib version cannot overwrite them. UPDATE_CHARTS=1 writes charts/.
+    out = os.path.join(root, "charts" if os.environ.get("UPDATE_CHARTS") == "1" else os.path.join("out", "charts"))
     os.makedirs(out, exist_ok=True)
     fig.savefig(os.path.join(out, name + ".png"), dpi=200, facecolor=BG)
     fig.savefig(os.path.join(out, name + ".svg"), facecolor=BG, metadata={"Date": None})

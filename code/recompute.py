@@ -851,9 +851,17 @@ if os.environ.get("SKIP_CHARTS") != "1":
         print("charts skipped:", e)
 
 outs = sorted(f for f in os.listdir(DATA) if f != "SHA256SUMS")
-with open(os.path.join(DATA, "SHA256SUMS"), "w") as f:
-    for name in outs:
-        f.write(hashlib.sha256(open(os.path.join(DATA, name), "rb").read()).hexdigest() + "  " + name + "\n")
+sums = "".join(hashlib.sha256(open(os.path.join(DATA, name), "rb").read()).hexdigest() + "  " + name + "\n"
+               for name in outs)
+pin_path = os.path.join(DATA, "SHA256SUMS")
+pinned = open(pin_path).read() if os.path.exists(pin_path) else None
+if os.environ.get("UPDATE_PINS") == "1" or pinned is None:
+    with open(pin_path, "w") as f:
+        f.write(sums)
+elif sums != pinned:
+    FAIL.append("outputs in data/ differ from data/SHA256SUMS (rerun with UPDATE_PINS=1 only after review)")
+else:
+    print("PASS outputs in data/ match data/SHA256SUMS")
 
 print(json.dumps({k: v["result"] for k, v in R.items()}))
 print("FAILED CHECKS:", FAIL if FAIL else "none")

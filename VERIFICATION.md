@@ -58,7 +58,7 @@ Coverage. Exhaustive for the recompute, checksums, imports, pre-registration has
 
 ## Note on DOCS_FIRST.md
 
-DOCS_FIRST.md was edited after its first hash (PREREG_SHA256.txt) to add the raw text check results (section 5) and to restate the method note. The documented-versus-measured table and the reading list were not changed. PREDICTIONS.md and PREREG_ADDENDUM.md were not edited.
+DOCS_FIRST.md was edited after its first hash (PREREG_SHA256.txt) to add the raw text check results (section 5) and to restate the method note. The documented-versus-measured table and the reading list were not changed. PREDICTIONS.md and PREREG_ADDENDUM.md were not edited. The version of DOCS_FIRST.md that matches the pinned hash was never committed, so that hash cannot be checked against any file in this repository and `sha256sum -c PREREG_SHA256.txt` reports it as failed. For release 1, PREDICTIONS.md and PREREG_ADDENDUM.md were first committed together with the data, so git history does not by itself show that they came first. For phase 1b, each pre-registration step was committed before the data it governs (see the commit log).
 
 ## Corrections, round 3
 

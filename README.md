@@ -75,7 +75,7 @@ See DOCS_FIRST.md for the reading list, the raw text checks, and the table of do
 
 ## Predictions
 
-39 predictions were recorded at 2026-11-09 10:16 UTC before any chain data was fetched (PREDICTIONS.md, hash in PREREG_SHA256.txt, never edited). The hash pinned for DOCS_FIRST.md no longer matches because that file was extended later, as noted in VERIFICATION.md. Results are in PREDICTIONS_RESULTS.md and data/predictions_scored.csv. 14 hit (10 excluding weak tests), 12 missed, 13 untestable in release 1. Notable misses:
+39 predictions were recorded at 2026-11-09 10:16 UTC before any chain data was fetched (PREDICTIONS.md, hash in PREREG_SHA256.txt, never edited). The hash pinned for DOCS_FIRST.md no longer matches because that file was extended later, as noted in VERIFICATION.md. PREDICTIONS.md entered git in the same first commit as the data, so for release 1 the timing rests on the recorded time and hash, not on git history. Phase 1b was committed before its data. Results are in PREDICTIONS_RESULTS.md and data/predictions_scored.csv. 14 hit (10 excluding weak tests), 12 missed, 13 untestable in release 1. Notable misses:
 - P15. I expected the claim not to reproduce within 25%. V0 came within 6%.
 - P17 to P19. I expected PegKeepers to withdraw 2M to 20M. They had nothing to withdraw.
 - P13. I expected all YB markets to be over-leveraged through the flush hour. tBTC was not.
@@ -142,7 +142,7 @@ Limits of phase 1b. P1B-09 stays scored MISS as pre-registered. The "other" side
 python3 -I code/recompute.py
 ```
 
-Standard library for every number. Charts need matplotlib 3.9.2 (requirements.txt). The script exits non-zero if any check fails, for example if PegKeeper debt does not reconcile from events or if the sum of transfer flows does not match the change in pool balances. data/SHA256SUMS pins the outputs. Network scripts live in code/fetch/ and are not needed to recompute.
+Standard library for every number. Charts need matplotlib and are written to out/charts/, so a rerun never overwrites the published charts/ (UPDATE_CHARTS=1 writes charts/, which were made with matplotlib 3.9.2, see requirements.txt). The script exits non-zero if any check fails, for example if PegKeeper debt does not reconcile from events, if the sum of transfer flows does not match the change in pool balances, or if the outputs in data/ do not match the hashes pinned in data/SHA256SUMS. Network scripts live in code/fetch/ and are not needed to recompute.
 
 ## Files
 
