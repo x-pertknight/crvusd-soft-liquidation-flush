@@ -1,0 +1,1317 @@
+{
+ "checks": {
+  "event_sources": {
+   "GHO": 0,
+   "USDC": 59,
+   "USDT": 229,
+   "frxUSD": 2,
+   "pyUSD": 0
+  },
+  "reconcile_samples": 9195,
+  "sim_consistency": {
+   "provide:Regulator ban": 30,
+   "withdraw:ok": 30,
+   "withdraw:peg unprofitable": 608,
+   "withdraw:returned 0": 3
+  }
+ },
+ "checks_failed": [],
+ "decomposition": {
+  "groups": {
+   "all": {
+    "counts": {
+     "a_provide_side": 704,
+     "bc_allowed_no_landing": 558,
+     "g_drained_next_sample": 85
+    },
+    "n": 1347,
+    "n_holds": 1262,
+    "shares_all_six": {
+     "a_provide_side": 0.5226429101707498,
+     "bc_allowed_no_landing": 0.4142538975501114,
+     "d_outside_band": 0.0,
+     "e_withdraw_paused": 0.0,
+     "g_drained_next_sample": 0.06310319227913883
+    },
+    "shares_of_holds": {
+     "a_provide_side": 0.5578446909667195,
+     "bc_allowed_no_landing": 0.4421553090332805,
+     "d_outside_band": 0.0,
+     "e_withdraw_paused": 0.0
+    }
+   },
+   "usdt_all": {
+    "counts": {
+     "a_provide_side": 680,
+     "bc_allowed_no_landing": 537,
+     "g_drained_next_sample": 74
+    },
+    "n": 1291,
+    "n_holds": 1217,
+    "shares_all_six": {
+     "a_provide_side": 0.5267234701781565,
+     "bc_allowed_no_landing": 0.4159566227730441,
+     "d_outside_band": 0.0,
+     "e_withdraw_paused": 0.0,
+     "g_drained_next_sample": 0.05731990704879938
+    },
+    "shares_of_holds": {
+     "a_provide_side": 0.5587510271158587,
+     "bc_allowed_no_landing": 0.44124897288414133,
+     "d_outside_band": 0.0,
+     "e_withdraw_paused": 0.0
+    }
+   },
+   "usdt_drain": {
+    "counts": {
+     "a_provide_side": 258,
+     "bc_allowed_no_landing": 121,
+     "g_drained_next_sample": 23
+    },
+    "n": 402,
+    "n_holds": 379,
+    "shares_all_six": {
+     "a_provide_side": 0.6417910447761194,
+     "bc_allowed_no_landing": 0.3009950248756219,
+     "d_outside_band": 0.0,
+     "e_withdraw_paused": 0.0,
+     "g_drained_next_sample": 0.05721393034825871
+    },
+    "shares_of_holds": {
+     "a_provide_side": 0.6807387862796834,
+     "bc_allowed_no_landing": 0.31926121372031663,
+     "d_outside_band": 0.0,
+     "e_withdraw_paused": 0.0
+    }
+   }
+  },
+  "outside_actual_band_share_usdt_drain": 0.0,
+  "outside_default_band_share_usdt_drain": 0.004975124378109453,
+  "price_deviation_on_chain": 1000000000000000000,
+  "provide_side_share_usdt_drain": 0.6442786069651741,
+  "sim_inside_bc": {
+   "ok": 5,
+   "peg unprofitable": 552,
+   "returned 0": 1
+  }
+ },
+ "events": {
+  "gaps_over_3_days_while_stuck": [
+   [
+    "USDT",
+    "2026-09-03 00:26:59"
+   ],
+   [
+    "USDT",
+    "2026-09-03 01:27:11"
+   ],
+   [
+    "USDT",
+    "2026-09-03 02:27:11"
+   ],
+   [
+    "USDT",
+    "2026-09-03 03:27:11"
+   ],
+   [
+    "USDT",
+    "2026-09-03 04:27:11"
+   ],
+   [
+    "USDT",
+    "2026-09-03 05:27:35"
+   ],
+   [
+    "USDT",
+    "2026-09-03 06:27:59"
+   ],
+   [
+    "USDT",
+    "2026-09-03 07:28:11"
+   ],
+   [
+    "USDT",
+    "2026-09-03 08:28:47"
+   ],
+   [
+    "USDT",
+    "2026-09-03 09:28:59"
+   ],
+   [
+    "USDT",
+    "2026-09-03 10:29:11"
+   ],
+   [
+    "USDT",
+    "2026-09-03 11:29:11"
+   ],
+   [
+    "USDT",
+    "2026-09-03 12:29:47"
+   ],
+   [
+    "USDT",
+    "2026-09-03 13:29:47"
+   ],
+   [
+    "USDT",
+    "2026-09-03 14:29:59"
+   ],
+   [
+    "USDT",
+    "2026-09-03 23:31:59"
+   ],
+   [
+    "USDT",
+    "2026-09-04 00:32:11"
+   ],
+   [
+    "USDT",
+    "2026-09-15 07:31:23"
+   ],
+   [
+    "USDT",
+    "2026-09-15 08:31:23"
+   ],
+   [
+    "USDT",
+    "2026-09-15 09:31:23"
+   ],
+   [
+    "USDT",
+    "2026-09-15 10:31:59"
+   ],
+   [
+    "USDT",
+    "2026-09-15 15:33:35"
+   ],
+   [
+    "USDT",
+    "2026-09-28 02:13:35"
+   ],
+   [
+    "USDT",
+    "2026-09-28 03:13:35"
+   ],
+   [
+    "USDT",
+    "2026-09-28 04:13:59"
+   ],
+   [
+    "USDT",
+    "2026-09-28 05:13:59"
+   ],
+   [
+    "USDT",
+    "2026-09-28 06:13:59"
+   ],
+   [
+    "USDT",
+    "2026-09-28 07:13:59"
+   ],
+   [
+    "USDT",
+    "2026-09-28 08:14:11"
+   ],
+   [
+    "USDT",
+    "2026-09-28 09:14:11"
+   ],
+   [
+    "USDT",
+    "2026-09-28 10:14:11"
+   ],
+   [
+    "USDT",
+    "2026-09-28 11:14:47"
+   ],
+   [
+    "USDT",
+    "2026-09-28 12:14:47"
+   ],
+   [
+    "USDT",
+    "2026-09-28 13:14:47"
+   ],
+   [
+    "USDT",
+    "2026-09-28 14:15:11"
+   ],
+   [
+    "USDT",
+    "2026-09-28 15:15:35"
+   ],
+   [
+    "USDT",
+    "2026-09-28 16:15:59"
+   ],
+   [
+    "USDT",
+    "2026-10-22 18:15:35"
+   ],
+   [
+    "USDT",
+    "2026-10-22 19:15:35"
+   ],
+   [
+    "USDT",
+    "2026-10-22 20:15:35"
+   ],
+   [
+    "USDT",
+    "2026-10-22 21:16:11"
+   ],
+   [
+    "USDT",
+    "2026-10-22 22:16:47"
+   ],
+   [
+    "USDT",
+    "2026-10-22 23:16:47"
+   ],
+   [
+    "USDT",
+    "2026-10-23 00:17:11"
+   ],
+   [
+    "USDT",
+    "2026-10-23 01:17:11"
+   ],
+   [
+    "USDT",
+    "2026-10-23 02:17:47"
+   ],
+   [
+    "USDT",
+    "2026-10-23 03:18:11"
+   ],
+   [
+    "USDT",
+    "2026-10-23 04:18:11"
+   ],
+   [
+    "USDT",
+    "2026-10-23 05:18:35"
+   ],
+   [
+    "USDT",
+    "2026-10-23 06:19:11"
+   ],
+   [
+    "USDT",
+    "2026-10-23 07:19:11"
+   ],
+   [
+    "USDT",
+    "2026-10-23 08:19:35"
+   ],
+   [
+    "USDT",
+    "2026-10-23 09:19:35"
+   ],
+   [
+    "USDT",
+    "2026-10-23 10:19:59"
+   ],
+   [
+    "USDT",
+    "2026-10-23 11:20:11"
+   ],
+   [
+    "USDT",
+    "2026-10-23 12:20:35"
+   ],
+   [
+    "USDT",
+    "2026-10-23 13:20:47"
+   ],
+   [
+    "USDT",
+    "2026-10-23 14:20:59"
+   ],
+   [
+    "USDT",
+    "2026-10-23 15:20:59"
+   ],
+   [
+    "USDT",
+    "2026-10-23 16:21:23"
+   ],
+   [
+    "USDT",
+    "2026-10-23 17:21:35"
+   ],
+   [
+    "USDT",
+    "2026-10-23 18:21:35"
+   ],
+   [
+    "USDT",
+    "2026-10-23 19:21:47"
+   ],
+   [
+    "USDT",
+    "2026-10-23 20:21:47"
+   ],
+   [
+    "USDT",
+    "2026-10-23 21:21:47"
+   ],
+   [
+    "USDT",
+    "2026-10-23 22:21:59"
+   ]
+  ],
+  "other_four_never_nonzero": 2,
+  "other_four_provided_since_sep": 12820573.88753435,
+  "per_pk": {
+   "GHO": {
+    "n_provide": 0,
+    "n_withdraw": 0,
+    "provided": 0.0,
+    "withdrawn": 0.0
+   },
+   "USDC": {
+    "n_provide": 28,
+    "n_withdraw": 31,
+    "provided": 12448591.400915677,
+    "withdrawn": 12448591.400915677
+   },
+   "USDT": {
+    "n_provide": 54,
+    "n_withdraw": 175,
+    "provided": 61905070.524739295,
+    "withdrawn": 104068213.39488809
+   },
+   "frxUSD": {
+    "n_provide": 1,
+    "n_withdraw": 1,
+    "provided": 371982.4866186741,
+    "withdrawn": 371982.4866186741
+   },
+   "pyUSD": {
+    "n_provide": 0,
+    "n_withdraw": 0,
+    "provided": 0.0,
+    "withdrawn": 0.0
+   }
+  },
+  "provide_days_at_price_ge1_before_oct14": [
+   "2026-09-03",
+   "2026-09-04",
+   "2026-09-05",
+   "2026-09-11",
+   "2026-09-16",
+   "2026-09-18",
+   "2026-09-19",
+   "2026-09-21",
+   "2026-09-24",
+   "2026-09-30",
+   "2026-10-04",
+   "2026-10-11"
+  ],
+  "provides_at_price_below_1": 23,
+  "provides_with_price": 83,
+  "usdt_drain": {
+   "days_first_withdraw_to_zero": 6.046666666666667,
+   "explained_share": 1.0,
+   "fall": 42163142.87014879,
+   "first_withdraw_after_last_ge1_ts": 1792795343,
+   "n_withdraw_peak_to_zero": 175,
+   "peak": 42163142.87014879,
+   "peak_ts": 1788218183
+  }
+ },
+ "failed_calls": {
+  "GHO": {
+   "direct_txs": 0,
+   "failed": 0,
+   "ok": 0,
+   "reasons": {}
+  },
+  "USDC": {
+   "direct_txs": 4,
+   "failed": 0,
+   "ok": 4,
+   "reasons": {}
+  },
+  "USDT": {
+   "direct_txs": 11,
+   "failed": 2,
+   "ok": 9,
+   "reasons": {
+    "Regulator ban": 2
+   }
+  },
+  "events_total": 290,
+  "events_via_direct_calls": 3,
+  "events_with_tx_hash": 290,
+  "frxUSD": {
+   "direct_txs": 0,
+   "failed": 0,
+   "ok": 0,
+   "reasons": {}
+  },
+  "pyUSD": {
+   "direct_txs": 0,
+   "failed": 0,
+   "ok": 0,
+   "reasons": {}
+  }
+ },
+ "fallback_kill": {
+  "first_sample_below_1_after_last_ge1": "2026-10-13 12:31:23",
+  "hours_from_t0_to_zero": {
+   "USDT": 395.30333333333334
+  },
+  "met": false,
+  "pegkeepers_with_debt_after_t0": [
+   "USDT"
+  ]
+ },
+ "governance": {
+  "aggregator_events_since_sep": [],
+  "aggregator_pair_events_2026": [
+   [
+    "2026-04-28 14:22:59",
+    "RemovePricePair(uint256 n)"
+   ],
+   [
+    "2026-03-13 01:12:47",
+    "AddPricePair(uint256 n, address pool, bool is_inverse)"
+   ]
+  ],
+  "daily_distinct_values": {
+   "aggregator()": [
+    "0x00000000000000000000000018672b1b0c623a30089a280ed9256379fb0e4e62"
+   ],
+   "alpha()": [
+    "0x00000000000000000000000000000000000000000000000006f05b59d3b20000"
+   ],
+   "beta()": [
+    "0x00000000000000000000000000000000000000000000000003782dace9d90000"
+   ],
+   "is_killed()": [
+    "0x0000000000000000000000000000000000000000000000000000000000000000"
+   ],
+   "price_deviation()": [
+    "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000"
+   ],
+   "worst_price_threshold()": [
+    "0x000000000000000000000000000000000000000000000000000110d9316ec000"
+   ]
+  },
+  "factory_ceilings_daily": {
+   "GHO": {
+    "ceiling_first": 0.0,
+    "ceiling_last": 0.0,
+    "ceiling_values": [
+     0.0
+    ],
+    "held_max": 0.0,
+    "held_min": 0.0
+   },
+   "USDC": {
+    "ceiling_first": 135000000.0,
+    "ceiling_last": 135000000.0,
+    "ceiling_values": [
+     135000000.0
+    ],
+    "held_max": 135000000.0,
+    "held_min": 122551408.59908432
+   },
+   "USDT": {
+    "ceiling_first": 135000000.0,
+    "ceiling_last": 135000000.0,
+    "ceiling_values": [
+     135000000.0
+    ],
+    "held_max": 135000000.0,
+    "held_min": 92836857.1298512
+   },
+   "frxUSD": {
+    "ceiling_first": 9000000.0,
+    "ceiling_last": 9000000.0,
+    "ceiling_values": [
+     9000000.0
+    ],
+    "held_max": 9000000.0,
+    "held_min": 8628017.513381327
+   },
+   "pyUSD": {
+    "ceiling_first": 45000000.0,
+    "ceiling_last": 45000000.0,
+    "ceiling_values": [
+     45000000.0
+    ],
+    "held_max": 45000000.0,
+    "held_min": 45000000.0
+   }
+  },
+  "pegkeeper_count_at_head": 5,
+  "regulator_events_since_sep": [],
+  "regulator_events_total": 25,
+  "regulator_param_events_all_time": [
+   [
+    "2024-07-25 09:46:59",
+    "PriceDeviation(uint256 price_deviation)"
+   ],
+   [
+    "2024-05-27 15:51:23",
+    "DebtParameters(uint256 alpha, uint256 beta)"
+   ],
+   [
+    "2024-05-27 15:51:23",
+    "PriceDeviation(uint256 price_deviation)"
+   ],
+   [
+    "2024-05-27 15:51:23",
+    "WorstPriceThreshold(uint256 threshold)"
+   ]
+  ]
+ },
+ "latest": {
+  "agg_price_wei": 997787923659668618,
+  "api": {
+   "body": {
+    "data": {
+     "address": "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E",
+     "last_updated": "2026-11-16T22:17:59",
+     "usd_price": 0.9976612620475667
+    }
+   },
+   "fetched_at": 1794868254
+  },
+  "block": 26430593,
+  "debt_wei": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "ts": 1794868247
+ },
+ "predictions": {
+  "R2-01": {
+   "measured": "peak sampled total 46,881,177 at 2026-09-03 22:31:35; after events 46,881,177",
+   "result": "HIT"
+  },
+  "R2-02": {
+   "measured": "USDT debt at 13 Oct 00:00 UTC 33,750,000",
+   "result": "HIT"
+  },
+  "R2-03": {
+   "measured": "USDT debt fell under 1 at 2026-10-29 23:49:35",
+   "result": "HIT"
+  },
+  "R2-04": {
+   "measured": "175 Withdraws from the peak (42,163,143 at 2026-08-31 23:16:23) to zero; events explain 1.0000 of the fall",
+   "result": "HIT"
+  },
+  "R2-05": {
+   "measured": "6.05 days from the first Withdraw after 2026-10-23 22:42:23 to zero",
+   "result": "HIT"
+  },
+  "R2-06": {
+   "measured": "2 of the other four never held debt; they provided 12,820,574 since 1 Sep",
+   "result": "MISS"
+  },
+  "R2-07": {
+   "measured": "12 stretches of 2+ samples at or above 1; last ends 2026-10-13 11:31:23",
+   "result": "MISS"
+  },
+  "R2-08": {
+   "measured": "share of samples at or above 1: 0.0658",
+   "result": "HIT"
+  },
+  "R2-09": {
+   "measured": "23 of 83 Provide events had price below 1 at the block before",
+   "result": "MISS"
+  },
+  "R2-10": {
+   "measured": "provide side in 0.6443 of USDT drain samples",
+   "result": "HIT"
+  },
+  "R2-11": {
+   "measured": "outside the on-chain band 0.0000 (price_deviation is 1.0); outside the 0.0005 default 0.0050",
+   "result": "HIT"
+  },
+  "R2-12": {
+   "measured": "0 Regulator events since 1 Sep; 5 PegKeepers listed",
+   "result": "HIT"
+  },
+  "R2-13": {
+   "measured": "regulator.aggregator() = 0x18672b1b0c623a30089a280ed9256379fb0e4e62",
+   "result": "HIT"
+  },
+  "R2-14": {
+   "measured": "sum of provide_allowed() at block 26372407 is 0 (price 0.997872, below 1, so every allowance is 0). Factory debt ceilings sum at 1 Sep: 324,000,000",
+   "result": "MISS"
+  },
+  "R2-15": {
+   "measured": "block 26430593 at 2026-11-16 22:30:47 UTC, debts [0.0, 0.0, 0.0, 0.0, 0.0]",
+   "result": "HIT"
+  },
+  "R2-16": {
+   "measured": "aggregator price 0.997788 at block 26430593, 2026-11-16 22:30:47 UTC",
+   "result": "HIT"
+  },
+  "R2-17": {
+   "measured": "API 0.997661 (updated 2026-11-16T22:17:59) vs on-chain 0.997788",
+   "result": "HIT"
+  },
+  "R2-18": {
+   "measured": "last time under 1 crvUSD: USDC 2026-09-08, USDT 2026-10-29, frxUSD 2026-09-15; span 51.8 days",
+   "result": "MISS"
+  },
+  "R2-19": {
+   "measured": "66 samples with debt unchanged for 3 days, price below 1, withdraw side",
+   "result": "MISS"
+  },
+  "R2-20": {
+   "measured": "12 days with a Provide at price at or above 1 before 14 Oct",
+   "result": "HIT"
+  }
+ },
+ "rebuild": {
+  "final": {
+   "GHO": {
+    "crvusd_held": 0.0,
+    "crvusd_share_of_pool": 0.7232067665728538,
+    "crvusd_to_remove_to_reach_provide_side": 247312.0265983938,
+    "provide_allowed": 0.0,
+    "provide_side": false
+   },
+   "USDC": {
+    "crvusd_held": 135000000.0,
+    "crvusd_share_of_pool": 0.8324847669358316,
+    "crvusd_to_remove_to_reach_provide_side": 2884884.5264353817,
+    "provide_allowed": 0.0,
+    "provide_side": false
+   },
+   "USDT": {
+    "crvusd_held": 135000000.0,
+    "crvusd_share_of_pool": 0.7941855500319399,
+    "crvusd_to_remove_to_reach_provide_side": 2996192.250185502,
+    "provide_allowed": 0.0,
+    "provide_side": false
+   },
+   "frxUSD": {
+    "crvusd_held": 9000000.0,
+    "crvusd_share_of_pool": 0.8363285305442228,
+    "crvusd_to_remove_to_reach_provide_side": 3348810.9967996166,
+    "provide_allowed": 0.0,
+    "provide_side": false
+   },
+   "pyUSD": {
+    "crvusd_held": 45000000.0,
+    "crvusd_share_of_pool": 0.8438122863148835,
+    "crvusd_to_remove_to_reach_provide_side": 8235289.671248541,
+    "provide_allowed": 0.0,
+    "provide_side": false
+   }
+  },
+  "hours_price_ge1": 121,
+  "per_pk": {
+   "GHO": {
+    "allowance_positive": 0,
+    "allowance_reverts": 0,
+    "holds_no_crvusd": 121,
+    "provide_side": 121,
+    "provide_side_and_allowed": 0
+   },
+   "USDC": {
+    "allowance_positive": 121,
+    "allowance_reverts": 0,
+    "holds_no_crvusd": 0,
+    "provide_side": 68,
+    "provide_side_and_allowed": 68
+   },
+   "USDT": {
+    "allowance_positive": 80,
+    "allowance_reverts": 15,
+    "holds_no_crvusd": 0,
+    "provide_side": 64,
+    "provide_side_and_allowed": 26
+   },
+   "frxUSD": {
+    "allowance_positive": 121,
+    "allowance_reverts": 0,
+    "holds_no_crvusd": 0,
+    "provide_side": 73,
+    "provide_side_and_allowed": 73
+   },
+   "pyUSD": {
+    "allowance_positive": 121,
+    "allowance_reverts": 0,
+    "holds_no_crvusd": 0,
+    "provide_side": 0,
+    "provide_side_and_allowed": 0
+   }
+  }
+ },
+ "review": {
+  "deposits_adjacent_reading": {
+   "no_adjacent_hourly_reading_at_or_above_1": 41,
+   "provides": 83
+  },
+  "drained_by_sim": {
+   "by_sim": {
+    "not simulated": 2,
+    "ok": 25,
+    "peg unprofitable": 56,
+    "returned 0": 2
+   },
+   "n": 85
+  },
+  "flat_stretch": {
+   "end_ts": 1792795343,
+   "pool_short_of_crvusd": 262,
+   "price_at_or_above_1": 13,
+   "price_below_1_with_debt": 278,
+   "readings": 291,
+   "share_pool_short": 0.9003436426116839,
+   "start_ts": 1791743327
+  },
+  "price_exceptions": {
+   "Provide": {
+    "events_on_other_side_before": 23,
+    "price_on_gate_side_at_event_block": 23
+   },
+   "Withdraw": {
+    "events_on_other_side_before": 5,
+    "price_on_gate_side_at_event_block": 3
+   }
+  },
+  "price_levels": {
+   "at_or_above_0_9999": 810,
+   "at_or_above_1": 121,
+   "by_month": {
+    "2026-08": {
+     "at_or_above_0_9999": 1,
+     "at_or_above_1": 1,
+     "readings": 1
+    },
+    "2026-09": {
+     "at_or_above_0_9999": 540,
+     "at_or_above_1": 89,
+     "readings": 717
+    },
+    "2026-10": {
+     "at_or_above_0_9999": 269,
+     "at_or_above_1": 31,
+     "readings": 742
+    },
+    "2026-11": {
+     "at_or_above_0_9999": 0,
+     "at_or_above_1": 0,
+     "readings": 380
+    }
+   },
+   "readings": 1840,
+   "share_at_or_above_0_9999": 0.44021739130434784,
+   "share_at_or_above_1": 0.06576086956521739
+  },
+  "sim_coverage": {
+   "deposit_branch_side": 706,
+   "deposit_branch_simulated": 30,
+   "not_simulated": 676,
+   "simulated": 671,
+   "snapshots": 1347,
+   "withdrawal_side": 641,
+   "withdrawal_side_returned_more_than_0": 30,
+   "withdrawal_side_simulated": 641
+  },
+  "stretches": {
+   "by_pool_side": {
+    "longest_provide_stretch": 221,
+    "provide_side_stretches": 34,
+    "stretches": 60
+   },
+   "by_state": {
+    "longest_provide_stretch": 221,
+    "provide_side_stretches": 32,
+    "stretches": 127
+   },
+   "other_pegkeepers": 56,
+   "usdt_readings": 1291
+  },
+  "usdt_period_splits": {
+   "13_oct_to_29_oct": {
+    "debt_fell_within_hour": 23,
+    "pool_short_of_crvusd": 258,
+    "shares": {
+     "a_provide_side": 0.6417910447761194,
+     "bc_allowed_no_landing": 0.3009950248756219,
+     "g_drained_next_sample": 0.05721393034825871
+    },
+    "snapshots": 402,
+    "withdrawal_side_not_drained": 121
+   },
+   "13_oct_to_first_withdrawal": {
+    "debt_fell_within_hour": 1,
+    "pool_short_of_crvusd": 229,
+    "shares": {
+     "a_provide_side": 0.8875968992248062,
+     "bc_allowed_no_landing": 0.10852713178294573,
+     "g_drained_next_sample": 0.003875968992248062
+    },
+    "snapshots": 258,
+    "withdrawal_side_not_drained": 28
+   }
+  },
+  "usdt_provide_share": {
+   "drained_label_but_provide_side": 1,
+   "pool_on_provide_side": 259,
+   "readings": 402,
+   "share_pool_provide_side": 0.6442786069651741,
+   "share_state_a": 0.6417910447761194,
+   "state_a_count": 258
+  },
+  "windows": {
+   "closed_opening_lengths_blocks": [
+    2,
+    2,
+    3,
+    7
+   ],
+   "events": [
+    {
+     "at_block_before": "ok",
+     "blocks_read": 31,
+     "event_block": 26263058,
+     "open_blocks": 2,
+     "openings": [
+      {
+       "blocks": 2,
+       "censored_end": false,
+       "censored_start": false,
+       "ok_blocks": 1
+      }
+     ],
+     "outcomes": {
+      "ok": 1,
+      "peg unprofitable": 29,
+      "returned 0": 1
+     }
+    },
+    {
+     "at_block_before": "ok",
+     "blocks_read": 31,
+     "event_block": 26263391,
+     "open_blocks": 31,
+     "openings": [
+      {
+       "blocks": 31,
+       "censored_end": true,
+       "censored_start": true,
+       "ok_blocks": 30
+      }
+     ],
+     "outcomes": {
+      "ok": 30,
+      "returned 0": 1
+     }
+    },
+    {
+     "at_block_before": "returned 0",
+     "blocks_read": 31,
+     "event_block": 26273668,
+     "open_blocks": 7,
+     "openings": [
+      {
+       "blocks": 7,
+       "censored_end": false,
+       "censored_start": false,
+       "ok_blocks": 3
+      }
+     ],
+     "outcomes": {
+      "ok": 3,
+      "peg unprofitable": 24,
+      "returned 0": 4
+     }
+    },
+    {
+     "at_block_before": "returned 0",
+     "blocks_read": 31,
+     "event_block": 26276676,
+     "open_blocks": 3,
+     "openings": [
+      {
+       "blocks": 3,
+       "censored_end": false,
+       "censored_start": false,
+       "ok_blocks": 1
+      }
+     ],
+     "outcomes": {
+      "ok": 1,
+      "peg unprofitable": 28,
+      "returned 0": 2
+     }
+    },
+    {
+     "at_block_before": "ok",
+     "blocks_read": 31,
+     "event_block": 26289919,
+     "open_blocks": 21,
+     "openings": [
+      {
+       "blocks": 21,
+       "censored_end": false,
+       "censored_start": true,
+       "ok_blocks": 20
+      }
+     ],
+     "outcomes": {
+      "ok": 20,
+      "peg unprofitable": 10,
+      "returned 0": 1
+     }
+    },
+    {
+     "at_block_before": "ok",
+     "blocks_read": 31,
+     "event_block": 26293373,
+     "open_blocks": 21,
+     "openings": [
+      {
+       "blocks": 21,
+       "censored_end": false,
+       "censored_start": true,
+       "ok_blocks": 20
+      }
+     ],
+     "outcomes": {
+      "ok": 20,
+      "peg unprofitable": 10,
+      "returned 0": 1
+     }
+    },
+    {
+     "at_block_before": "ok",
+     "blocks_read": 31,
+     "event_block": 26294013,
+     "open_blocks": 21,
+     "openings": [
+      {
+       "blocks": 21,
+       "censored_end": false,
+       "censored_start": true,
+       "ok_blocks": 20
+      }
+     ],
+     "outcomes": {
+      "ok": 20,
+      "peg unprofitable": 10,
+      "returned 0": 1
+     }
+    },
+    {
+     "at_block_before": "ok",
+     "blocks_read": 31,
+     "event_block": 26298125,
+     "open_blocks": 2,
+     "openings": [
+      {
+       "blocks": 2,
+       "censored_end": false,
+       "censored_start": false,
+       "ok_blocks": 1
+      }
+     ],
+     "outcomes": {
+      "ok": 1,
+      "peg unprofitable": 29,
+      "returned 0": 1
+     }
+    },
+    {
+     "at_block_before": "ok",
+     "blocks_read": 31,
+     "event_block": 26301677,
+     "open_blocks": 31,
+     "openings": [
+      {
+       "blocks": 31,
+       "censored_end": true,
+       "censored_start": true,
+       "ok_blocks": 29
+      }
+     ],
+     "outcomes": {
+      "ok": 29,
+      "returned 0": 2
+     }
+    },
+    {
+     "at_block_before": "ok",
+     "blocks_read": 31,
+     "event_block": 26301769,
+     "open_blocks": 31,
+     "openings": [
+      {
+       "blocks": 31,
+       "censored_end": true,
+       "censored_start": true,
+       "ok_blocks": 28
+      }
+     ],
+     "outcomes": {
+      "ok": 28,
+      "returned 0": 3
+     }
+    }
+   ],
+   "events_closed_within_read": [
+    26263058,
+    26273668,
+    26276676,
+    26298125
+   ],
+   "events_ok_at_block_before": 8,
+   "events_opening_fills_all_blocks_read": 3,
+   "events_opening_reaches_edge_of_read": 6,
+   "events_with_opening_in_read": 10,
+   "n_events": 10
+  },
+  "withdrawal_minimum_by_group": {
+   "all_pegkeepers": {
+    "crvusd_share_min": 0.53124477907514,
+    "n": 207
+   },
+   "usdt_13oct_to_zero": {
+    "crvusd_share_min": 0.53124477907514,
+    "n": 60
+   }
+  },
+  "worst_price_threshold": {
+   "per_pk": {
+    "GHO": {
+     "blocked_by_worst_price": 100,
+     "hours": 121,
+     "max_gap": 0.001032958916465834
+    },
+    "USDC": {
+     "blocked_by_worst_price": 0,
+     "hours": 121,
+     "max_gap": -0.00035055221587645
+    },
+    "USDT": {
+     "blocked_by_worst_price": 0,
+     "hours": 121,
+     "max_gap": 1.8689094857101e-05
+    },
+    "frxUSD": {
+     "blocked_by_worst_price": 0,
+     "hours": 121,
+     "max_gap": -0.000512268460087178
+    },
+    "pyUSD": {
+     "blocked_by_worst_price": 0,
+     "hours": 121,
+     "max_gap": -0.000584069267922816
+    }
+   },
+   "threshold": 0.0003
+  }
+ },
+ "series": {
+  "first_ts": 1788218183,
+  "last_block": 26430186,
+  "last_ge1_sample_ts": 1791891083,
+  "last_long_run_end_ts": 1791891083,
+  "last_ts": 1794863351,
+  "peak_total_events": 46881177.13130868,
+  "peak_total_events_ts": 1788471443,
+  "peak_total_sampled": 46881177.13130868,
+  "peak_total_sampled_ts": 1788474695,
+  "per_pk": {
+   "GHO": {
+    "debt_at_oct13": 0.0,
+    "last_nonzero_sample_ts": null,
+    "max_after_events": 0.0,
+    "max_sampled": 0.0,
+    "samples_nonzero": 0,
+    "zero_since_ts": null
+   },
+   "USDC": {
+    "debt_at_oct13": 0.0,
+    "last_nonzero_sample_ts": 1788839639,
+    "max_after_events": 12448591.400915677,
+    "max_sampled": 12448591.400915677,
+    "samples_nonzero": 104,
+    "zero_since_ts": 1788842459
+   },
+   "USDT": {
+    "debt_at_oct13": 33750000.0,
+    "last_nonzero_sample_ts": 1793317703,
+    "max_after_events": 42163142.87014879,
+    "max_sampled": 42163142.87014879,
+    "samples_nonzero": 1412,
+    "zero_since_ts": 1793317775
+   },
+   "frxUSD": {
+    "debt_at_oct13": 0.0,
+    "last_nonzero_sample_ts": 1789482803,
+    "max_after_events": 371982.4866186741,
+    "max_sampled": 371982.4866186741,
+    "samples_nonzero": 22,
+    "zero_since_ts": 1789483247
+   },
+   "pyUSD": {
+    "debt_at_oct13": 0.0,
+    "last_nonzero_sample_ts": null,
+    "max_after_events": 0.0,
+    "max_sampled": 0.0,
+    "samples_nonzero": 0,
+    "zero_since_ts": null
+   }
+  },
+  "run_list": [
+   [
+    [
+     "2026-08-31 23:16:23",
+     "2026-09-01 08:18:23",
+     10
+    ]
+   ],
+   [
+    [
+     "2026-09-03 16:30:11",
+     "2026-09-03 17:30:35",
+     2
+    ]
+   ],
+   [
+    [
+     "2026-09-03 20:31:11",
+     "2026-09-03 22:31:35",
+     3
+    ]
+   ],
+   [
+    [
+     "2026-09-05 02:37:35",
+     "2026-09-07 13:50:59",
+     60
+    ]
+   ],
+   [
+    [
+     "2026-09-14 18:27:47",
+     "2026-09-15 00:30:11",
+     7
+    ]
+   ],
+   [
+    [
+     "2026-09-21 09:06:11",
+     "2026-09-21 12:08:23",
+     4
+    ]
+   ],
+   [
+    [
+     "2026-09-21 17:10:47",
+     "2026-09-21 18:11:11",
+     2
+    ]
+   ],
+   [
+    [
+     "2026-10-02 04:35:35",
+     "2026-10-02 14:38:11",
+     11
+    ]
+   ],
+   [
+    [
+     "2026-10-04 22:49:23",
+     "2026-10-05 04:49:47",
+     7
+    ]
+   ],
+   [
+    [
+     "2026-10-11 19:24:47",
+     "2026-10-11 22:25:23",
+     4
+    ]
+   ],
+   [
+    [
+     "2026-10-12 05:26:35",
+     "2026-10-12 09:26:47",
+     5
+    ]
+   ],
+   [
+    [
+     "2026-10-13 08:30:59",
+     "2026-10-13 11:31:23",
+     4
+    ]
+   ]
+  ],
+  "runs_ge1_2plus_samples": 12,
+  "runs_ge1_any": 14,
+  "samples": 1840,
+  "share_price_ge1": 0.06576086956521739
+ },
+ "threshold_evidence": {
+  "ok": {
+   "n": 27,
+   "pool_price_max": 0.9999316492941424,
+   "pool_price_median": 0.9999207458687384,
+   "pool_price_min": 0.9997608693064584,
+   "share_max": 0.608622584662503,
+   "share_median": 0.5391638613554649,
+   "share_min": 0.5338805983631474
+  },
+  "peg unprofitable": {
+   "n": 579,
+   "pool_price_max": 0.9999999508799113,
+   "pool_price_median": 0.9999529498073501,
+   "pool_price_min": 0.999913003040322,
+   "share_max": 0.5428847029421738,
+   "share_median": 0.5234342095875517,
+   "share_min": 0.5000245723248319
+  },
+  "returned 0": {
+   "n": 3,
+   "pool_price_max": 0.9999379182632264,
+   "pool_price_median": 0.9999360849485633,
+   "pool_price_min": 0.9999331782540255,
+   "share_max": 0.5331359605776291,
+   "share_median": 0.5317179305248617,
+   "share_min": 0.5308219727608932
+  }
+ },
+ "withdraw_event_states": {
+  "all_pegkeepers": {
+   "crvusd_share_max": 0.6423640238742917,
+   "crvusd_share_median": 0.5444217911380578,
+   "crvusd_share_min": 0.53124477907514,
+   "n": 207,
+   "price_ge1": 5,
+   "price_max": 1.0000000543404872,
+   "price_min": 0.9987783587403165,
+   "provide_side": 0,
+   "withdraw_allowed_zero": 5
+  },
+  "usdt_13oct_to_zero": {
+   "crvusd_share_max": 0.6423640238742917,
+   "crvusd_share_median": 0.5421669150919981,
+   "crvusd_share_min": 0.53124477907514,
+   "n": 60,
+   "price_ge1": 0,
+   "price_max": 0.9995852534456373,
+   "price_min": 0.9987783587403165,
+   "provide_side": 0,
+   "withdraw_allowed_zero": 0
+  }
+ }
+}

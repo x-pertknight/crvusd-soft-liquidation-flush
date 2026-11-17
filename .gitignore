@@ -1,3 +1,5 @@
 __pycache__/
 *.pyc
 out/
+drafts/
+code/build_preview_r2.py

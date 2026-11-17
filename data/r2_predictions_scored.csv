@@ -1,0 +1,21 @@
+id,result,measured
+R2-01,HIT,"peak sampled total 46,881,177 at 2026-09-03 22:31:35; after events 46,881,177"
+R2-02,HIT,"USDT debt at 13 Oct 00:00 UTC 33,750,000"
+R2-03,HIT,USDT debt fell under 1 at 2026-10-29 23:49:35
+R2-04,HIT,"175 Withdraws from the peak (42,163,143 at 2026-08-31 23:16:23) to zero; events explain 1.0000 of the fall"
+R2-05,HIT,6.05 days from the first Withdraw after 2026-10-23 22:42:23 to zero
+R2-06,MISS,"2 of the other four never held debt; they provided 12,820,574 since 1 Sep"
+R2-07,MISS,12 stretches of 2+ samples at or above 1; last ends 2026-10-13 11:31:23
+R2-08,HIT,share of samples at or above 1: 0.0658
+R2-09,MISS,23 of 83 Provide events had price below 1 at the block before
+R2-10,HIT,provide side in 0.6443 of USDT drain samples
+R2-11,HIT,outside the on-chain band 0.0000 (price_deviation is 1.0); outside the 0.0005 default 0.0050
+R2-12,HIT,0 Regulator events since 1 Sep; 5 PegKeepers listed
+R2-13,HIT,regulator.aggregator() = 0x18672b1b0c623a30089a280ed9256379fb0e4e62
+R2-14,MISS,"sum of provide_allowed() at block 26372407 is 0 (price 0.997872, below 1, so every allowance is 0). Factory debt ceilings sum at 1 Sep: 324,000,000"
+R2-15,HIT,"block 26430593 at 2026-11-16 22:30:47 UTC, debts [0.0, 0.0, 0.0, 0.0, 0.0]"
+R2-16,HIT,"aggregator price 0.997788 at block 26430593, 2026-11-16 22:30:47 UTC"
+R2-17,HIT,API 0.997661 (updated 2026-11-16T22:17:59) vs on-chain 0.997788
+R2-18,MISS,"last time under 1 crvUSD: USDC 2026-09-08, USDT 2026-10-29, frxUSD 2026-09-15; span 51.8 days"
+R2-19,MISS,"66 samples with debt unchanged for 3 days, price below 1, withdraw side"
+R2-20,HIT,12 days with a Provide at price at or above 1 before 14 Oct

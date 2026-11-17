@@ -1,5 +1,9 @@
 # crvUSD in the 2026-11-08 ETH flush
 
+## Release 2: why the five PegKeepers hold no debt
+
+Release 2 follows the five crvUSD PegKeepers from 1 September to 16 November 2026: when each stopped holding debt, why the largest one sat still for twelve days, and what would let them act again. The short version is in `post.md`, the full write-up in `article.md`, and every figure, caveat and check in `RELEASE2.md`. Release 1 follows below.
+
 A block-level study of the crvUSD peg pools during the ETH drop of 2026-11-08, 21:41 to 21:56 UTC. Release 1 answers three questions with on-chain data only. Every number recomputes offline from the raw files in this repo.
 
 Window 2026-11-08 20:00 to 2026-11-09 04:00 UTC, blocks 26,372,408 to 26,374,799.
@@ -44,6 +48,8 @@ Readings at the start of the window (block 26,372,407), context outside the pre-
 | PegKeeper debt, all five | 0 crvUSD, against debt ceilings of 324M. Below peg only debt already deposited can be withdrawn |
 | Time below peg | Aggregator price last at or above 1 on 13 October (six-hourly samples), 26.3 days before the window. Below 1 in 119 of 121 samples over 30 days |
 | crvUSD in crvUSD-paired volatile pools versus PegKeeper reserves | 84.0M crvUSD in the four active Yield Basis pools. 30.8M crvUSD in the five PegKeeper pools, of which the PegKeepers' withdrawable share was 0 |
+
+Note added in release 2 (the table is unchanged). The 324M in the first row is the sum of the ControllerFactory debt ceilings for the five PegKeepers (135M + 135M + 45M + 9M + 0). It is not an allowance the PegKeeperRegulator would grant. At that block the Regulator's own allowance to deposit was 0 for every PegKeeper, because the aggregator price (0.9979) was below 1. See RELEASE2.md and SOURCE_DIFF_R2.md.
 
 ## How the result depends on choices
 

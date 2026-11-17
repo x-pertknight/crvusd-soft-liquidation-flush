@@ -1,0 +1,62 @@
+{
+ "USDC_transactions": [
+  50,
+  true,
+  ""
+ ],
+ "USDC_logs": [
+  100,
+  true,
+  ""
+ ],
+ "USDT_transactions": [
+  50,
+  true,
+  ""
+ ],
+ "USDT_logs": [
+  400,
+  true,
+  ""
+ ],
+ "pyUSD_transactions": [
+  50,
+  true,
+  ""
+ ],
+ "pyUSD_logs": [
+  50,
+  true,
+  ""
+ ],
+ "frxUSD_transactions": [
+  23,
+  true,
+  ""
+ ],
+ "frxUSD_logs": [
+  50,
+  true,
+  ""
+ ],
+ "GHO_transactions": [
+  37,
+  true,
+  ""
+ ],
+ "GHO_logs": [
+  50,
+  true,
+  ""
+ ],
+ "Regulator_logs": [
+  25,
+  true,
+  ""
+ ],
+ "Aggregator_logs": [
+  13,
+  true,
+  ""
+ ]
+}
