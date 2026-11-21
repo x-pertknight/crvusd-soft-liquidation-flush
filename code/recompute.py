@@ -850,7 +850,10 @@ if os.environ.get("SKIP_CHARTS") != "1":
     except ImportError as e:
         print("charts skipped:", e)
 
-outs = sorted(f for f in os.listdir(DATA) if f != "SHA256SUMS")
+# Release 1 pins cover release 1 outputs only. Release 2 files (r2_*) are pinned in R2_SHA256SUMS
+# and checked by recompute_r2.py, so they are left out here.
+outs = sorted(f for f in os.listdir(DATA)
+              if f not in ("SHA256SUMS", "R2_SHA256SUMS") and not f.startswith("r2_"))
 sums = "".join(hashlib.sha256(open(os.path.join(DATA, name), "rb").read()).hexdigest() + "  " + name + "\n"
                for name in outs)
 pin_path = os.path.join(DATA, "SHA256SUMS")
