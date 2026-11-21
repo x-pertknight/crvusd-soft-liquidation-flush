@@ -11,6 +11,9 @@ import os
 import sys
 from collections import defaultdict
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from flows import CLASSES, agg_class, build_rows, flows_match_balance, yb  # noqa: E402
+
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 RAW = os.path.join(ROOT, "code", "raw")
 DATA = os.path.join(ROOT, "data")
@@ -354,31 +357,7 @@ def legtype(h, pool):
     return "swap" if swap else "liquidity"
 
 
-rows = []
-multi = defaultdict(lambda: [0, 0.0])
-for h, legs in net.items():
-    m = matches(h)
-    if len(m) > 1:
-        multi["+".join(m)][0] += 1
-        multi["+".join(m)][1] += sum(legs.values())
-    if m:
-        cls = m[0]
-    elif all(legtype(h, p) == "liquidity" for p in legs):
-        cls = "liquidity_non_pk"
-    else:
-        cls = "other"
-    b = tx_block[h]
-    t = TX.get(h, {})
-    for pool, v in legs.items():
-        rows.append({"tx": h, "block": b, "ts": BT[b], "pool": pool_name[pool], "class": cls,
-                     "net_in": v, "leg": legtype(h, pool), "from": (t.get("from") or "").lower(),
-                     "to": (t.get("to") or "").lower()})
-for h, legs in pk_leg.items():
-    b = tx_block[h]
-    for pool, v in legs.items():
-        if v != 0:
-            rows.append({"tx": h, "block": b, "ts": BT[b], "pool": pool_name[pool], "class": "pegkeeper",
-                         "net_in": v, "leg": "liquidity", "from": "", "to": ""})
+rows, multi = build_rows(net, pk_leg, tx_block, matches, legtype, TX, BT, pool_name)
 check(all(h in TX for h in net), "every flow transaction has from/to cached")
 
 # balance reconciliation: sum of net flows equals change of crvUSD balance in pools
@@ -389,28 +368,8 @@ for p in C["pegkeepers"]:
     d_pool_bal += (int(st(pool, "balances(uint256)", B1, (i,)), 16) - int(st(pool, "balances(uint256)", PRE, (i,)), 16)) / E18
 check(all(p["coins"][1].lower() == C["crvusd"] for p in C["pegkeepers"]), "crvUSD is coin 1 in every PegKeeper pool")
 sum_flows = sum(r["net_in"] for r in rows)
-check(abs(sum_flows - d_pool_bal) <= max(1000.0, 0.002 * abs(d_pool_bal)),
+check(flows_match_balance(sum_flows, d_pool_bal),
       f"sum of transfer flows {sum_flows:,.0f} matches pool balance change {d_pool_bal:,.0f} (admin fee tolerance)")
-
-CLASSES = ["pegkeeper", "hard_liquidation", "llamma_arbitrage", "yb_levamm_leg", "yb_curve_pool_leg",
-           "borrower_action", "liquidity_non_pk", "other"]
-
-
-def agg_class(rs):
-    out = {c: {"net_in": 0.0, "sold": 0.0, "bought": 0.0, "n_tx": 0} for c in CLASSES}
-    seen = defaultdict(set)
-    for r in rs:
-        o = out[r["class"]]
-        o["net_in"] += r["net_in"]
-        if r["net_in"] > 0:
-            o["sold"] += r["net_in"]
-        else:
-            o["bought"] += -r["net_in"]
-        seen[r["class"]].add(r["tx"])
-    for c in CLASSES:
-        out[c]["n_tx"] = len(seen[c])
-    return out
-
 
 in_main = [r for r in rows if TS_START <= r["ts"] < TS_END]
 in_flush = [r for r in rows if TS_F0 <= r["ts"] < TS_F1]
@@ -454,16 +413,6 @@ q3["s1_moved_net_in"] = sum(r["net_in"] for r in s1_moved)
 q3["s1_moved_n_tx"] = len({r["tx"] for r in s1_moved})
 yb_from = {r["from"] for r in in_main if r["class"] in ("yb_levamm_leg", "yb_curve_pool_leg")} - {""}
 q3["s1_from_only_moved_net_in"] = sum(r["net_in"] for r in in_main if r["class"] == "other" and r["from"] in yb_from)
-
-
-def yb(rs, gross=False, pools_only=None, classes=("yb_levamm_leg", "yb_curve_pool_leg")):
-    s = 0.0
-    for r in rs:
-        if r["class"] in classes and (pools_only is None or r["pool"] in pools_only):
-            if gross and r["net_in"] <= 0:
-                continue
-            s += r["net_in"]
-    return s
 
 
 V = {"V0_main_net_same_tx": yb(in_main), "V1_flush_hour": yb(in_flush), "V2_gross_sells": yb(in_main, gross=True),

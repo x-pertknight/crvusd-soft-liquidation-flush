@@ -1,6 +1,6 @@
 # Release 2. Why the crvUSD PegKeepers are at zero debt
 
-Follow-up to release 1 (see README.md). Release 1 found all five PegKeepers at zero debt at 20:00 UTC on 8 November 2026 and left open why the USDT PegKeeper's debt reached zero by 30 October and why the other four held zero. Release 1 files are unchanged. Readable write-up: `article.md`. This file is the technical note and holds every caveat.
+Follow-up to release 1 (see README.md). Release 1 found all five PegKeepers at zero debt at 20:00 UTC on 8 November 2026 and left open why the USDT PegKeeper's debt reached zero (since 23:49 UTC on 29 October, see below) and why the other four held zero. Release 1 files are unchanged. Readable write-up: `article.md`. This file is the technical note and holds every caveat.
 
 Window: hourly samples from 2026-08-31 23:16 UTC to block 26,430,593 (2026-11-16 22:30:47 UTC), 1,840 samples, 300 blocks apart.
 

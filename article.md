@@ -1,6 +1,6 @@
 # Why crvUSD's PegKeepers hold no debt, and what that means below the peg
 
-On 16 November 2026 all five crvUSD PegKeepers had zero debt, and have had since 29 October. The aggregated price was about 0.998. Four of them still hold crvUSD they could deposit; what is zero is the crvUSD placed in their pools. With no debt, a PegKeeper can do nothing while crvUSD is under 1.
+On 16 November 2026 all five crvUSD PegKeepers had zero debt, and have had since 23:49 UTC on 29 October. The aggregated price was about 0.998. Four of them still hold crvUSD they could deposit; what is zero is the crvUSD placed in their pools. With no debt, a PegKeeper can do nothing while crvUSD is under 1.
 
 ## How a PegKeeper works
 

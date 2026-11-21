@@ -49,7 +49,7 @@ def chart_debt_price():
                 colors=[COL[n] for n in NAMES])
     a.set_ylabel("PegKeeper debt, million crvUSD")
     a.legend(loc="upper right", ncol=3, frameon=False, fontsize=12)
-    a.set_title("PegKeeper debt reached zero on 29 October\nand has stayed there", loc="left", fontsize=15)
+    a.set_title("PegKeeper debt has been zero since\n23:49 UTC on 29 October", loc="left", fontsize=15)
     p = [float(r["agg_price"]) for r in s]
     b.plot(t, p, color=INK, lw=1)
     b.axhline(1.0, color="#b03030", lw=1)

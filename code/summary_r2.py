@@ -68,7 +68,7 @@ def main():
     c = Canvas()
     c.text(60, 52, "With no debt, crvUSD's\nPegKeepers can't act below 1", 62, bold=True)
     c.text(60, 218, "Hourly readings, 1 September to 16 November 2026", 27, GREY)
-    c.text(60, 296, "Nothing of theirs in the pools since 29 October", 37, bold=True)
+    c.text(60, 296, "Nothing of theirs in the pools from 29 October (UTC)", 37, bold=True)
     c.text(60, 352, "Debt in the pools, million crvUSD", 24, GREY)
     h = 190
     a = c.fig.add_axes([60 / W, 1 - (410 + h) / H, 960 / W, h / H])
@@ -82,9 +82,9 @@ def main():
     for d, lab in [(dt.datetime(2026, 9, 1), "1 Sep"), (dt.datetime(2026, 10, 1), "1 Oct"), (dt.datetime(2026, 11, 1), "1 Nov")]:
         x = 60 + 960 * (d - t[0]).total_seconds() / span
         c.text(max(x, 62), 610, lab, 24, GREY)
-    lab = c.text(852, 440, "zero from\n29 October", 32, INK, bold=True)
+    lab = c.text(832, 440, "zero from\n29 Oct (UTC)", 32, INK, bold=True)
     lab.set_zorder(10)
-    c.ax.annotate("", xy=(60 + 960 * (dt.datetime(2026, 10, 30) - t[0]).total_seconds() / span + 8, 586), xytext=(866, 528),
+    c.ax.annotate("", xy=(60 + 960 * (dt.datetime(2026, 10, 30) - t[0]).total_seconds() / span + 8, 586), xytext=(846, 528),
                   arrowprops={"arrowstyle": "->", "color": INK, "lw": 2.5}, zorder=10)
     c.text(60, 684, "Why the largest one sat still", 43, bold=True)
     cols2 = [(60, "12 days", SLATE, "its debt of about 34M\nstayed flat"),

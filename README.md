@@ -1,12 +1,14 @@
 # crvUSD in the 2026-11-08 ETH flush
 
+[![reproduce](https://github.com/x-pertknight/crvusd-soft-liquidation-flush/actions/workflows/reproduce.yml/badge.svg)](https://github.com/x-pertknight/crvusd-soft-liquidation-flush/actions/workflows/reproduce.yml)
+
 ## Release 2: why the five PegKeepers hold no debt
 
 Release 2 follows the five crvUSD PegKeepers from 1 September to 16 November 2026: when each stopped holding debt, why the largest one sat still for twelve days, and what would let them act again. The short version is in `post.md`, the full write-up in `article.md`, and every figure, caveat and check in `RELEASE2.md`. Release 1 follows below.
 
 A block-level study of the crvUSD peg pools during the ETH drop of 2026-11-08, 21:41 to 21:56 UTC. Release 1 answers three questions with on-chain data only. Every number recomputes offline from the raw files in this repo.
 
-Window 2026-11-08 20:00 to 2026-11-09 04:00 UTC, blocks 26,372,408 to 26,374,799.
+Window 2026-11-08 20:00 to 2026-11-09 04:00 UTC, blocks 26,372,408 to 26,374,799. All times in this repo are UTC.
 
 ## Findings
 
@@ -22,7 +24,7 @@ Window 2026-11-08 20:00 to 2026-11-09 04:00 UTC, blocks 26,372,408 to 26,374,799
 
 - Nothing. All five PegKeepers (USDC, USDT, pyUSD, frxUSD, GHO) had zero debt at 20:00 UTC. There was no crvUSD of theirs in the pools to withdraw, and no Provide or Withdraw event in the window.
 - Under the pre-registered definition this is "no reserves to deploy", not "binding".
-- Context outside the pre-registered measures. Sampled every 6 hours over the previous 30 days, only the USDT PegKeeper held debt, up to 33.75M crvUSD. Its debt fell under 1 crvUSD at 23:49:35 UTC on 29 October, block 26,301,792 (release 2 Withdraw events). The six hourly samples show 9.55M at 19:11 UTC on 29 October and zero at 01:13 UTC on 30 October. The other four held zero throughout. This study does not establish why. Zero debt is consistent with the price record. The aggregator price was below 1 in 119 of 121 six-hourly samples over the 30 days, and in all 40 samples since 30 October (mean 0.9988). PegKeepers only deposit above 1.
+- Context outside the pre-registered measures. Sampled every 6 hours over the previous 30 days, only the USDT PegKeeper held debt, up to 33.75M crvUSD. Its debt fell under 1 crvUSD at 23:49:35 UTC on 29 October, block 26,301,792 in tx 0x1fd8475934e70029ceeb32ddb6cfc21caceefe91700f7d39924308ed2bb8914d, the last Withdraw in data/r2_events.csv. The six hourly samples show 9.55M at 19:11 UTC on 29 October and zero in the sample at 01:13 UTC on 30 October. The other four held zero throughout. This study does not establish why. Zero debt is consistent with the price record. The aggregator price was below 1 in 119 of 121 six-hourly samples over the 30 days, and in all 40 samples from 00:00 UTC on 30 October (mean 0.9988). PegKeepers only deposit above 1.
 - The borrow rate did respond. The WETH mint market rate rose from 6.32% to 7.70% over the window.
 
 **Q3. Who sold and who bought crvUSD in the peg pools, and does the "net -4.10M sold via YB" claim reproduce?**
@@ -143,6 +145,8 @@ Predictions, scored on all ten events and again without 8 November (same result 
 Limits of phase 1b. P1B-09 stays scored MISS as pre-registered. The "other" side held only two small Tricrypto-NG pools, so the test could not discriminate between ownership mattering or not. Completeness was checked against a second source (Blockscout) for E01, E03, E04 and E05, with identical log sets. E03 and E05 were first refused with HTTP 429 and checked in a later retry. E04 was added in that retry. The other six events are checked against the RPC only. Every event passed the exact peg pool balance check. Details in VERIFICATION.md, section Phase 1b.
 
 ## Reproduce
+
+`./reproduce.sh` runs both recompute scripts, checks every output against its pinned hash and runs the tests in tests/. CI runs it on every push.
 
 ```
 python3 -I code/recompute.py
