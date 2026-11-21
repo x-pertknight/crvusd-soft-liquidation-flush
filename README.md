@@ -22,7 +22,7 @@ Window 2026-11-08 20:00 to 2026-11-09 04:00 UTC, blocks 26,372,408 to 26,374,799
 
 - Nothing. All five PegKeepers (USDC, USDT, pyUSD, frxUSD, GHO) had zero debt at 20:00 UTC. There was no crvUSD of theirs in the pools to withdraw, and no Provide or Withdraw event in the window.
 - Under the pre-registered definition this is "no reserves to deploy", not "binding".
-- Context outside the pre-registered measures. Sampled every 6 hours over the previous 30 days, only the USDT PegKeeper held debt, up to 33.75M crvUSD. It reached zero by 30 October. The other four held zero throughout. This study does not establish why. Zero debt is consistent with the price record. The aggregator price was below 1 in 119 of 121 six-hourly samples over the 30 days, and in all 40 samples since 30 October (mean 0.9988). PegKeepers only deposit above 1.
+- Context outside the pre-registered measures. Sampled every 6 hours over the previous 30 days, only the USDT PegKeeper held debt, up to 33.75M crvUSD. Its debt fell under 1 crvUSD at 23:49:35 UTC on 29 October, block 26,301,792 (release 2 Withdraw events). The six hourly samples show 9.55M at 19:11 UTC on 29 October and zero at 01:13 UTC on 30 October. The other four held zero throughout. This study does not establish why. Zero debt is consistent with the price record. The aggregator price was below 1 in 119 of 121 six-hourly samples over the 30 days, and in all 40 samples since 30 October (mean 0.9988). PegKeepers only deposit above 1.
 - The borrow rate did respond. The WETH mint market rate rose from 6.32% to 7.70% over the window.
 
 **Q3. Who sold and who bought crvUSD in the peg pools, and does the "net -4.10M sold via YB" claim reproduce?**
@@ -166,3 +166,5 @@ Standard library for every number. Charts need matplotlib and are written to out
 - charts/. C1 to C6 as PNG and SVG. C3_flows_by_class_square_post is a square version without the pre-registered hour band.
 
 Wallets are reported only in aggregate. No address is named as a seller.
+
+Code is MIT licensed. Text and data are CC BY 4.0.

@@ -1,4 +1,4 @@
-All five crvUSD PegKeepers have had nothing put into their pools since 29 October, so they can do nothing while crvUSD trades below 1.
+All five crvUSD PegKeepers have had nothing put into their pools since 23:49 UTC on 29 October, so they can do nothing while crvUSD trades below 1.
 
 What a PegKeeper does
 
@@ -6,7 +6,7 @@ Each can hold crvUSD given to it by Curve. It may put some into its pool only wh
 
 Where they stand now
 
-All five have had no debt since 29 October. Four still hold crvUSD they could put in. GHO's ceiling is zero.
+All five have had no debt since 23:49 UTC on 29 October. Four still hold crvUSD they could put in. GHO's ceiling is zero.
 
 Why the largest one sat still
 
