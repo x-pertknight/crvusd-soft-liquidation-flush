@@ -168,7 +168,7 @@ Standard library for every number. Charts need matplotlib and are written to out
 - code/raw/phase1b/. Phase 1b raw responses (gzip JSON), the S candidate list and the S membership per event.
 - data/phase1b_events.json, data/phase1b_results.json, data/phase1b_events_metrics.csv. Phase 1b outputs.
 - charts/. C1 to C6 as PNG and SVG. C3_flows_by_class_square_post is a square version without the pre-registered hour band.
-- DOCS_FIRST.md and DOCS_FIRST_R2.md are hash locked and predate the wording on preregistration above, so their own wording is left as written.
+- DOCS_FIRST_R2.md is hash locked and predates the wording on preregistration above, so it is left as written. DOCS_FIRST.md no longer matches its recorded hash because it was extended later, as line 86 states; its wording is also left as written.
 
 Wallets are reported only in aggregate. No address is named as a seller.
 
