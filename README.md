@@ -152,7 +152,7 @@ Limits of phase 1b. P1B-09 stays scored MISS as pre-registered. The "other" side
 python3 -I code/recompute.py
 ```
 
-Standard library for every number. Charts need matplotlib and are written to out/charts/, so a rerun never overwrites the published charts/ (UPDATE_CHARTS=1 writes charts/, which were made with matplotlib 3.9.2, see requirements.txt). The script exits non-zero if any check fails, for example if PegKeeper debt does not reconcile from events, if the sum of transfer flows does not match the change in pool balances, or if the outputs in data/ do not match the hashes pinned in data/SHA256SUMS. Network scripts live in code/fetch/ and are not needed to recompute.
+Standard library for every number. Charts need matplotlib and are written to out/charts/, so a rerun never overwrites the published charts/ (UPDATE_CHARTS=1 writes charts/). Release 1 charts (C1 to C6) were drawn with matplotlib 3.9.2 and release 2 charts (R2_C1 to R2_C3 and summary.png) with matplotlib 3.11.2, the version pinned in requirements.txt. The script exits non-zero if any check fails, for example if PegKeeper debt does not reconcile from events, if the sum of transfer flows does not match the change in pool balances, or if the outputs in data/ do not match the hashes pinned in data/SHA256SUMS. Network scripts live in code/fetch/ and are not needed to recompute.
 
 ## Files
 
