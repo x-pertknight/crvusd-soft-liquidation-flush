@@ -13,14 +13,14 @@ The script fails if any of these do not hold.
 - The sum of transfer flows (3,633,679) matches the change in crvUSD pool balances (3,635,102) within the admin fee tolerance.
 - Soft liquidation losses are a small share of traded value (a decimals sanity check).
 
-## Adversarial check
+## Review of the strongest case against the study
 
 This check argued the strongest case that the study is wrong or overclaimed, against the repo and the write-up. It re-ran the recompute on a clean copy and reproduced data/results.json byte for byte. Findings and what changed:
 
 | Finding | Severity | Change |
 |---|---|---|
 | "Yield Basis did the selling" treats routing as cause. The logs cannot separate arbitrage from ordinary routed sales | Fatal | Headline, README and write-up now say "transactions routed through Yield Basis pools". Limitation added |
-| The 1.91M liquidity deposit "kept the price from recovering". The evidence gave a weighted price move of 0.15 bp. A suggested replacement text said under 0.01 bp, a units slip. 0.15 bp is correct, see round 4 | Fatal | Claim removed everywhere |
+| The 1.91M liquidity deposit "kept the price from recovering". The evidence gave a weighted price move of 0.15 bp. A suggested replacement text said under 0.01 bp, a units slip. 0.15 bp is correct, see the corrections on the 1.91M deposit below | Fatal | Claim removed everywhere |
 | PegKeeper "defence already spent" asserted without history. C2 missing | Repairable | 30-day debt history added as labelled context (C2). Wording now neutral. Only the USDT PegKeeper held debt in 30 days, zero by 30 October. Cause not studied |
 | Borrow rate response omitted | Repairable | Added (6.32% to 7.70% in the WETH market) |
 | "Markets 7 to 9 account for 3.64M" was wrong. 3.64M includes deprecated markets | Repairable | Now "3.64M touching only BTC markets, 2.86M touching only active markets 7 to 9". Computed in recompute |
@@ -60,7 +60,7 @@ Coverage. Exhaustive for the recompute, checksums, imports, pre-registration has
 
 DOCS_FIRST.md was edited after its first hash (PREREG_SHA256.txt) to add the raw text check results (section 5) and to restate the method note. The documented-versus-measured table and the reading list were not changed. PREDICTIONS.md and PREREG_ADDENDUM.md were not edited. The version of DOCS_FIRST.md that matches the pinned hash was never committed, so that hash cannot be checked against any file in this repository and `sha256sum -c PREREG_SHA256.txt` reports it as failed. For release 1, PREDICTIONS.md and PREREG_ADDENDUM.md were first committed together with the data, so git history does not by itself show that they came first. For phase 1b, each pre-registration step was committed before the data it governs (see the commit log).
 
-## Corrections, round 3
+## Corrections after review, 9 November: summary image
 
 | Finding | Change |
 |---|---|
@@ -71,7 +71,7 @@ DOCS_FIRST.md was edited after its first hash (PREREG_SHA256.txt) to add the raw
 | Short summary gave 4.10M without context, used hyphen bullets and "Sunday's" | Rewritten |
 | Pre-registered hour band in the square summary image | A version without the band, C3_flows_by_class_square_post. Repo versions keep it |
 
-## Corrections, round 4
+## Corrections after review, 9 November: the 1.91M deposit
 
 The 1.91M deposit at 23:38:11 UTC (block 26,373,494) into the pyUSD PegKeeper pool. All values read by archive eth_call and decoded in recompute.py (liquidity_non_pk_detail.largest in results.json).
 
@@ -93,11 +93,11 @@ Deposit contribution versus block change. The pool moved 2.7 bp and carries 3.14
 
 Legs versus transactions. The liquidity class has 52 pool legs in 45 transactions (some transactions touch more than one pool). C3 and the README now say "52 legs in 45 tx".
 
-## Corrections, round 5
+## Corrections after review, 9 November: framing and context
 
 | Change | Detail |
 |---|---|
-| Write-up drafts removed from the repo | The repo holds the study only |
+| Write-up drafts | The release 1 drafts were removed on 9 November. Release 2 added post.md and post_comment.md, which are still in the repo |
 | Framing | The Yield Basis LEVAMM leg was close to flat (net bought 0.05M). The selling went through the Curve crvUSD pools where Yield Basis is the LP, 3.64M of the 3.85M through the BTC pools. The README now states the mechanism in those terms. No number changed |
 | C3 title and labels | Now "Selling through Curve crvUSD pools where Yield Basis is the LP, mostly BTC". Panels renamed "Curve pools, Yield Basis as LP" and "Yield Basis LEVAMM leg" |
 | What to watch | New context read at block 26,372,407 (code/fetch/fetch_context_watch.py, raw in code/raw/context_watch.json, computed in results.json under watch). PegKeeper debt 0 against ceilings of 324M. Aggregator price last at or above 1 on 13 October in six-hourly samples, 26.3 days before the window. crvUSD in the four active Yield Basis pools 84.0M, crvUSD in the five PegKeeper pools 30.8M |

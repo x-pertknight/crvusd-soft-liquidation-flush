@@ -67,7 +67,7 @@ Note added in release 2 (the table is unchanged). The 324M in the first row is t
 
 V3 links "other" transactions to YB senders by tx.from or tx.to. tx.to includes shared router contracts, so V3 overstates linkage. Linking by sender only moves 0.02M.
 
-The flush hour was fixed before the data was seen, from the brief's "around 23:00 UTC". The drop came at 21:41 to 21:56 UTC. The brief's time was probably local time (UTC+1). The pre-registration said the hour would not be moved, and it was not. P01, P11, P12 and P13 are scored on that hour as written. Measured on the actual drop instead (not scored), YB routes were the largest net seller class in 21:45 to 22:00, so P11 would hit. From 21:45 to 04:00 the Curve pool leg sell peak (21:45 bucket) came before the LEVAMM leg buy peak (23:00 bucket), so P12 would hit on that window.
+The flush hour was set in the addendum from the event notes' "around 23:00 UTC". The drop came at 21:41 to 21:56 UTC. That time was probably local time (UTC+1). The pre-registration said the hour would not be moved, and it was not. P01, P11, P12 and P13 are scored on that hour as written. Measured on the actual drop instead (not scored), YB routes were the largest net seller class in 21:45 to 22:00, so P11 would hit. From 21:45 to 04:00 the Curve pool leg sell peak (21:45 bucket) came before the LEVAMM leg buy peak (23:00 bucket), so P12 would hit on that window.
 
 ## Deviations from the pre-registration
 
@@ -149,7 +149,7 @@ Limits of phase 1b. P1B-09 stays scored MISS as pre-registered. The "other" side
 `./reproduce.sh` runs both recompute scripts, checks every output against its pinned hash and runs the tests in tests/. CI runs it on every push.
 
 ```
-python3 -I code/recompute.py
+./reproduce.sh
 ```
 
 Standard library for every number. Charts need matplotlib and are written to out/charts/, so a rerun never overwrites the published charts/ (UPDATE_CHARTS=1 writes charts/). Release 1 charts (C1 to C6) were drawn with matplotlib 3.9.2 and release 2 charts (R2_C1 to R2_C3 and summary.png) with matplotlib 3.11.2, the version pinned in requirements.txt. The script exits non-zero if any check fails, for example if PegKeeper debt does not reconcile from events, if the sum of transfer flows does not match the change in pool balances, or if the outputs in data/ do not match the hashes pinned in data/SHA256SUMS. Network scripts live in code/fetch/ and are not needed to recompute.

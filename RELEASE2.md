@@ -27,7 +27,7 @@ Window: hourly samples from 2026-08-31 23:16 UTC to block 26,430,593 (2026-11-16
 
 ## Predictions
 
-20 recorded before any data (PREDICTIONS_R2.md, hash in PREREG_R2_SHA256.txt, addendum in PREREG_R2_ADDENDUM.md with its own hash). 14 hit, 6 missed. Details in PREDICTIONS_R2_RESULTS.md and data/r2_predictions_scored.csv. Two misses (R2-11 hit vacuously, R2-14) come from premises that the deployed contracts did not satisfy, logged in SOURCE_DIFF_R2.md. R2-09 missed by sub-block timing, not by substance.
+20 predictions are written down and scored, misses included (PREDICTIONS_R2.md, addendum in PREREG_R2_ADDENDUM.md). Their hash files entered git with the results in a6aa41c, so git does not show that they came first. 14 hit, 6 missed. Details in PREDICTIONS_R2_RESULTS.md and data/r2_predictions_scored.csv. Two misses (R2-11 hit vacuously, R2-14) come from premises that the deployed contracts did not satisfy, logged in SOURCE_DIFF_R2.md. R2-09 missed by sub-block timing, not by substance.
 
 ## Reproduce
 
@@ -41,7 +41,7 @@ Checks in the recompute (all pass): grid spacing; no failed hourly reads; PegKee
 
 ## Files
 
-- DOCS_FIRST_R2.md, PREDICTIONS_R2.md, PREREG_R2_ADDENDUM.md, PREREG_R2_SHA256.txt, PREREG_R2_ADDENDUM_SHA256.txt. Written before the data. PREREG_R2_ADDENDUM2.md, PREREG_R2_ADDENDUM3.md and their hash files: changes made after review, 2026-11-17.
+- DOCS_FIRST_R2.md, PREDICTIONS_R2.md, PREREG_R2_ADDENDUM.md, PREREG_R2_SHA256.txt, PREREG_R2_ADDENDUM_SHA256.txt. Reading list, predictions and addendum, committed with the results in a6aa41c. DOCS_FIRST_R2.md was edited on 22 November 2026, so its hash in PREREG_R2_SHA256.txt no longer matches. PREREG_R2_ADDENDUM2.md, PREREG_R2_ADDENDUM3.md and their hash files: changes made after review, 2026-11-17.
 - SOURCE_DIFF_R2.md. Deployed source against the docs reading.
 - PREDICTIONS_R2_RESULTS.md. Scores and belief updates.
 - code/recompute_r2.py, r2_lib.py, r2_checks.py, r2_metrics.py, r2_review.py, charts_r2.py. Recompute and charts.

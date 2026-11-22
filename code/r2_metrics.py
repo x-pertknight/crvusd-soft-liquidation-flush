@@ -431,7 +431,7 @@ def rebuild(d):
 
 
 def withdraw_event_states(d):
-    """State at the block before every Withdraw event (condition 3 of the gate 1 approval)."""
+    """State at the block before every Withdraw event (condition 3 in PREREG_R2_ADDENDUM.md)."""
     if not d["extra"]:
         return {"note": "r2_extra.json missing"}
     import statistics
