@@ -27,7 +27,7 @@ Window: hourly samples from 2026-08-31 23:16 UTC to block 26,430,593 (2026-11-16
 
 ## Predictions
 
-20 predictions are written down and scored, misses included (PREDICTIONS_R2.md, addendum in PREREG_R2_ADDENDUM.md). Their hash files entered git with the results in a6aa41c, so git does not show that they came first. 14 hit, 6 missed. Details in PREDICTIONS_R2_RESULTS.md and data/r2_predictions_scored.csv. Two misses (R2-11 hit vacuously, R2-14) come from premises that the deployed contracts did not satisfy, logged in SOURCE_DIFF_R2.md. R2-09 missed by sub-block timing, not by substance.
+20 predictions are written down and scored, misses included (PREDICTIONS_R2.md, addendum in PREREG_R2_ADDENDUM.md). They were not preregistered: their hash files entered git with the results in a6aa41c, so git does not show that they came first. 14 hit, 6 missed. Details in PREDICTIONS_R2_RESULTS.md and data/r2_predictions_scored.csv. Two misses (R2-11 hit vacuously, R2-14) come from premises that the deployed contracts did not satisfy, logged in SOURCE_DIFF_R2.md. R2-09 missed by sub-block timing, not by substance.
 
 ## Reproduce
 
@@ -50,7 +50,7 @@ Checks in the recompute (all pass): grid spacing; no failed hourly reads; PegKee
 - data/r2_series.csv, r2_events.csv, r2_decomposition.csv, r2_results.json, r2_predictions_scored.csv, R2_SHA256SUMS.
 - charts/R2_C1_debt_and_price, R2_C2_usdt_drain, R2_C3_decomposition (PNG and SVG).
 
-## Deviations from the pre-registration
+## Deviations from the predictions and addendum
 
 Addendum 2 (PREREG_R2_ADDENDUM2.md, 2026-11-17, hash in PREREG_R2_ADDENDUM2_SHA256.txt) records the changes made after an outside review: the simulation label fix (a call returning 0 is not "ok"), the window check (redefined in addendum 3, PREREG_R2_ADDENDUM3.md), the `worst_price_threshold` and event-block price reads, and the wording rules. The (b)/(c) simulation split was designed after the first data was seen.
 
