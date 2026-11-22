@@ -68,7 +68,7 @@ def main():
     c = Canvas()
     c.text(60, 52, "With no debt, crvUSD's\nPegKeepers can't act below 1", 62, bold=True)
     c.text(60, 218, "Hourly readings, 1 September to 16 November 2026", 27, GREY)
-    c.text(60, 296, "Nothing of theirs in the pools from 29 October (UTC)", 37, bold=True)
+    c.text(60, 296, "Nothing of theirs in the pools since 23:49 UTC, 29 Oct", 37, bold=True)
     c.text(60, 352, "Debt in the pools, million crvUSD", 24, GREY)
     h = 190
     a = c.fig.add_axes([60 / W, 1 - (410 + h) / H, 960 / W, h / H])
