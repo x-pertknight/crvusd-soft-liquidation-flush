@@ -69,7 +69,7 @@ V3 links "other" transactions to YB senders by tx.from or tx.to. tx.to includes 
 
 The flush hour was set in the addendum from the event notes' "around 23:00 UTC". The drop came at 21:41 to 21:56 UTC. That time was probably local time (UTC+1). The pre-registration said the hour would not be moved, and it was not. P01, P11, P12 and P13 are scored on that hour as written. Measured on the actual drop instead (not scored), YB routes were the largest net seller class in 21:45 to 22:00, so P11 would hit. From 21:45 to 04:00 the Curve pool leg sell peak (21:45 bucket) came before the LEVAMM leg buy peak (23:00 bucket), so P12 would hit on that window.
 
-## Deviations from the pre-registration
+## Deviations from the written predictions and addenda
 
 - Price direction. The addendum defined the crvUSD price as the inverse of get_p and required a direction check. The check showed that get_p already returns crvUSD in the paired coin (crvUSD inflow lowered get_p in 462 blocks and raised it in 1). get_p is used directly.
 - Five PegKeepers, not four. Disclosed in the addendum before data.
@@ -83,7 +83,7 @@ See DOCS_FIRST.md for the reading list, the raw text checks, and the table of do
 
 ## Predictions
 
-Release 1 has 39 predictions in PREDICTIONS.md with a recorded time of 2026-11-09 10:16 UTC and SHA256 1e62bf74 in PREREG_SHA256.txt, never edited. Release 2 predictions have no recorded time or hash: they entered git with the results in a6aa41c (RELEASE2.md). The hash pinned for DOCS_FIRST.md no longer matches because that file was extended later, as noted in VERIFICATION.md. PREDICTIONS.md and PREREG_SHA256.txt entered git in the same first commit as the data (b69d95c), so for release 1 the timing rests on that recorded time and hash, not on git history. Phase 1b was committed before its data. Results are in PREDICTIONS_RESULTS.md and data/predictions_scored.csv. 14 hit (10 excluding weak tests), 12 missed, 13 untestable in release 1. Notable misses:
+Release 1 has 39 predictions in PREDICTIONS.md with a recorded time of 2026-11-09 10:16 UTC and SHA256 1e62bf74 in PREREG_SHA256.txt, never edited. The hash proves the file was not changed after that time. It does not prove the file was written before the data was seen. Where this repo says pre-registered, read it in that sense. Release 2 predictions have no recorded time or hash: they entered git with the results in a6aa41c (RELEASE2.md). The hash pinned for DOCS_FIRST.md no longer matches because that file was extended later, as noted in VERIFICATION.md. PREDICTIONS.md and PREREG_SHA256.txt entered git in the same first commit as the data (b69d95c), so for release 1 the timing rests on that recorded time and hash, not on git history. Phase 1b was committed before its data. Results are in PREDICTIONS_RESULTS.md and data/predictions_scored.csv. 14 hit (10 excluding weak tests), 12 missed, 13 untestable in release 1. Notable misses:
 - P15. I expected the claim not to reproduce within 25%. V0 came within 6%.
 - P17 to P19. I expected PegKeepers to withdraw 2M to 20M. They had nothing to withdraw.
 - P13. I expected all YB markets to be over-leveraged through the flush hour. tBTC was not.
@@ -156,7 +156,7 @@ Standard library for every number. Charts need matplotlib and are written to out
 
 ## Files
 
-- PREDICTIONS.md, PREREG_ADDENDUM.md, PREREG_SHA256.txt. Pre-registration.
+- PREDICTIONS.md, PREREG_ADDENDUM.md, PREREG_SHA256.txt. Release 1 predictions with their recorded time and hash. See Predictions above for what the hash does and does not prove.
 - PREDICTIONS_RESULTS.md. Scored results.
 - DOCS_FIRST.md. Reading list, raw text checks, documented versus measured.
 - VERIFICATION.md. Review findings and what changed.
