@@ -1,6 +1,6 @@
 # Release 2 docs first. PegKeepers at zero debt
 
-Status: dated 2026-11-16 UTC. It entered git with the release 2 results in a6aa41c. Release 1 files are not edited. This file covers release 2 only: when and why each of the five PegKeepers reached zero debt, and what would let them rebuild a buffer.
+Status: written 2026-11-16 UTC before any chain or API data was fetched for release 2. Release 1 files are not edited. This file covers study 2 only: when and why each of the five PegKeepers reached zero debt, and what would let them rebuild a buffer.
 
 Method note. Release 2 reads the Curve docs pages and the contract source in the `curvefi/curve-stablecoin` GitHub repository (master branch, folder `curve_stablecoin/stabilizer`, plus `price_oracles`). The pages were retrieved through a page-fetch tool that returns excerpts and paraphrase, not the raw file. So every code line below is "read via excerpt" and must be re-checked against the verified source of the deployed contract, at the deployed address, before any number depends on it (section 5). Master may differ from what is deployed.
 
@@ -59,7 +59,7 @@ For debt to fall, all of these must hold: aggregator price at or below 1, pool h
 ### 2.5 Offboarding (P8)
 PegKeeperOffboarding.vy always returns 0 for provide and the maximum for withdraw. If governance had swapped it in as a PegKeeper's regulator, that PegKeeper could only withdraw. No deployment of it is listed in P9. Whether the PegKeepers' regulator is still 0x36a04C... and whether any PegKeeper uses another regulator is read from chain (`pegkeeper.regulator()`).
 
-## 3. What this implies
+## 3. What this implies, before any data
 
 - While `aggregator.price() < 1`, no PegKeeper can add debt. Debt can only stay or fall. Zero debt is an **absorbing** state: once reached below peg, it cannot be left until the aggregator price is back at or above 1.
 - Zero debt is **not the only possible state** below peg. Debt can persist when (a) the pool is on the provide side of the balance test (more of the other coin than crvUSD), so update() takes the provide branch and reverts with "Regulator ban"; (b) nobody calls update(); (c) the withdrawal reverts as "peg unprofitable"; (d) the pool price is outside price_deviation of its oracle price; or (e) withdrawing is paused. The slow USDT unwind in release 1 (33.75M, zero by 30 October, after the last aggregator reading at or above 1 on 13 October) is exactly the pattern these reasons could produce. Which one applies is a measurement.
@@ -87,4 +87,4 @@ PegKeeperOffboarding.vy always returns 0 for provide and the maximum for withdra
 - Docs inconsistency in P3. The heading says withdrawing needs price below 1 but one sentence says a price at or below 1 blocks it. The code returns 0 only when the price is above 1, so the heading matches the code. At exactly 1 both directions pass the price test.
 - P3 also says the provide ban applies at "equal to or below 1.0". The code blocks only below 1. At exactly 1 provide is allowed.
 - P9 lists four PegKeepers (no GHO). Release 1 read five from the Regulator on chain. Chain is used.
-- Three ways to get this wrong. Reading the withdraw rule backwards: the withdraw branch is the **else** of the provide test, and the price gate on withdraw is `price > 1` blocks. A governance change in a regulator or limit: checked by event scan. A price source that differs from the contracts': checked by reading `regulator.aggregator()` and comparing with the API.
+- The brief names three ways to get this wrong. Reading the withdraw rule backwards: the withdraw branch is the **else** of the provide test, and the price gate on withdraw is `price > 1` blocks. A governance change in a regulator or limit: checked by event scan. A price source that differs from the contracts': checked by reading `regulator.aggregator()` and comparing with the API.

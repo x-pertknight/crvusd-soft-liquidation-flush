@@ -83,7 +83,7 @@ See DOCS_FIRST.md for the reading list, the raw text checks, and the table of do
 
 ## Predictions
 
-39 predictions were recorded at 2026-11-09 10:16 UTC before any chain data was fetched (PREDICTIONS.md, hash in PREREG_SHA256.txt, never edited). The hash pinned for DOCS_FIRST.md no longer matches because that file was extended later, as noted in VERIFICATION.md. PREDICTIONS.md entered git in the same first commit as the data, so for release 1 the timing rests on the recorded time and hash, not on git history. Phase 1b was committed before its data. Results are in PREDICTIONS_RESULTS.md and data/predictions_scored.csv. 14 hit (10 excluding weak tests), 12 missed, 13 untestable in release 1. Notable misses:
+39 predictions were recorded at 2026-11-09 10:16 UTC before any chain data was fetched (PREDICTIONS.md, hash in PREREG_SHA256.txt, never edited). The hash pinned for DOCS_FIRST.md no longer matches because that file was extended later, as noted in VERIFICATION.md. PREDICTIONS.md entered git in the same first commit as the data, so for release 1 the timing rests on the recorded time only, not on git history. Phase 1b was committed before its data. Results are in PREDICTIONS_RESULTS.md and data/predictions_scored.csv. 14 hit (10 excluding weak tests), 12 missed, 13 untestable in release 1. Notable misses:
 - P15. I expected the claim not to reproduce within 25%. V0 came within 6%.
 - P17 to P19. I expected PegKeepers to withdraw 2M to 20M. They had nothing to withdraw.
 - P13. I expected all YB markets to be over-leveraged through the flush hour. tBTC was not.

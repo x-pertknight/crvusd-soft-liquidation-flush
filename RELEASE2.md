@@ -41,7 +41,7 @@ Checks in the recompute (all pass): grid spacing; no failed hourly reads; PegKee
 
 ## Files
 
-- DOCS_FIRST_R2.md, PREDICTIONS_R2.md, PREREG_R2_ADDENDUM.md, PREREG_R2_SHA256.txt, PREREG_R2_ADDENDUM_SHA256.txt. Reading list, predictions and addendum, committed with the results in a6aa41c. DOCS_FIRST_R2.md was edited on 22 November 2026, so its hash in PREREG_R2_SHA256.txt no longer matches. PREREG_R2_ADDENDUM2.md, PREREG_R2_ADDENDUM3.md and their hash files: changes made after review, 2026-11-17.
+- DOCS_FIRST_R2.md, PREDICTIONS_R2.md, PREREG_R2_ADDENDUM.md, PREREG_R2_SHA256.txt, PREREG_R2_ADDENDUM_SHA256.txt. Reading list, predictions and addendum, committed with the results in a6aa41c. DOCS_FIRST_R2.md says it was written before any data; it entered git with the results in a6aa41c, so git does not show that order. PREREG_R2_ADDENDUM2.md, PREREG_R2_ADDENDUM3.md and their hash files: changes made after review, 2026-11-17.
 - SOURCE_DIFF_R2.md. Deployed source against the docs reading.
 - PREDICTIONS_R2_RESULTS.md. Scores and belief updates.
 - code/recompute_r2.py, r2_lib.py, r2_checks.py, r2_metrics.py, r2_review.py, charts_r2.py. Recompute and charts.
