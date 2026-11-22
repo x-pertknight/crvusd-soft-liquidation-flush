@@ -85,7 +85,7 @@ The 1.91M deposit at 23:38:11 UTC (block 26,373,494) into the pyUSD PegKeeper po
 | Weight definition | Pool TVL share at block 26,372,407 (before the window), both coins at 1 USD, fixed for the window. pyUSD pool 1.17M of 37.24M, 3.1% |
 | Weighted price | 0.996011 to 0.995996, a 0.149 bp move |
 
-Why the move is small. The deposit roughly tripled the pool but kept its mix close to the existing 88% crvUSD, and A of 2000 makes the curve flat near balance. Why 0.15 bp and not under 0.01 bp. 0.996011 minus 0.995996 is 0.0000149, which is 0.149 bp. The "under 0.01 bp" figure in a suggested wording from the adversarial check was a units slip. It never entered the README, the write-up or the charts.
+Why the move is small. The deposit roughly tripled the pool but kept its mix close to the existing 88% crvUSD, and A of 2000 makes the curve flat near balance. Why 0.15 bp and not under 0.01 bp. 0.996011 minus 0.995996 is 0.0000149, which is 0.149 bp. The "under 0.01 bp" figure in a suggested wording from the review was a units slip. It never entered the README, the write-up or the charts.
 
 Fixed weights are a pre-registered choice. After the deposit the pyUSD pool held about 3.4M, so with live TVL weights its share would be higher, but its own price moved only 2.7 bp, so the weighted effect would still be well under 1 bp.
 
