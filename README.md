@@ -83,7 +83,7 @@ See DOCS_FIRST.md for the reading list, the raw text checks, and the table of do
 
 ## Predictions
 
-Release 1 predictions were preregistered: 39 predictions in PREDICTIONS.md, recorded at 2026-11-09 10:16 UTC before any chain data was fetched, with SHA256 1e62bf74 in PREREG_SHA256.txt, never edited. Release 2 predictions were not preregistered: they entered git with the results in a6aa41c (RELEASE2.md). The hash pinned for DOCS_FIRST.md no longer matches because that file was extended later, as noted in VERIFICATION.md. PREDICTIONS.md and PREREG_SHA256.txt entered git in the same first commit as the data (b69d95c), so for release 1 the timing rests on that recorded time and hash, not on git history. Phase 1b was committed before its data. Results are in PREDICTIONS_RESULTS.md and data/predictions_scored.csv. 14 hit (10 excluding weak tests), 12 missed, 13 untestable in release 1. Notable misses:
+Release 1 has 39 predictions in PREDICTIONS.md with a recorded time of 2026-11-09 10:16 UTC and SHA256 1e62bf74 in PREREG_SHA256.txt, never edited. Release 2 predictions have no recorded time or hash: they entered git with the results in a6aa41c (RELEASE2.md). The hash pinned for DOCS_FIRST.md no longer matches because that file was extended later, as noted in VERIFICATION.md. PREDICTIONS.md and PREREG_SHA256.txt entered git in the same first commit as the data (b69d95c), so for release 1 the timing rests on that recorded time and hash, not on git history. Phase 1b was committed before its data. Results are in PREDICTIONS_RESULTS.md and data/predictions_scored.csv. 14 hit (10 excluding weak tests), 12 missed, 13 untestable in release 1. Notable misses:
 - P15. I expected the claim not to reproduce within 25%. V0 came within 6%.
 - P17 to P19. I expected PegKeepers to withdraw 2M to 20M. They had nothing to withdraw.
 - P13. I expected all YB markets to be over-leveraged through the flush hour. tBTC was not.
@@ -168,7 +168,7 @@ Standard library for every number. Charts need matplotlib and are written to out
 - code/raw/phase1b/. Phase 1b raw responses (gzip JSON), the S candidate list and the S membership per event.
 - data/phase1b_events.json, data/phase1b_results.json, data/phase1b_events_metrics.csv. Phase 1b outputs.
 - charts/. C1 to C6 as PNG and SVG. C3_flows_by_class_square_post is a square version without the pre-registered hour band.
-- DOCS_FIRST_R2.md is hash locked and predates the wording on preregistration above, so it is left as written. DOCS_FIRST.md no longer matches its recorded hash because it was extended later, as line 86 states; its wording is also left as written.
+- DOCS_FIRST_R2.md is hash locked and predates the wording on predictions above, so it is left as written. DOCS_FIRST.md no longer matches its recorded hash because it was extended later, as line 86 states; its wording is also left as written.
 
 Wallets are reported only in aggregate. No address is named as a seller.
 
